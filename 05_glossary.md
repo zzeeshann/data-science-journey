@@ -18,6 +18,16 @@ A token is roughly ¾ of a word. The **context window** is how many tokens a mod
 
 **Parameters = size of brain. Tokens = size of notepad in front of brain.** Independent.
 
+## GPU
+
+Graphics Processing Unit. Originally built to draw video game graphics fast — turns out the same chip is brilliant at the maths AI needs. A normal chip (CPU) does things one-at-a-time-but-clever. A GPU does thousands-at-once-but-simple. AI work is the second kind.
+
+Without a GPU, loading a language model takes many minutes or just fails. With one, seconds.
+
+## T4
+
+The specific GPU model Google lends out for free in Colab. Made by Nvidia, a few years old, modest by 2026 standards but genuinely useful — enough for small-to-medium AI models and real datasets. The reason this whole project is possible on a 2016 MacBook.
+
 ## Google Colab
 
 A computer I rent from Google, for free, running in my browser. Google keeps the computer in a data centre; I control it through a web page. A **Colab notebook** is a page with two kinds of boxes — code cells (Python, Shift+Enter runs it) and text cells (notes).
@@ -32,6 +42,22 @@ The GitHub of AI models. A website where the open-source AI world publishes:
 - **Spaces** — mini-apps where you can try models in your browser.
 
 The Python library `transformers` is how you use them in code.
+
+## Pandas
+
+The standard Python library for handling tables of data. Think Excel, but driven by code. Nicknamed `pd` when imported. Almost everything in data work passes through pandas at some point.
+
+## DataFrame
+
+The pandas word for a table. Rows and columns, just like a spreadsheet. You can add new columns, filter rows, run calculations across a column in one line. The basic unit of data work in Python.
+
+## Matplotlib
+
+The standard Python library for making charts. Nicknamed `plt` when imported. Not pretty by default, but it works everywhere and every other charting library is built on top of it or compared to it.
+
+## Histogram
+
+A bar chart of how often each value range appears. Split your data into "bins" (e.g. 30 equal-width buckets), count how many data points fall in each, draw a bar for each bucket. Tells you the *shape* of your data — bell-curve, lopsided, two humps, flat.
 
 ## Prompt engineering (small-form)
 
