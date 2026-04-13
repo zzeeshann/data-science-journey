@@ -10,7 +10,11 @@ GitHub got set up. The repo is real now, sitting at a URL, empty but waiting. Th
 
 Then Colab. Three libraries installed in one line. Thirty seconds later I was downloading a thousand medical paper abstracts from Hugging Face. The first one I opened was a 2008 study about feeding schoolchildren in Iran — anthropometric indices, p-values, a structured background-methods-results-conclusion shape. Nothing to do with consciousness. That's fine. I'm not measuring the meaning yet. I'm measuring the *texture*.
 
-The first real measurement was word counts. Average abstract: 205 words. Shortest: 46. Longest: 373. The histogram showed a lopsided hump that climbed gradually and then fell off a cliff just past 300. You could see the journal word limit in the shape of the data. Authors write up to the line and not past it. The rule is invisible in any single abstract but obvious in a thousand of them. That's what data does.
+The first real measurement was word counts. Average abstract: 205 words. Shortest: 46. Longest: 373. Then the histogram:
+
+![Word count of PubMed abstracts](images/chapter_03_histogram.png)
+
+A lopsided hump that climbs gradually and falls off a cliff just past 300. You could see the journal word limit in the shape of the data. Authors write up to the line and not past it. The rule is invisible in any single abstract but obvious in a thousand of them. That's what data does.
 
 Claude predicted a tighter, more bell-shaped curve before the chart rendered. The actual chart was messier than that. When I pointed at the screen, Claude said so plainly — *the data disagrees with what I told you, the data wins.* I noticed I trusted the conversation more after that than before. Honesty about being wrong is worth more than confidence about being right.
 

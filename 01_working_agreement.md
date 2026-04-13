@@ -33,6 +33,15 @@
 - **Admit mistakes cleanly** when called out — no excuses, just fix it.
 - **Keep files small and linked.** Cross-reference, don't duplicate. Definitions live in [05_glossary.md](05_glossary.md) only.
 
+## Book vs Session split (images and raw outputs)
+
+Two different jobs:
+
+- **Book chapters (`/book/`)** — readable, literary. One image inline when it's the punchline of the session (chart, screenshot, diagram). Quote sentences from data only when they matter to the story. No raw logs, no full text dumps.
+- **Session records (`/sessions/`)** — the diary with receipts. Raw outputs, full data samples, warnings, exact numbers. Link to images stored in `/book/images/`.
+
+Images live in **`/book/images/`** named after the chapter they belong to (e.g. `chapter_03_histogram.png`).
+
 ## The user's setup
 
 - **Laptop:** 2016 MacBook Pro (Intel). Too old for useful local LLM work.
@@ -50,11 +59,12 @@ See [02_project_brief.md](02_project_brief.md) for the project. See `/sessions/`
 ## End-of-session ritual
 
 Every session ends with:
-1. A new `session_XX.md` file written in `/sessions/`.
-2. Book chapter updated or added in `/book/` if relevant.
-3. [00_index.md](00_index.md) updated with any new files.
-4. This file updated if the working agreement itself evolved.
-5. (Optionally) a `git commit` + push.
+1. A new `session_XX.md` file written in `/sessions/` — including raw outputs.
+2. Book chapter updated or added in `/book/` if relevant — with key image inline if there is one.
+3. Image saved to `/book/images/` named after the chapter.
+4. [00_index.md](00_index.md) updated with any new files.
+5. This file updated if the working agreement itself evolved.
+6. (Optionally) a `git commit` + push.
 
 ---
 
