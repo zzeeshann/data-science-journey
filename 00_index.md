@@ -22,16 +22,21 @@ A self-directed data science learning journey, structured as a real research pro
 - **[02_project_brief.md](02_project_brief.md)** — what the project is and the research questions.
 - **[03_project_structure.md](03_project_structure.md)** — folder layout, Mac setup, GitHub setup.
 - **[04_roadmap.md](04_roadmap.md)** — rough 6-month plan. Not a commitment, a compass.
-- **[05_glossary.md](05_glossary.md)** — definitions of terms (parameters, tokens, Colab, tool use, GPU, T4, pandas, matplotlib, etc.). Single source of truth for concepts.
+- **[05_glossary.md](05_glossary.md)** — definitions of terms. Single source of truth for concepts.
 
 ### `/sessions/` — what we actually did
 - **[session_01.md](sessions/session_01.md)** — first session: Colab setup, first LLM run, first observation.
 - **[session_02.md](sessions/session_02.md)** — chose sub-question 2, GitHub live, first dataset loaded (PubMed), first measurement, first chart.
+- **[session_03.md](sessions/session_03.md)** — loaded William James 1890 from Project Gutenberg, cleaned, filtered to paragraphs, first two-point comparison chart (PubMed vs James).
 
 ### `/book/` — the personal book, written as we go
 - **[chapter_01.md](book/chapter_01.md)** — Why I'm doing this.
 - **[chapter_02.md](book/chapter_02.md)** — First contact.
 - **[chapter_03.md](book/chapter_03.md)** — First measurement.
+- **[chapter_04.md](book/chapter_04.md)** — Two shapes on one page.
+
+### `/data/raw/` — source texts kept for analysis
+- **[hamming_lecture_01_1995.txt](data/raw/hamming_lecture_01_1995.txt)** — Richard Hamming, "Learning to Learn" Lecture 1 (Orientation), 1995. Candidate 20th-century data point for sub-question 2 — a mid-century scientist talking about thinking, mind, learning, and the examined life. Parked for a future session.
 
 ---
 

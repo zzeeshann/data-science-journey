@@ -34,6 +34,8 @@ A computer I rent from Google, for free, running in my browser. Google keeps the
 
 Free tier includes a **T4 GPU**, which is what's needed for AI work and what my 2016 Mac doesn't have. Enable it: Runtime → Change runtime type → T4 GPU → Save.
 
+**Colab memory is ephemeral.** When you close a notebook session (or it times out), every variable is wiped. The *code* persists, but the *data it loaded* does not. To keep working, re-run the cells from the top, or use **Runtime → Run all**. Free tier gives one active session at a time.
+
 ## Hugging Face
 
 The GitHub of AI models. A website where the open-source AI world publishes:
@@ -42,6 +44,12 @@ The GitHub of AI models. A website where the open-source AI world publishes:
 - **Spaces** — mini-apps where you can try models in your browser.
 
 The Python library `transformers` is how you use them in code.
+
+## Project Gutenberg
+
+A free online library of books whose copyright has expired — roughly, anything published before about 1928 in the US. 70,000+ books, downloadable as plain text. This project's source for pre-20th-century material.
+
+Every Gutenberg file wraps the actual book in boilerplate — a copyright notice at the top and a license at the bottom. The book proper sits between two marker lines: `*** START OF THE PROJECT GUTENBERG EBOOK ...` and `*** END OF THE PROJECT GUTENBERG EBOOK ...`. Cleaning = finding those markers and keeping only what's between them.
 
 ## Pandas
 
@@ -58,6 +66,25 @@ The standard Python library for making charts. Nicknamed `plt` when imported. No
 ## Histogram
 
 A bar chart of how often each value range appears. Split your data into "bins" (e.g. 30 equal-width buckets), count how many data points fall in each, draw a bar for each bucket. Tells you the *shape* of your data — bell-curve, lopsided, two humps, flat.
+
+## List comprehension
+
+Python shorthand for "make a new list by doing something to each item in an old list." Written with square brackets:
+
+```python
+# Keep only paragraphs with 40+ words
+real_paragraphs = [p for p in paragraphs if len(p.split()) >= 40]
+```
+
+Read left-to-right: *"for each `p` in `paragraphs`, if the word count is 40 or more, keep `p`."* Replaces a three-line for-loop with one clean line. Everywhere in real Python.
+
+## Right-skewed distribution
+
+A distribution where most values are low, a few are very high, and the mean is dragged higher than the median. The chart looks like a ramp starting tall on the left and trailing off to the right. Happens when there's **no ceiling** on the high end — writers who can write paragraphs as long as they want, incomes with no upper limit, reaction times where most are fast but occasionally one is very slow.
+
+Opposite: a **constrained** distribution like PubMed abstracts, where a hard word limit cuts off the high end and produces a humpy shape with a cliff.
+
+Mean vs median is the tell. If mean ≫ median, right-skewed. If mean ≈ median, roughly symmetric.
 
 ## Prompt engineering (small-form)
 

@@ -1,0 +1,487 @@
+EC 4000 — Lecture 1: Orientation
+Richard Hamming
+
+
+
+Course Logistics
+Welcome to EC 4000. The class meets Tuesday, Thursday, and Friday — 3 o'clock on Friday. I'm
+in Hispanic 518, extension 2655. I'm typically in mornings because I'm only teaching half-time,
+so I go home and work in the afternoons.
+There are some notes here, and for those not here — don't come asking. I can't give out sets of
+notes by mail because the book is being published, and the publisher has a right to profit by it.
+It'll be out within a year. Meanwhile, students in this class can get a set of notes, and if there
+aren't enough at the end of the day, I'll bring some more tomorrow.
+
+
+
+What This Course Is About
+The first lecture is on orientation — what am I trying to do?
+The purpose of this course is to prepare you for your technical future. There really is no technical
+content in this course, although I'm going to talk about digital filters and all kinds of things —
+things you presumably know. I am concerned about style.
+I have studied great scientists ever since I was at Los Alamos during the war. What is it that
+differentiates those who do and those who do not do significant things? Mainly it's a matter of
+style. Many a person I've known worked just as hard as others but didn't have much to show for
+it. So my problem is to instil in you something called style, so you will amount to something.
+After all, the Navy is paying a large sum of money to have you here, and it wants money back by
+your later performance.
+I will examine, criticise, and talk about various people's style — mainly my own, but other
+people's where I can use it. There are many things I'm going to tell you that I wish somebody had
+told me. I had to find out for myself. This course is not a normal technical course. It's all about the
+topics they never told you in class that they should have, because each course is taught in
+isolation and a large amount falls in between. That's what I'm trying to pick up.
+
+
+
+Style Cannot Be Put Into Words
+Style cannot be put into words. I can only approach you by particular examples and let you infer
+what it is.
+There is a belief that you probably hold — that anything can be talked about. This goes back to
+Socrates, Plato, and Aristotle in early Greek times. They thought they could talk about the gods,
+truth, beauty, justice, love — all those things. At the same time, there were the Mystery Cults in
+Greece who said: you must experience — you cannot talk. And if you remember the Middle Ages,
+various saints said you can't talk about God, you've got to experience Him. The same way the
+Mohammedans about Allah — you can't portray Him, you can't put up pictures, you must sense.
+So there has long been a school which says you cannot put everything into words, and one of
+those things is style. I really cannot say what I mean. I can only give you these examples and
+struggle, hoping that you will get the idea.
+
+
+
+Why I Talk About Myself
+To be effective in a course like this, I have found that I have to talk about myself. If I make
+abstract remarks, it just sounds like so many pious words. If I talk about me — what I've done —
+maybe it will penetrate.
+This gives the course an attitude of bragging. I'm always talking about myself. But I will tell you
+several mistakes that I made, too, so you won't do the same sort of thing.
+Similarly, I have to get you to quit your modesty. I have to get you individually to respond to my
+challenge — that you're going to be great. You have to say to yourself: "Yes, if that guy Hamming
+can go out and become a great scientist, I can too. I can become a great person." I have to get you
+to say to yourself that it is worth the effort, and you're going to try to be something more than just
+the average person.
+
+
+
+Coaches, Not Teachers
+While we speak of teachers, we are really coaches. I cannot run the four-minute mile for you. I
+can comment upon your style, but you must do the work. The same way — I cannot make you a
+great scientist. I can criticise style and other things, but I cannot by mere words make you great.
+Just as in running a four-minute mile, you must do the work.
+Which means you have to take what you hear and read, think it over carefully, discuss it with
+your friends, and see what you can adapt to yourself.
+There is no one style which is successful. Painters paint in many different styles. You have to find
+a style that is you, which means you have to take fragments from other people, use them, adapt
+them, and make them yours. You can't copy me directly — you won't get away with it.
+I will use the analogy of painting. In painting, once you've learned colour mixing, form, and
+sketching, you study under a master whom you temporarily accept as knowing what he's talking
+about. But there are limits to what can be done. You know that if you copy the master's style
+exactly, you will not be a great painter. You also know that if you paint in the style he or she did,
+it's too late — the future wants a different style.
+Thus I can tell you about the style I used in the past, but that won't be the style you'll need to
+cope with the future. You must manufacture the style which will make you a significant person in
+the future. What I did would not make me successful if I were starting now, just as my
+predecessors got successful on things that I couldn't do and get successful on.
+
+
+
+The Difficulty Increases With Each Generation
+When I went to Bell Laboratories in 1946, I looked around — since I was already interested in
+what made great scientists — and I looked at what they did. When I looked at what they did to
+become famous, it didn't look that difficult. They tended to do the easy problems. I found in the
+course of my time there a couple of holes they left, but fundamentally they did these easy
+problems. My generation did the somewhat harder ones, and we left to the others the harder still.
+Every generation has more difficulty, but you stand on our shoulders to some extent. Yet the task
+is harder. Having got man to the moon, the next real good feat in space is going to be a lot harder.
+
+
+
+The Young Turks
+When I came to the Labs, there were four of us who came in at about the same time, about the
+same age — within a year. We privately called ourselves the "Four Young Turks," and many years
+later I discovered top management called us the same.
+We were troublemakers. We didn't do things the way the previous generation did. We did new
+things. The previous generation didn't like it — we didn't do things "right."
+For example, my boss Henrik Bode, in network theory, had made his reputation doing network
+theory with complex variables. He knew that's how you do things — after all, that's what made
+him famous. This guy Hamming comes along and keeps using computing machines, which is not
+the way to do it in his eyes. But it was the thing that needed to be done.
+This is a lesson I want to get across to you regularly. Supposing I am successful and you do rise to
+the top — would you please remember that what made you great is not appropriate for the next
+generation? You know how to get great, because after all you were great, but the things that you
+did may not be appropriate. All too often we have that trouble with bosses. They know: "By God,
+this is what I did, and I got to the top — it must be right." They're very often wrong. I want you to
+think seriously, when you rise to the top, that your method of success may not be appropriate
+now that the world has changed.
+
+
+
+Education vs. Training
+I want to talk about education. Education is what, when, and why to do things. Training is how to
+do it. Most of your courses have been training. I'm trying to talk about the education part.
+If you have one without the other, it's not much good. I've had very able technical people
+reporting to me who applied their technology and methods to the wrong problem — and it had to
+be undone. And I've had other people who had all kinds of theory but couldn't do anything.
+They're not much use either. You need both: theory to guide you, and skill and technique to do.
+One without the other isn't too good.
+In a certain sense I'm engaged in meta-education — I'm talking about education constantly,
+because that's what you're going to have to do. You're going to have to educate yourself
+constantly. That's what the future demands.
+
+
+
+The Exponential Growth of Knowledge
+I'm going to try constantly to project forward what the world's going to be like, but let's look back
+first to history.
+The modern era in science and engineering began with Sir Isaac Newton — roughly 1642. He was
+born Christmas Day, the same year that Galileo died, and he lived to be about 85. So we can say
+it's around 1700.
+From Newton's time to ours, we have roughly doubled the knowledge every 17 years. The
+doubling period of science from then to now is roughly 17 years.
+When I came to Bell Laboratories in '46, they were trying to shrink down from wartime size to
+5,500 people. I watched through 30 years of management putting on hiring freezes and doing
+everything else — but the doubling continued, every 17 years, with small wiggles. They had to
+hire the people to keep up with the expanding knowledge.
+It's a common statement that 90% of the scientists who ever lived are now alive.
+
+
+
+A Back-of-the-Envelope Calculation
+I'm going to turn now to a back-of-the-envelope calculation, which I learned by watching Fermi
+and other people — Shockley and others. When I used to go to lunch with them, this is what they
+did.
+Suppose first we have exponential growth of the number of scientists — that comes from a
+differential equation: the rate of change is proportional to how much you have, and the solution is
+exponential growth.
+If I assume the amount of knowledge being generated is proportional to the number of scientists,
+I can integrate up to now versus up to 17 years ago. The ratio works out to say that half the
+knowledge has been generated in the last 17 years — consistent with the doubling.
+Now take the other statement: 90% of the scientists who ever lived are now alive. I take 55 years
+as a reasonable scientific lifetime — you probably don't mean a living scientist when he's two
+years old, you mean from when he's beginning to be a scientist until they decay somewhere in
+the eighties. If I put that in, I come up with 89%, which is close enough to 90%.
+You see what happened: I got a clearer idea of what I was talking about, and I had to answer a
+question I hadn't thought about — what did I mean by the lifetime of a scientist? Those two
+statements are compatible: we double every 17 years, and 90% of the scientists who ever lived are
+now alive.
+The reason I want to put in back-of-the-envelope calculations is that they're widely used. It puts
+the thing firmer in your mind — having shown you the calculation, you may retain it longer. Plus
+it gives you practice in quick modelling. Nobody pretends this is really accurate. I don't pretend
+17 is the exact number — it's somewhere around there.
+Back-of-the-envelope calculations are very useful. I found it very useful when I hear things over
+TV or radio, or read newspapers — do a quick model and ask myself: are these numbers possible?
+Very frequently, two things emerge: either they're not possible, or you didn't even know what
+they were talking about. To make a model, you found that they failed to tell you what they were
+talking about — they just gave you a spectacular answer.
+
+
+
+The Consequences of Doubling
+This doubling business is a very serious one. I've had to live through my life with that fact. Here's
+a table:
+
+ Multiplier                                                   Years
+
+ 2×                                                           ~17
+
+ 3×                                                           ~27
+
+ 4×                                                           ~34
+
+ 5×                                                           ~39
+
+ 10×                                                          ~56
+
+
+
+One way to read it: ask the time from now to retirement, look at the column — that's how much
+more knowledge there will be than what you now have, if we go on the same way. You face a
+rather horrendous future.
+Another way to look at it: suppose you were 34 when your child was born. Your child goes to
+college — there's four times as much knowledge. Not just mathematical theorems — recordings
+of Beethoven's Ninth, where to go skiing, what channels to listen to on TV. There's going to be
+four times as much knowledge for your poor child to face. Don't be surprised if your children are
+somewhat more disoriented than you were — and God knows you were sometimes disoriented.
+Furthermore, almost half of the new material occurs in the last doubling period, which is what
+causes saturation. Saturation comes on quite rapidly.
+If you think you'll be Chief of Staff in, say, 39 years from now — there'll be five times as much
+knowledge needed to run the Navy as is needed now. That is what you face.
+Learning to Learn
+What's my answer? Learning to learn was the only thing I could do. Things become obsolete —
+something like half of what we have taught you lovingly in other courses will be obsolete in 15
+years. Either we're no longer doing it, or it's been replaced by something else.
+Consider what I had to live through. I came to Bell Laboratories in '46 and they were running
+vacuum tubes. So I started — having a mathematical background — studying what vacuum
+tubes were. But in some years I began eating with the physics department, and I ate with the
+guys while they were developing the engineering side of transistors. I did a great deal of
+calculation for them. I obsoleted all the knowledge I had learned. I haven't seen a vacuum tube
+for a long while, except in my friend's office where he keeps one to show students what a vacuum
+tube is.
+You can say, well, the original transistors were a tin can with three legs. Yeah — now there's a
+million transistors on a chip that size.
+At Los Alamos, we calculated atomic bomb designs on relay calculators which probably averaged
+maybe an operation a second — around the clock, six and a half days a week, for a month,
+sometimes three months, to get one solution. Now you can punch it into a modern machine —
+boop — and there's the answer.
+I was educated as a mathematician. I certainly had no course in numerical analysis. I never knew
+about a computer. I knew a little physics — Los Alamos taught me some more. But
+fundamentally, when I went to Bell Labs, because I believed that in the computing I did I should
+understand the nature of the problem, I had to learn something of the physical sciences — some
+chemistry as well as a lot of physics — some social science, and a little bit of biological science,
+because the Laboratories had such departments. I spent a lifetime getting background
+knowledge.
+One thing you can do is try to cling to fundamentals — which is very glib until you ask: what do I
+mean by fundamentals? I have two criteria, which are not fully adequate. One: from the
+fundamentals, you can derive the rest of the field. Two: they've been around for some time. But
+"the fundamentals of amplification were vacuum tubes" doesn't count. True, the Nyquist
+formulas are still good, and the gain formulas used with vacuum tubes are still useful — although
+we have to apply them to other things. Feedback is still the same. But a lot of things are not.
+
+
+
+Science vs. Engineering
+In science, if you know what you're doing, you shouldn't be doing it — because science is
+supposed to be exploration of what you don't know. In engineering, you should know what
+you're doing.
+Well, nothing is pure. Science involves a great deal of engineering, and engineering involves a
+great deal of new material. It's a great blend. But what is painful to you — and it's going to get
+worse — is that the two fields are growing together.
+When I first came to Bell Labs, when something was discovered in physics, the telephone
+company was not in that great a hurry to get it developed and into the field. After all, they had
+pretty much a monopoly — why hurry? Now, we are not willing to wait for scientific principles to
+be developed first and then applied. We want it in the field tomorrow.
+The leisure which we used long ago — develop the ideas first and then apply them — is going to
+be less and less acceptable. When an idea is first around, you want to apply it.
+I just read last night that one of the presidents, who was at a museum — one of these World's
+Fairs — was shot, and the bullet was in his back. The doctors refused to operate because they
+didn't know where the bullet was. But right there at the Fair, X-rays were being demonstrated.
+They didn't use the new technique — it was right there, ready and available. They wouldn't use it,
+and he died. No, they were conservative. We don't allow that much anymore. You're going to be
+pushed very hard to go from idea to developed item and get it on the market rapidly.
+
+
+
+Predicting the Future
+I once read there were some 76 different methods of predicting the future. One is to predict
+tomorrow will be like today — whatever the temperature is today, predict tomorrow is the same.
+It's a pretty good prediction. A somewhat better one is to note the linear trend and predict it
+forward — that's good for a while, but not too long. And furthermore, it depends on which
+variable you pick to be linear. If you pick the coefficient in front, it's one thing. If you pick the
+exponent, it's something else.
+I made many predictions on how much computing we'd need — I was regularly wrong on the low
+side. One time I got annoyed and said, "I will predict high." So I got out some formulas and
+predicted really high. A couple of years later, the piece of paper turned up on my desk. I looked at
+it — I was low again. The growth of computing has been unbelievable.
+On the other hand, take artificial intelligence. The predictions made by almost all the experts 10,
+20, 30 years ago have not been realised.
+Nevertheless, there's a saying: short-term predictions are optimistic, long-term predictions are
+pessimistic. The reason is simple — the long-term predictions are pessimistic because nobody
+can believe a geometric progression. When we got transistors going, nobody in his right mind
+would have predicted a million transistors on a chip that big. Nobody. It's beyond belief — but
+that's what we did, and you know it.
+Predicting the future is a very hard business, but you have to do it.
+
+
+
+On History
+Some people believe history repeats itself, and some believe exactly the opposite. But one thing
+you can be sure of: what we now regard as the past was to some people the future, and what you
+think is the future will become the past. There will be a time when some of you will be in the
+history books.
+Another thing against history is Henry Ford Senior's remark: "History is bunk." I think he said it
+for two reasons.
+First, history is rarely reported correctly. There are a great many descriptions of what happened
+at Los Alamos during the war — no two of them agree, and they don't agree with what I think
+happened. One time, Stanisław Ulam wrote his experience and published it. I came into Los
+Alamos on my regular summer visit and said to my friend, "I just read Ulam's book — that isn't
+how I remembered it." He said, "That isn't how I remembered it either. I was just going to ask how
+you remembered it." And I suddenly realised: no two people remember the same thing. You're
+familiar with this — an accident, several witnesses, they report different things. There is no
+reliable report of what happened in the past. It's what has come down to us and been accepted.
+Second, I think in Ford's mind was the fact that the past is being more rapidly disconnected from
+the future. The invention of the computer tells you how much the world is different from what it
+was before computers appeared.
+Some historians, when you read them, will give you the impression that it was inevitable — it was
+inevitable that Rome would fall, or this or that. On the other hand, they will tell you the future is
+very open-ended, many things are possible. Can this be true — that the past was very
+determined but the future is very open? It seems unlikely. So you're left with saying maybe the
+past was not so determinate.
+Consider the individual lives of Alexander the Great, Napoleon, and Hitler. If they had died in
+their childhood, would not the world be very different? On the intellectual side — Pythagoras,
+Aristotle, Newton, Maxwell, Einstein — people who, had they died in their youth, would have left
+the world rather different.
+Individuals do matter. I suggest that the past was less determinant than historians like to make it,
+and the future is less open-ended than you would like to believe. But there are great possibilities
+for you.
+
+
+
+Technology and Society
+One other thing against history: unforeseen technological inventions can ruin anything.
+Transistors — the development of vacuum tubes was practically cut off. A technological
+invention can completely change the history of something, and one can hardly foresee
+technological inventions.
+But there are also social inventions, which are important. You people have been trained mainly in
+the physical side, and I've got to make you more sensitive to the fact that all of your life takes
+place in a social society which has restraints. I will claim that the future of technology will be less
+determined by what technology can do than by social, legal, and other restraints on what we may
+do.
+If you think about computer-controlled highway traffic — it sounds good to you. Then ask
+yourself: who do I sue in an accident? And you begin to realise it's going to be very difficult to get
+going. Social conventions are going to stop a great many things from happening.
+
+
+
+The Drunken Sailor
+I want to tell a story I'll use several times — the story of the drunken sailor. He staggers a couple
+steps this way, staggers that way, staggers this way. In n steps, typically he'll get the square root of
+n distance away. In 100 steps, he'll be about 10 away. In 10,000 steps, about 100. He may be right
+where he started; he may be further away. But that's typical.
+On the other hand, if there's a pretty girl over there — he staggers like this, back like this, over
+like this — he's going to get a distance proportional to n.
+If I can create in you a vision of where you are headed, you will make progress proportional to n.
+If you do not have a vision, you will wander like a drunken sailor and get very little.
+One of my major purposes is to get you to form a reasonable vision of what you are going to do
+with your future — what kind of person you're going to be. You're going to say to me, "Hamming,
+how do I know the future?" And I'm going to say: it doesn't matter much. From what I've
+examined in life, it doesn't matter much what goal you set — whether you march that way, that
+way, or that way. If you have a goal, you'll get somewhere near it. If you don't have a goal, you're a
+drunken sailor.
+My problem is to make you form your goals and to some extent try to achieve them — to make
+you something important rather than just drifting. It's comfortable to drift through life, and a
+great many people will assert they're perfectly content to drift. I don't think that's too good an
+idea.
+It's none of my business what goal you take. It is my business to force you to set up some
+reasonably decent goals, to try and achieve something in your life. The society is paying a great
+deal of money for your education — it's entitled to something.
+Those who do something generally have some kind of goals and see where they're headed, and
+their lives add up. Those who don't are just a bunch of isolated events — they did this, they did
+that, they did the other thing, but nothing added up.
+Even if you want merely to be a great guitar player, I don't mind — so long as you set a goal that
+involves struggling. That is the essential part.
+
+
+
+The Unity of Knowledge
+The standard method of teaching is to have departments, which break things up into subject
+matter — calculus, linear programming, and so on. Too much falls between, and this course is an
+attempt to plug those holes.
+Another goal I have is to show you that, in spite of different departments, there's an essential
+unity of all knowledge. When you face a difficult problem of unknown type — it doesn't matter
+whether it comes from chemistry, physics, or anything else — you have to find the answer. And
+knowledge is pretty homogeneous then. It's no longer divided up into courses, no longer divided
+up into departments.
+At Bell Labs, I was in the math department almost all the time, but in fact I was doing a great
+many other things — statistics, computing, physics, chemistry. We did not observe too tight a
+division. For purposes of organisation, you do have to have some structure. But I want to get into
+your minds that knowledge is a sort of homogeneous body which we have specialised with
+certain names, but it's all interconnected.
+
+
+
+Why Computing Will Dominate
+The course will centre around computing — not, I like to think, because I'm prejudiced and my
+life was in computing, but rather because computers are going to dominate science and
+engineering. There are very powerful reasons for this.
+Economics. Computers are far, far cheaper than human beings — and they're getting cheaper by
+the year. Humans are getting more expensive by the year.
+Speed. Your nervous system — if you drop something on your toe, the signal goes up to your
+head at about 100 metres per second. Light: 300,000 kilometres per second. You aren't in the
+league. You can't even touch electronic speeds.
+Accuracy. Machines can be quite precise. They can do double precision if necessary. You would
+have trouble doing double-precision arithmetic.
+Reliability. God — or nature, however you want to put it — didn't make you to be a reliable thing.
+You've been walking for years, and still every now and then you trip and stumble. You can't do
+anything really reliable. That's why man ended up on top of the heap — he has flexibility built in.
+But don't ever try to get humans to do something reliable. Take bowling: all you have to do is
+throw the ball down the alley exactly the same way every time for a perfect game. Perfect games
+are rare, even among the most skilled experts.
+Rapidity of control. Because machines have rapid control, we are now building aeroplanes
+which are basically unstable, and we have a computer correcting the instability every
+millisecond, so we get better performance. The pilot couldn't do it. If that computer goes out, the
+pilot's through. The pilot is left with the large-scale, broad planning — but the millisecond-to-
+millisecond is under computer control.
+Freedom from boredom. It sounds trivial. You cannot put a human being on a job to watch for
+something for three years and, when it happens, respond promptly. You can put a computer on
+that job. If such-and-such happens in the atomic pile, do this. Well, it hasn't happened for four
+years — the dial goes over — the human being isn't going to respond well. He's been staring at
+the thing for the last two and a half years. Machines don't know what the word "boredom" means.
+Bandwidth. In any rapidly changing situation, the person in charge can only get so much
+information in and out. There's a general belief that you can process only about 50 bits per
+second, maybe 60. A machine's got enormous bandwidth. Put all your inputs together — visual,
+auditory, everything — and they won't match a modern machine. Not only coming in, but giving
+orders out. For central control, the human simply cannot compete in a complicated situation if
+it's merely bandwidth in and bandwidth out. If it's making judgements, that's another story. But
+we no longer have a crew aiming a gun at an aeroplane — we have self-contained systems. The
+human is too slow.
+Ease of retraining. Training, to a great extent, is: you learn to do something, and now we change
+the equipment — you've got to unlearn the old habits and learn new ones, repeating them many
+times. With the computer, I change the program and it's done. No elaborate training, no endless
+hours of constant practice. Just put a new program in and the machine behaves a new way.
+Hostile environments. Outer space, underwater, high radiation fields, warfare, unhealthy
+manufacturing situations — I can put machines in those situations where humans are very
+difficult. In space, I've got to keep this human being in an atmosphere he's used to — oxygen and
+so on. High radiation will kill them. How we're going to manage getting people to Mars and back
+in the radiation coming from the Sun — I don't know whether we just irradiate them thoroughly,
+or maybe decide not to send human beings that far.
+Personal problems. This is one I'm much sensitive to. Personal problems dominate
+management. With machines, there are no pensions, no personal squabbles — two machines
+don't get squabbling with each other, but I've had two employees who wouldn't even share the
+same room. No unions, no personal leave, no egos, no death of relatives. No recreation needed —
+if I turn the machine off, that's the end of it. With a human being, I have to provide reasonable
+recreation.
+Machines have got it all over humans in these areas. All of you have probably already been
+saying, "Oh yeah, but what about the advantages humans have?" I won't have to list those —
+you're trying to do it already. But I gave you a bunch of details which you'll find very hard to get
+around.
+Because it's economically sound, you are going to see more and more machines running
+organisations. The design of chips is under computer control to a great extent. Some computers
+are actually being assembled heavily by machines. I was on the board of directors of a computer
+company for a while, and at one point more than half the computers coming down the
+production line, we were grabbing to mechanise the production line itself. We sold less than half
+— because we were mechanising the line and getting production much cheaper. That shows you
+how rapidly a company in the computing business was mechanising itself.
+One of my friends said he ordered a bunch of machines. The message came in overnight. A
+bunch of machines assembled those particular computers — just what they wanted, with the
+parts they wanted — and the next day those computers were on the loading dock.
+
+
+
+A Religious Course
+Lastly, this is in a certain sense a religious course. I am preaching a message: that with one life to
+lead, you ought to do more than just get by.
+It is an emotional matter I'm appealing to. It's very frequently said that a happy life is one in
+which you have some goals and achieve them. But studying the matter over, reading about it, and
+talking to people — everybody pretty much agrees that it's not the achievement of the goal that
+is the best part. It's the struggle. The struggle to success is what makes you what you will be.
+Remember: in your old age, you're going to have to live with yourself. There's no escaping living
+with yourself in old age. You're stuck with yourself, and in old age you can't change much, as you
+can when you're younger. Consider the kind of person you wish to be in your old age, and start
+now being that kind of person.
+It is an opinion — not a fact — that most people believe the struggle to achieve excellence is
+worth it. When you look at people's lives...
+As a child, I went to a movie — they were called Nickelodeons in my day, but we actually spent a
+dime to go. One Saturday, I went with a friend of mine and it was one of those films — you
+laughed and laughed and laughed at all the ridiculous situations. We walked out and he said to
+me, "You know, that wasn't a very funny movie." I thought for a while, and I said, "You're right."
+All the laughter did not make the movie funny at all.
+And the same way with life. The pleasant life is not the one that is the sum total of pleasant
+moments. Somehow or other, it adds up very differently. The good life is not the life of pleasure
+from moment to moment — and you know it. In fact, you are well aware that you cannot get up in
+the morning and say, "I shall be happy today," and make it work. The good life has to be snuck up
+upon.
+I'm saying — as an opinion of myself and many other books — that the way to do that is to take
+yourself in hand and manage yourself to be the person you wish to be, to achieve the goals you
+wish, and be more articulate about your direction than just idle drifting like a drunken sailor.
+
+
+
+The Unexamined Life
+In ancient Greece, our boy Socrates said: "The unexamined life is not worth living."
+I was crossing the Cornell campus one time, as consultant for the president — a whole committee
+had been put together. Walking across, I heard a professor right ahead of me saying to a student:
+"The unexamined life is not worth living." And in the course of crossing one quadrangle, he
+managed to say it three times.
+So I'll repeat it a third time: the unexamined life is not worth living.
+See you Thursday. There are notes here on the course — and if there aren't enough, I'll bring
+some more tomorrow.
+
