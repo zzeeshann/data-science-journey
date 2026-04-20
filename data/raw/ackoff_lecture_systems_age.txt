@@ -1,0 +1,693 @@
+From Machine Age to Systems Age: A Lecture by Russell L. Ackoff
+
+
+Information, Knowledge, and Understanding
+There's an old educational adage that says an ounce of knowledge is worth a pound of
+information, and an ounce of understanding is worth a pound of knowledge. Unfortunately, the
+educational system allocates about 90% of its time to conveying information, about 9% to
+conveying knowledge, and about 1% to conveying understanding. The explanation is simple
+enough — it's difficult for a teacher to convey what he doesn't have.
+Despite the overwhelming importance of understanding, we don't even understand what
+understanding is — and we didn't until a short while ago. We tend to use "understanding" and
+"knowledge" interchangeably, and they're very different things.
+Information is what is contained in descriptions — answers to questions that begin with words
+like who, when, where, what, how many. If somebody asks how many people are in this
+auditorium and you say 114, that's information.
+Knowledge is contained in instruction — answers to questions that begin with how to. If I ask
+where Washington is and you say it's 30 miles to the north, that's information. If I say "how do I
+get there?" and you instruct me, you're conveying knowledge.
+Understanding is conveyed through explanation — answers to questions that begin with why.
+As I've indicated, we've only begun to understand something about understanding in recent
+years, because all of our understanding is rooted in certain very fundamental assumptions we
+make about the nature of the world and the reality we experience.
+
+
+
+Worldviews and Cultural Ages
+There is a set of fundamental beliefs that each of us holds which constitutes what's called our
+worldview — or what the Germans call a Weltanschauung — a concept of the nature of reality.
+Everything that we see, let alone think, is coloured by that set of fundamental assumptions.
+That worldview has a significance we've only recently begun to appreciate. It has two major
+impacts on the way we organise our experience.
+First: the fact that you and I share a common view of the world is what makes us members of the
+same culture. A culture is a group of people bound together by a common view of the nature of
+the world. That view is usually inculcated through education, and we obtain it unconsciously.
+Very few people can articulate the worldview that binds their culture together — we have to dig
+into our unconscious to extract it.
+The significance is this: when the view that binds a culture together begins to go through a
+change, society goes through a major transformation. It moves from what the historian calls one
+age into another. An age is a period of time in which a culture has a single view of the world.
+When that view goes through a transformation, the culture moves from one age into another.
+The thesis I want to make and defend here this afternoon is that, starting about the time of World
+War II, the Western world began to go through a change of age — a fundamental and profound
+transformation in our concept of the nature of reality. If we understand this, it enables us to
+understand the incredible rate of change we're experiencing, the fundamental changes in our
+institutions, the changes in our morality, and all the rest of it — because it all derives from a
+changing view of the world.
+
+
+
+The Medieval Period and the Renaissance
+A period of transformation from one age to another is something we all know, at least from our
+education. The one most familiar to us is the Renaissance — a period of transformation from the
+so-called Dark or Middle Ages into the modern era, which for reasons I'll make clear, I will call
+the Machine Age.
+There are aspects of medieval life that seem to have been lost in history. For example: the
+expected lifespan during the medieval period was 27 years. 40% of children born in medieval
+times never survived childhood. Over 95% of people lived in abject poverty — at a level we can't
+even begin to imagine. Over 95% of people born in that period never travelled more than four
+miles from their place of birth during their entire lives. They lived in small villages, never had
+exposure to any culture other than the one in which they were born and raised. Life was
+miserable.
+Therefore the most common and widespread question of the era was: What is the purpose of life?
+What reason can there be behind this short period of abject misery?
+The major institution of the day — the Church — provided an answer. They said life is
+preparatory for death. If you've lived your life right, you have an infinite sojourn in paradise. So
+why worry about a lousy 27 years? Focus on eternity.
+And that's what the Middle Ages did. They were preoccupied with death, not life. Portions of the
+Church declared curiosity a sin. Man contemplated his soul and the spiritual life, not the
+objective life he lived every day or the environment in which he lived it.
+If you look at the art of the medieval period — literature like Dante's Inferno, Milton's Paradise
+Lost — it all had to do with the afterlife. The graphic art of the cathedrals depicted angels and
+gods, very little of the everyday events of normal people. The music of the period supported
+religious rituals, all dealing with spirituality.
+That orientation began to break down as a result of the Crusades. When Peter the Hermit led the
+first Crusade across the face of Europe, for the first time hordes of men and women were exposed
+to cultures other than their own. They became curious about these differences and the roots of
+them. Out of that curiosity about differences in the way men lived grew the movement we know
+as the New Humanism, which gave rise to what later came to be known as the Renaissance.
+You know what "Renaissance" literally means? Rebirth. It was the re-entry of man into the world
+that he experiences — out of spirituality into reality. With the growth of interest in the nature of
+man, there was a natural growth of interest in the nature of the environment in which he lived.
+And so science as we know it today was born in the latter part of the Renaissance.
+
+
+
+The Machine Age: Two Foundational Beliefs
+Out of this orientation grew a new view of the world which has pertained from the Renaissance
+all the way up through today — because an age doesn't end at a given date. Like old generals, it
+tends to fade away as something else comes into the limelight.
+Let me characterise the age out of which we're departing. I'm not going to tell you anything you
+don't know. I'm going to try to raise it to consciousness and give it a structure so that you
+recognise it in a systematic way.
+There were two fundamental beliefs at the foundation of the Western worldview for 400 years.
+
+The Complete Understandability of the Universe
+The first was a conviction that the universe could be completely understood — that man had the
+power, through his mind, to understand everything. That sounds a little arrogant today, perhaps.
+But as recently as about 1850, at a major international conference, the leading scientists of the
+world issued a proclamation — a statement of shared belief — that by the year 1900, our
+understanding of the universe would be complete.
+It's perhaps reassuring to know that scientists can't forecast any better than economists can.
+They were completely wrong. They didn't anticipate any of the major changes to come, including
+Einstein and Heisenberg. But the important thing is: they believed it was possible.
+
+Analysis as the Method of Inquiry
+The second critical element was the way we went about inquiring into nature and the nature of
+man. We developed a method of inquiry which became pervasive in the Western world.
+This method comes naturally to us. If you observe any child in the process of learning, you will
+observe it. Give a child an object he's never seen before — a radio, a clock, a toy — and the first
+thing he'll do if he wants to understand it is take it apart.
+We began inquiry by taking apart whatever it is that we want to understand. The second step was
+to try to understand the behaviour of the parts taken separately. And then, once we understand
+the behaviour of each of the parts, to aggregate that understanding into an understanding of the
+whole.
+Three-step process:
+  1. Take the thing you want to understand apart
+  2. Try to understand the behaviour of its parts
+  3. Aggregate the understanding of the parts into an understanding of the whole
+That process is called analysis. Analysis became the dominant mode of thought in the Western
+world, and still is. It so dominates that if one person says "I had a problem and analysed it" and
+another says "I had a problem and thought about it," you'd be hard-pressed to tell me the
+difference. We use them synonymously. We didn't even entertain the possibility of there being
+another way of thinking.
+
+
+
+The Doctrines of the Machine Age
+Applying analysis to a world we believed was completely understandable led to a series of
+questions, the answers to which formed doctrines. Those doctrines combined to produce our
+view of the world.
+
+Reductionism
+Suppose we take a familiar object like an automobile and want to understand it. We take it apart.
+We get a carburettor. To understand the carburettor, we take it apart. Now we've got a valve. To
+understand the valve, we take it apart.
+First fundamental question: is there any end to the process of taking things apart?
+If you believe the universe is capable of being completely understood, the answer must be yes.
+There has to be an end. Therefore the first fundamental doctrine — reductionism — says that
+everything in the universe, and every experience of anything in the universe, is reducible to
+indivisible parts or elements.
+You all recognise this in specific manifestations. In school you learned that every physical object,
+if taken apart sufficiently, will ultimately reach an individual particle of matter called the atom.
+The atomic theory is a reductionist theory of nature. In chemistry, the periodic table lists the
+chemical elements — the ultimate forms of matter from which all others are derived. In biology,
+every living thing ultimately reduces to a single element of life called the cell. Even in linguistics,
+they ultimately identified an element of sound out of which all languages are built, called the
+phoneme.
+
+Cause and Effect
+Once we've reduced an automobile to its atoms and understand their behaviour, we have to
+aggregate that understanding — which means knowing how the parts relate to each other. In an
+era that believed everything reduces to indivisible parts, we also believed that every relationship
+in the universe reduces to one simple relationship: cause and effect.
+A cause is something which is both necessary and sufficient for its effect. If I strike this lantern
+with this pen, you hear a noise. If I hadn't struck it, you wouldn't have heard that noise — the
+cause is necessary for the effect. If I do strike it, it makes a noise — the cause is sufficient for the
+effect.
+Three Consequences of Causal Thinking
+Our commitment to cause and effect led to three fundamental beliefs about the nature of the
+world.
+First: God as Creator. If I have something I don't understand, I look for its cause. But now I have
+an unexplained cause. I treat it as an effect and look for its cause. If I trace any causal chain back
+— is there any end? If the universe is completely understandable, there must be a first cause. We
+gave that cause a name: God. Our concept of God as the Creator derived directly from our
+commitment to cause and effect. God is external to the universe but responsible for it. This
+notion of God as creator is characteristic of the Western world but not much of the rest of the
+world — because most of the rest of the world never made the same commitment to cause and
+effect.
+Second: Environment-Free Explanation. Because a cause is sufficient for its effect, it provides a
+complete explanation. The environment isn't required. Consider the most familiar law of physics
+— the law of freely falling bodies: s = ½gt². Why is it called the law of freely falling bodies?
+Because it describes a body falling in a vacuum — the absence of an environment. Every
+fundamental law of physics describes behaviour in the absence of an environment. What do you
+call the place a scientist does research? A laboratory. And what is a laboratory? A place
+deliberately constructed to exclude the environment — to study the effect of one variable on
+another without environmental intervention.
+Third: Determinism. Does every event that occurs have a cause? If the universe is completely
+understandable, yes. Nothing happens by chance. Chance is a synonym for ignorance — it
+simply means we don't know enough to explain something, but everything is explainable. The
+doctrine that everything in the universe occurs as the effect of a cause is called determinism. It
+gave rise to an apparent conflict with our belief in free will — which became the principal topic of
+Western philosophy for 400 years.
+
+Newton's Machine
+Newton was the first to pick up all these elements, put them together, and look at them self-
+consciously as the elements of a worldview. A world in which everything is reducible to
+indivisible parts, those parts behave according to causal laws, and they do nothing that is not
+caused.
+Newton told us what kind of world this was. He said the world is a machine. He did not say it was
+like a machine — he said it is a machine. Furthermore, he said the universe is a hermetically
+sealed clock. It's self-contained, without an environment. It is a closed system.
+
+
+
+The Machine Age and Religion
+Certain derivative beliefs followed. Every religion in the Western world, regardless of sectarian
+differences, preached that the world is a machine created by God to do God's work — and
+therefore we are here to serve His purposes, to do His will.
+Combine that with an even older belief from Genesis: that man was created in the image of God.
+If the universe is a machine created by God to do God's work, and man was created in the image
+of God, then what should man be doing?
+Creating machines to do his work.
+That was the origin of the Industrial Revolution — man's effort to imitate God as he understood
+Him at the time.
+
+
+
+The Industrial Revolution and Work
+The first Industrial Revolution was about the mechanisation of work. Two fundamental
+concepts: work and a machine.
+It took a major social revolution called the Reformation to tell us what work was, but one thing
+was clear: work was real. And reality reduces to atoms, which have only two properties — mass
+and energy. Therefore work was defined as the application of energy to matter, in order to change
+its properties. If you apply heat to coal and convert it into a gas, that's work. If you move a chair,
+that's work — you've changed the location of matter.
+A machine is any object which can be used to apply energy to matter so as to transform it.
+Somewhere in your schooling you learned that all machines reduce to three elementary
+machines — the wheel and axle, the lever arm, and the inclined plane. Every machine is believed
+to be some combination of those elements. Reductionism again.
+
+Frederick Taylor and the Factory
+How do we mechanise work? Frederick Taylor wrote the bible. You take a task to be done and
+analyse it — Taylor called it work analysis. You disaggregate the job into work elements. A work
+element is a task so simple it can only be done by one person at a time. For example, tightening a
+screw. Ever have two people try to tighten the same screw at the same time?
+Through work analysis, we divided work into elementary tasks. The simpler the task, the easier it
+would be to mechanise. We mechanised all we possibly could, but some tasks couldn't be
+mechanised — either we lacked the technology, or it was more expensive than human labour. So
+for those tasks, we put people in.
+Now aggregate. What do you get when you take work divided into simple elements, each
+performed either by a machine or a person, and aggregate them into a sequence with a final
+product?
+The modern factory. The production line. The assembly line. Its composition and structure are a
+direct consequence of applying the analytical method to a Machine Age concept of work.
+
+
+
+The Dilemmas That Broke the Machine Age
+Now — what makes one age die and another get born? The answer lies in a concept called the
+dilemma. A dilemma is a problem which cannot be solved within the prevailing view of the
+world, and therefore constitutes a challenge to that view.
+Starting way back, dilemmas began to appear. They didn't carry much force until they gathered
+in number and momentum.
+
+Free Will vs. Determinism
+The first dilemma: how do you explain freedom of choice in a universe where every choice is
+determined by some cause? Philosophers struggled with this for about 300 years. The consensus
+they eventually reached was that free will is an illusion granted to us by a merciful God who
+realises how dull our life would be without it.
+One philosopher expressed it beautifully: "Man is like a fly riding on the trunk of an elephant
+who thinks he's steering it. The elephant doesn't mind, and it makes the ride more interesting."
+That didn't get rid of the dilemma, because no argument convinces most people they don't have
+freedom of will. But most people also believe the world is a machine — and a machine cannot
+have parts that have choice.
+
+Heisenberg's Uncertainty Principle (1923)
+The first dilemma that truly rocked the Machine Age worldview appeared in 1923, when Werner
+Heisenberg came out with the Uncertainty Principle. Heisenberg showed that if you take the two
+properties of an atom — mass and momentum — and try to determine both at the same moment
+of time, the more accurately you determine either one, the less accurately you can determine the
+other.
+This knocked out the belief that the universe can be completely understood. In the limit, you can
+only understand 50% of it at any given moment.
+The greatest American philosopher of the time, John Dewey, immediately responded by writing
+The Quest for Certainty, in which he said complete understandability of the universe is not
+attainable — it is an ideal which we can continually approach but never in principle attain. That
+was the first publicly recognised change in the fundamental belief of the era.
+
+Wiener's Cybernetics (1947)
+In 1947, a book appeared which rocked the academic world: Cybernetics by the MIT
+mathematician Norbert Wiener. Wiener and his colleagues were taken by the new mechanisms
+created during the war — servo mechanisms, automatic pilots, guidance systems for missiles.
+They tried to develop a theory to explain their behaviour.
+Their startling conclusion: whereas for 400 years we had tried to understand man by treating
+him as nothing but a complicated machine, now we had a complicated machine which could only
+be understood if we looked at it as though it were a man. They called it a teleological mechanism
+— "teleological" meaning purposeful, from the Greek.
+But you can't be purposeful without choice, and you can't be a mechanism if you've got choice.
+How can you have a teleological mechanism? Again, the current worldview simply wasn't
+holding up.
+
+Von Bertalanffy's General Systems Theory (1954)
+The final attack came in 1954 with a book by the German biologist Ludwig von Bertalanffy called
+General Systems Theory. The content of the book was relatively unimportant, but the central
+organising concept — the system — became the key to understanding what was happening to
+our worldview.
+
+
+
+What Is a System?
+A system is a set of two or more elements that has three properties.
+First: Each element in the set can affect the behaviour of the whole. Consider the most familiar
+system: yourself. You are a biological system called an organism. You have parts — heart, lungs,
+stomach, pancreas — and each can affect your behaviour.
+Someone might object: "What about the appendix?" Right — the appendix, as far as we know, has
+no effect on anything. The word "appendix" means added on or attached to. It is not a part of the
+system precisely because it doesn't affect the whole.
+Second: The way each element affects the whole depends on at least one other element. The
+effect the heart has on your behaviour depends on what the lungs are doing. If the brain stops
+functioning, it affects the pancreas, the liver, and almost everything else. The parts are
+interconnected — no part has an independent effect on the whole.
+Third: Take the elements of a system, line them up in any order, subdivide them into groups any
+way you like — every group will have the first and second properties. Every group can affect the
+behaviour of the whole, and no group has an independent effect.
+We can summarise: a system is a whole that cannot be divided into independent parts.
+
+
+
+The Essential Properties of Systems
+Two fundamental characteristics derive from the nature of a system.
+
+Essential properties belong to the whole, not the parts
+What's the essential property of an automobile? It can carry you from one place to another. What
+part of an automobile can carry you from one place to another? None. Not even the motor — the
+motor can't even carry itself.
+What are your essential properties as a human being? You live — but no part of you does. You can
+read and write — no part of you can. Your hand can't write; that's easy to demonstrate by
+removing it from your arm, putting it on a table, and watching it. It won't do anything. Your eye
+can't see. Your brain can't think. You can think.
+When a system is disassembled, it loses all of its essential properties. Even though you have
+every single part, you no longer have an automobile. An automobile is not the sum of its parts.
+The behaviour of a system is never equal to the sum of the behaviour of its parts — it is the
+product of their interactions.
+
+Parts lose their essential properties when removed
+Consider the hand. Its essential properties — holding, pointing, moving — are lost when it's
+removed from the body. The eye is an instrument for seeing, but it doesn't see when removed
+from the head. The brain doesn't think when removed from the head.
+
+
+
+Analysis Cannot Yield Understanding of a System
+Here is the dilemma that broke the back of Machine Age thinking.
+We have a system. We want to understand it. Analysis is the only way of thinking we know. So
+let's analyse it.
+Step one of analysis: take it apart. What happens when you take a system apart? It loses all of its
+essential properties.
+Step two: try to understand each part taken separately. What happens to a part of a system when
+you separate it? It loses all of its essential properties.
+In 1954, the great insight was: analysis cannot yield understanding of a system. It yields
+something — but not understanding. It yields knowledge.
+We needed a new way of thinking.
+
+
+
+Synthetic Thinking (Systems Thinking)
+The new way of thinking — not surprisingly called synthetic or systems thinking — is
+diametrically the opposite of analytical thinking. It does not replace analysis; it supplements it.
+We still must analyse systems if we want to know them, but analysis won't allow us to understand
+them.
+Consider: the British automobile has a steering wheel on the right, ours on the left. I'll give you
+any number of American and British automobiles. Take them apart from now to doomsday, but
+you'll never be able to tell me why the steering wheel is on different sides. The original
+automobile was a six-passenger vehicle; today they're getting closer to four. Analyse old and new
+automobiles until doomsday — you'll never find the answer to that why question.
+The British have their steering wheel on the right because knights were right-handed. They
+could defend their right side with a sword, but their left side was exposed, so the inferior rode on
+their left to protect them. The driver is the knight; the passenger is the inferior. The United States
+never had knights in shining armour — we got about it for different reasons.
+The car was originally built for six because it was designed for the average American family,
+which was 5.6. It's getting smaller because the average family is now 3.2.
+Explanations never lie inside a system. They lie outside.
+
+The Three Steps of Synthesis
+Analysis has three steps. Synthesis is the opposite:
+
+ Step   Analysis                                        Synthesis
+
+ 1      Take the thing apart                            Identify a containing whole — a larger system of
+                                                        which it is a part
+
+ 2      Explain the behaviour of each part separately   Explain the behaviour of the containing whole
+
+ 3      Aggregate understanding of parts into           Disaggregate understanding of the whole into
+        understanding of the whole                      understanding of the part
+
+
+
+To explain a university, you don't take it apart into colleges, departments, faculty, students, and
+subject matter. You identify the educational system it belongs to, explain that, and then identify
+the university's role or function within it.
+Analysis reveals structure — it tells us how something works. We abbreviate that as know-how,
+or knowledge. Synthesis yields understanding. They are two aspects of our quest for mastery
+over our environment, and they are not separate.
+
+
+
+The New Doctrines
+Expansionism Replaces Reductionism
+In analysis, we take things apart into smaller and smaller pieces. In synthetic thinking, we
+expand outward. To understand the university, we must understand the educational system. To
+understand the educational system, we must understand the society it's part of. To understand
+society, we must understand the world.
+This doctrine is called expansionism. It raises what appears to be exactly the same question in
+reverse: is there any end to the process of expanding the containing system? Is there one whole
+which ultimately contains everything?
+The answer: once you've given up the belief that the universe can be completely understood, this
+question has no meaning in science. If there were one whole that contained everything, you
+could never demonstrate it — because to know it would be to understand the universe, which
+we've established is in principle not fully understandable. If you believe there is no containing
+whole, you could never prove that either. It's an unprovable proposition.
+But psychologically, humans feel a tremendous need for some containing whole. This manifested
+itself in an interesting way around 1968, during the student revolution. I visited the University of
+California at Berkeley and learned that the heaviest-selling book at their bookstore — the largest
+university bookstore in the country — was the I Ching.
+Why had Buddhist literature suddenly become dominant among university students? The first
+generation born after World War II had reached university. They were absorbing by osmosis
+some of the systemic transformation taking place. The concept of God the Creator didn't match
+— because we'd had to give up cause and effect. They were looking for a whole that gave life
+meaning.
+They found it in Eastern religions. That is a very different God. Not God the Father. Not God the
+Mother. Not God in it. God everything — a God that can't be pictured. Not God the creator, but a
+whole of which you are a part. And meditation is the method by which you become conscious of
+your membership in that whole.
+
+Producer-Product Replaces Cause and Effect
+In 1896, a young man graduated from Harvard — took his undergraduate degree in civil
+engineering, his master's in psychology, and his doctorate in philosophy. Edgar Arthur Singer
+went to the University of Pennsylvania and two years later wrote what was probably the most
+important article in science in the last hundred years. Practically nobody read it.
+Singer said science had been cheating for 200 to 300 years. Consider an acorn and an oak tree. Is
+the acorn the cause of the oak? No. An acorn is necessary for an oak — you can't get one without
+the other. But it's not sufficient. Throw an acorn in the ocean: no oak tree. Plant it in arctic ice: no
+oak tree. In the desert: no oak tree.
+Science was aware of this, but called it "probabilistic causality" or "non-deterministic causality."
+Singer said that was cheating. If a cause is by definition sufficient for its effect, then the
+probability of the effect given the cause must be one — nothing else. If the probability is
+anything other than one, it's not causality. There is no such thing as probabilistic causality. If it's
+probabilistic, it's not causality. If it's causality, it's not probabilistic.
+"Non-deterministic causality" violates the most fundamental law of logic, formulated as early as
+Aristotle: if you deny the consequence, you must deny the premise.
+Singer said this is a fundamentally different relationship — not a kind of cause and effect at all.
+He called it producer-product. The acorn is not the cause of the oak; it is a producer of it.
+
+The Orange Metaphor
+Imagine a visitor from a foreign country who has never seen an orange. You cut it in half one way
+and show them a cross-section. Your partner says, "Why did you cut it that way? Why not the
+other way?" At first it seems to make no difference — but if you slice it the other way, you get an
+entirely different view of the same orange.
+Singer showed that we had assumed the universe is an orange that can only be sliced one way —
+cause and effect. He said it's multi-dimensional. There are an infinite number of relationships we
+can use to slice the universe, and each gives a different view. The more views we have, the more
+likely we are to understand its structure — just as we better understand an orange from seeing
+both cross-sections.
+
+The Environment Re-enters
+When you look at the oak tree through producer-product, you need the environment to explain
+it. The acorn isn't sufficient — you also need moisture, temperature, soil nutrients, and countless
+other conditions. The set of all necessary conditions other than the producer is called the
+environment.
+Through cause and effect, we didn't need the environment to explain anything. Through
+producer-product, we need it to explain everything. Exactly the opposite.
+The universality of the laws of physics, contrary to popular belief, does not derive from the fact
+that they apply to every environment — it derives from the fact that they don't apply to any. They
+apply in the absence of an environment. The moment we make laws apply in an environment,
+universality disappears.
+I remember the terrible shock when something I'd believed so strongly — "everything that goes
+up must come down" — turned out to be wrong. Today we put things up that don't come down.
+What we know now is: there is no law for which there doesn't exist some environment in which it
+does not hold. All explanation is environmentally relative.
+
+Choice Becomes Observable
+Perhaps Singer's greatest accomplishment was to demonstrate in detail how choice and free will
+can be incorporated into a view of the universe seen through producer-product. Choice becomes
+an objectively observable property of behaviour — not something subjectively hidden in the
+dark recesses of the mind. He created tests for determining whether you display choice, purpose,
+or free will.
+This gave rise to the type of psychology subsequently known as behaviourism.
+
+
+
+Three Kinds of Systems
+When we look at the world not as a machine but as a system, we need to ask: what kind of
+system?
+There are three kinds.
+
+1. The Machine
+A machine has no purpose of its own. It's an instrument used by something external to serve that
+thing's purposes. When the universe was a machine, we needed God to give it a function. An
+automobile has no purposes of its own — it serves the purposes of its driver. Its parts have no
+purpose either. The ideal machine is hermetically sealed, operating independently of its
+environment.
+2. The Organism
+An organism has a purpose of its own, but its parts don't. Your dominant purpose as an organism
+is survival (and growth, which is essential for survival). But your organs and cells have no
+purpose of their own — they have functions. The environment is a passive supplier of resources
+and a receptacle for waste.
+Every machine is embedded in an organism, because a machine is simply a system used by one
+or more organisms.
+
+3. The Social System
+A social system has purposes of its own, its parts have purposes of their own, and it's part of a
+larger system which has purposes of its own. The view that emerges is of the universe as a
+purposeful system consisting of nested systems, each with its own purposes — with the
+possibility of incompatible purposes at any level.
+Today we reconceptualise management as the balancing of the interests of the organisation
+managed, the interests of its parts (because they have their own purposes), and the interests of
+the larger system of which the organisation is a part.
+
+
+
+The Implications for Management
+The Performance of the Whole
+Our characteristic way of running any organisation — military, governmental, corporate — is
+divide and conquer. Want to learn how to run a business? Go to business school. Select courses:
+finance, accounting, production. We've taken business apart. You study each part separately. The
+fundamental assumption is that when you can make each part work effectively, you can make
+the whole work effectively.
+Wrong. Absolutely wrong.
+A system in which each part is working as efficiently as possible is a system which as a whole
+cannot be working as efficiently as possible. We can prove that rigorously. But we manage as
+though it were not the case.
+Suppose we bought one of every make of automobile available in the United States — 142 of
+them. We hire 100 of the best automotive engineers and ask: which car has the best carburettor?
+Mercedes. Best transmission? Buick. Best distributor? And so on, through every part, until we've
+found the best one available.
+Then we give the list to the engineers and say: assemble the best possible automobile.
+What happens? We don't even get an automobile. The parts don't fit.
+The performance of a system is the product of the interactions of its parts. It's the fitting that
+matters. But management still focuses on managing the actions of parts rather than their
+interactions.
+Managing Interactions, Not Actions
+For 400 years, we've thought of a manager as the pinnacle of an organisation, telling people
+below him what to do — management as supervision or command. That's nonsense today.
+When this doctrine was developed, the average worker had three years of education. The tasks
+required virtually no skills. Workers were easily substituted.
+Today the average employee has more than 12 years of education. They have skills their bosses
+don't. I've got programmers who can program circles around me — it would be nonsense for me
+to tell them how to write a program. My job isn't to tell them what to do. My job is to create an
+environment in which they can do what they know how to do as effectively as possible.
+Management is not about managing down. It's about managing over and up — managing the
+interactions of your unit with other units across and above, so as to enable those below you to do
+their jobs as efficiently as possible.
+If someone doesn't know how to do their job, the answer isn't to tell them — it's that you've got
+the wrong person in the job.
+
+
+
+The Corporation Through Three Lenses
+The Corporation as Machine (19th Century)
+When we looked at organisations as machines, they had no purpose of their own. They served
+the purpose of their god — the owner. In the 19th century, the owner had all the power of God in
+his company. He could employ whomever he wanted, under whatever conditions, at whatever
+compensation. He could work people 66 hours a week, seven days a week, 52 weeks a year.
+The purpose of the corporation was to serve the interest of the owner. And the owner's interest
+was profit. Milton Friedman is the great high priest of this view: "The only legitimate objective of
+business is business" — meaning profit, and nothing else.
+
+The Corporation as Organism (Post-WWI)
+About the time of World War I, the American economy was growing so fast that corporations
+could grow faster than they could finance through reinvested profits alone. The fundamental
+problem: do I retain control and restrain growth, or give up control and allow growth?
+They went public. Equity financing. God disappeared — became an abstract spirit. 250,000
+stockholders. You can't sit down and worship them.
+As Peter Drucker explained, we created a church and a clergy. The clergy was called
+management. It represents the will of the owners to the layman. How does it know the will of the
+owners? By revelation — no more direct access than the clergy has to God.
+The whole language changed. The chief executive became "the head" of the organisation — a
+biological concept. Machines don't have heads; organisms do. The company became a
+"corporation" — from corpus, a body. Legally, the corporation became a biological individual,
+with the same status as a person in a court of law.
+And what happened to profit? Drucker has an absolutely magnificent passage: "Profit is to a
+corporation what oxygen is to a human being — necessary for its survival, but not the reason for
+it." Profit became a means, not an end. The end was survival and growth. The Fortune 500
+emerged. Every company sought to be the biggest, the fastest growing.
+
+The Corporation as Social System (Post-WWII)
+About the time of World War II, the organism concept began to break down. We'd always known
+that the behaviour of a system containing people depends on the behaviour of those people. But
+believe it or not, we didn't know until after World War II that the behaviour of the people depends
+on what the system does to them.
+That's a feedback loop. How did we find out? The constituent members of organisations began to
+organise and protest:
+     Workers unionised — the phenomenon of alienation from work
+     Minorities organised against mistreatment by the majority
+     Women protested sex discrimination
+     The young protested age discrimination — the "generation gap"
+
+All of these are structurally identical: a subset of an organisation's members protesting the way
+the organisation affects their interests.
+Simultaneously, individuals and groups outside the organisation began to protest too. The
+consumerist movement, initiated by Ralph Nader. The ecological and environmentalist
+movement.
+Management had to begin taking into account the interests of the larger system and the smaller
+systems, as well as the system it managed.
+
+
+
+Development vs. Growth
+When we see organisations as social systems, profitability is not an appropriate objective.
+Neither are survival and growth. What is?
+Development.
+Development and growth are entirely different things. A cemetery grows but it doesn't develop.
+A rubbish heap grows; it does not develop. Einstein was developing even when he was
+contracting in size.
+Growth is an increase in size or number. But what is development?
+The Leyte Story
+Let me share an experience from the army that taught me what development is.
+I participated in the invasion of Leyte in World War II. About three months into the campaign, on
+the western coast, I was called back to headquarters. General Gruber wanted to see me. I could
+only think of one explanation — I was going to be court-martialled again.
+The General had a stack of papers. He took me through 30 minutes of questioning about my
+background in architecture. Finally he said, "I think you'll do." Troops on the island were worn
+out. He wanted a recreation centre for four to six hundred men at a time, three to five days each.
+He showed me the site — a beautiful eight-acre plateau on the Burugo River, short grass,
+surrounded by trees. Perfect.
+"When can you start?" Tomorrow. "How many engineers will you give me?" None — he couldn't
+spare any. He'd give me enough money to hire 250 natives and two interpreters. Materials? None
+to spare. "I thought you said you were an architect. Find out what the natives build out of. Build it
+out of that."
+I went to the town of Burugo and asked for the best builders. Two brothers. They built with three
+materials: nipa (a long grass woven into mats), bamboo, and the trunks of coconut palms.
+I followed them for a week, watching them build a house. I developed tremendous admiration for
+their skill — but also saw deficiencies. All their buildings leaned, because the grass ties expanded
+in moisture and loosened in wind. I decided I didn't want a leaning recreation centre. The
+solution: signal corps wire, which was lying all over the island. It wouldn't expand in moisture or
+heat.
+The river was perfect for swimming at high tide — a one-and-a-half-foot jump from the bank. At
+low tide, a nine-foot drop to two feet of water. We needed a floating dock for 200 men. Coconut
+palm wouldn't float — too dense. We built a cage out of bamboo, filled it with empty 55-gallon
+drums, and it went up and down on poles with the tide.
+Over three months, with 150 men collecting materials and 100 women weaving nipa, we built a
+recreation centre with locker rooms, indoor facilities, showers for 400 men, baseball diamonds,
+basketball courts — using only the natives' three materials plus wire and drums.
+The main recreation hall was 40 by 60 feet. The natives screamed that I couldn't put a roof on it
+— the longest bamboo was 12 to 14 feet. I brought out a template and built bamboo trusses to
+span the 40 feet. They'd never seen that before.
+When we finished, the natives went back to Burugo, tore it down, and rebuilt it using the
+techniques they'd learned.
+I came out of that experience feeling I was more developed than they were. Why? Not because I
+had more than they did. I didn't have anything they didn't have. Development is not a matter of
+how much you have — it's a matter of how much you can do with whatever you have.
+The more you can do with what resources you've got, the more developed you are. The less
+dependent you are on resources because of your ability to create them, the more developed you
+are.
+Standard of living is not a measure of development — it's a measure of growth. The appropriate
+measure of development is quality of life.
+
+The Paragon of Development
+The paradigm of development is not the paradigm of growth. J.P. Morgan, Jean-Paul Getty, Sam
+Walton may be paragons of growth, but none of development.
+The paragon of development is Robinson Crusoe — the ultimate symbol of the developed man.
+He built a hell of a good quality of life out of nothing. It's not a matter of how much you've got, but
+how much you can do with whatever you have.
+We've begun to appreciate that continued increases in standard of living are very frequently
+accompanied by decreasing quality of life. That's what the ecology movement is all about —
+people saying we have to be willing to sacrifice some standard of living for a higher quality of life.
+To develop is to increase your ability and desire to satisfy your own needs and desires, and those
+of others.
+
+
+
+Q&A (Selected)
+On metaphysics and the structure of the universe:
+The term "metaphysics" was originally used by Aristotle. It literally means "after physics" — it
+was a book he wrote after Physics. Philosophers have been trying to put additional significance
+into it ever since. It has no more significance than "number two" did coming after number one.
+What it's generally taken to mean is the study of the structure of the universe which cannot be
+directly observed but inferred from what we observe.
+On whether the universe is finite or infinite:
+I don't feel any need to believe either that it's finite or infinite. It's irrelevant — it can't affect
+anything I do. It was critical in the Machine Age, but it isn't now. If you want to believe in an
+expanding universe, you can. I can't prove you're wrong. If you want to believe in a finite
+universe, you can. I can't prove you're wrong either. It's a matter of emotional preference. We
+don't have to pretend it's a scientific issue.
+On survival and growth as means, not ends:
+Survival and growth become means of development, just as profit became a means to survival
+and growth. They're no longer objectives — they are means.
+The only way a company can survive is to increase its productivity. The most effective way today
+is through automation — but that reduces the number of people required. Employment is the
+only method ever discovered by society of simultaneously producing and distributing wealth. If
+you grow in a coordinated way with increases in productivity, you absorb people displaced by
+technology into new businesses created through growth.
+On B.F. Skinner:
+Skinner's thinking never proceeded beyond about 1910. There are still people who believe in
+Newton. Skinner is a mechanistic behaviourist. He represents two generations ago in
+psychology. He happens to be a very smart man, but he's wrong.
+On whether he's interested in the resurgence of fundamentalism:
+I ought to be honest with you — I'm not interested in that question. I could fabricate an answer,
+but that would be unfair to you. It's just one I don't think worth thinking about. That doesn't
+mean it isn't worth others thinking about — that's just not where my concern is.
+On the Apple Computer founder being fired:
+You're asking me to explain a phenomenon of Apple Computer using cause and effect — but I
+just rejected cause and effect. I can't blame it on either Steve or credit the success to Sculley.
+They may have been necessary, but neither is sufficient. When you think synthetically, you don't
+talk about blame and "what's the cause?" You look for the interactions which produce a given
+state. Sculley at Pepsi-Cola was not the success he was at Apple. He didn't do it alone. Steve was
+very successful at Apple up to a point, and then he failed. It's the interaction of various
+conditions. You can't give a simple explanation of a systemic property.
+
+
+Transcribed and edited from a lecture delivered by Russell L. Ackoff.
+
