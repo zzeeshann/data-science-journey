@@ -111,6 +111,30 @@ The real fix to the math problem. The LLM doesn't do the math — it **writes Py
 
 Nothing hallucinated. The number came from real execution. LLM is the brain, Python is the calculator. This is how all serious 2026 AI systems work. "Agents" = LLMs with tools attached.
 
+## Cantril ladder
+
+A survey instrument the Gallup World Poll and World Happiness Report use to measure subjective wellbeing. Respondents are asked to imagine a ladder with steps numbered 0 to 10, where the top step represents the best possible life for them and the bottom step the worst possible life, and to say which step they currently stand on. The country score reported each year is a three-year average of responses. First used in [Session 4](sessions/session_04.md).
+
+## Dystopia + residual
+
+A single column in the World Happiness Report. It combines two things: the *Dystopia constant*, a time-invariant reference benchmark representing a hypothetical worst country (so every real country's contribution is positive), and the *residual*, which is the part of each country's happiness score that the six measured factors — GDP, social support, health, freedom, generosity, corruption — cannot explain. Because the Dystopia constant does not change over time, the *change* in this column between years is the *change in residual*: any year-over-year movement is the model's unexplained-component movement. Session 4 found this column fell in 98% of countries between 2019 and 2025 while measured factors rose in 99%, pointing to a systematic global variable the WHR model does not capture. First used in [Session 4](sessions/session_04.md).
+
+## Line of best fit
+
+A straight line drawn through a scatter of points that minimises the squared distance between the line and the points (ordinary least squares). The simplest way to summarise a two-variable relationship with one line. In Python: `slope, intercept = np.polyfit(x, y, 1)` — the `1` means "degree-1 polynomial," i.e. a line. First used in [Session 4](sessions/session_04.md).
+
+## Panel data
+
+A dataset with both a cross-section dimension (e.g. country) and a time dimension (e.g. year), so each row is an observation of one unit at one time. The World Happiness Report file is a country × year panel: 2,116 rows ≈ 150 countries × 14 years. Opposite of a pure cross-section (one moment, many units) or a pure time series (one unit, many moments). Panels let you ask questions neither a cross-section nor a time series alone can answer — like "did social support rise in the UK while happiness fell?" First used in [Session 4](sessions/session_04.md).
+
+## Pearson correlation
+
+A single number between −1 and +1 that summarises how tightly two variables move together in a straight-line relationship. +1 = perfect positive line, 0 = no linear relationship, −1 = perfect negative line. Invariant under positive linear transforms, so scaling or shifting either variable doesn't change *r*. Does **not** capture non-linear relationships and is vulnerable to outliers — see the Venezuela moment in [Session 4](sessions/session_04.md), where dropping one broken row shifted *r* from +0.745 to +0.799. In pandas: `df['a'].corr(df['b'])`.
+
+## Residual
+
+The difference between an actual observed value and the value predicted by a model: `residual = actual − predicted`. For a line of best fit, each point has a residual equal to its vertical distance above (positive) or below (negative) the line. In a more complex model like the World Happiness Report's six-factor regression, the residual is everything about the outcome the model's predictors cannot explain. Large residuals, plural, moving together across countries, are not noise — they are a signal that the model is missing a variable. First used in [Session 4](sessions/session_04.md).
+
 ## The mental division for this project
 
 - **LLMs handle:** reading, summarising, classifying, comparing styles, hypotheses, explanations.
