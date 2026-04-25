@@ -116,7 +116,7 @@ To stay honest:
 
 ## What gets parked alongside this
 
-- *Thinking in Wholes* (2026) → `/data/raw/thinking_in_wholes_2026.docx` — the lens.
+- *Thinking in Wholes* (2026) → `/data/raw/thinking_in_wholes_2026.md` — the lens.
 - Ackoff lecture → `/data/raw/ackoff_lecture_systems_age.txt` — Session 6 reference material when we hit embeddings.
 - Hamming lecture → already in `/data/raw/` — kept for a possible later session on the scientist's voice.
 

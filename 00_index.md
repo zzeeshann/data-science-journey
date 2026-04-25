@@ -49,7 +49,7 @@ A multi-year data science investigation into how humans describe consciousness, 
 ### `/data/raw/` — source texts kept for analysis
 - **[hamming_lecture_01_1995.txt](data/raw/hamming_lecture_01_1995.txt)** — Hamming, "Learning to Learn" Lecture 1, 1995. Parked.
 - **[ackoff_lecture_systems_age.txt](data/raw/ackoff_lecture_systems_age.txt)** — Ackoff, "From Machine Age to Systems Age," ~1980s. Session 6 reference.
-- **[thinking_in_wholes_2026.docx](data/raw/thinking_in_wholes_2026.docx)** — *Thinking in Wholes* (2026). The lens, not a data point.
+- **[thinking_in_wholes_2026.md](data/raw/thinking_in_wholes_2026.md)** — *Thinking in Wholes* (2026). The lens, not a data point. (Markdown so it renders directly on GitHub; the `.docx` source is no longer kept in the repo.)
 - **[WHR26_Data_Figure_2.1.xlsx](data/raw/WHR26_Data_Figure_2.1.xlsx)** — World Happiness Report 2026 "Data for Figure 2.1" panel. 2,116 rows × 13 cols. Countries × years 2011–2025 with life evaluation and six factor contributions.
 
 ### `/data/processed/` — cleaned data products
