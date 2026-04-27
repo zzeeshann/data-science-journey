@@ -24,21 +24,25 @@ Here's the part I didn't expect: the list includes Afghanistan and Austria. Leba
 
 And in every one of these 38 countries, the happiness decline — like the global pattern from Session 4 — landed in the unexplained residual. GDP rose. Human development barely moved. Happiness fell. The fall isn't in the measured factors. It's in the part the model can't see.
 
+I then tested the obvious hypothesis: maybe HDI stagnation *is* what drives the residual down. If that were true, you'd expect a clear relationship between the two — countries where HDI moved less would have bigger residual drops. The correlation came out at r=0.11, not statistically significant. HDI stagnation, on its own, doesn't predict the residual drop.
+
 ![Residual change vs HDI change, coloured by happiness change](images/chapter_06_residual_hdi_labelled.png)
 
-I then tested the obvious hypothesis: maybe HDI stagnation *is* what drives the residual down. If that were true, you'd expect a clear relationship between the two — countries where HDI moved less would have bigger residual drops. The correlation came out at r=0.11, not statistically significant. HDI stagnation, on its own, doesn't predict the residual drop.
+UK, US, Canada and Finland sit in the lower-left, where the residual collapsed. India and Viet Nam are alone in the upper-right, where it held. Most countries cluster around the middle, and the slope through them is barely there — that's the 0.11.
+
+Split countries into three groups by HDI change — stagnating, middle, improving — and the boxplots tell the same story:
 
 ![Residual change by HDI-change group](images/chapter_06_hdi_groups_boxplot.png)
 
-Split countries into three groups — HDI stagnating, middle, HDI improving — and the boxplots tell the same story: the distributions barely differ. The group where HDI improved most doesn't have noticeably smaller residual drops than the group where HDI stagnated. The dashboard that was designed to catch what GDP misses is also missing this.
+The distributions barely differ. The group where HDI improved most doesn't have noticeably smaller residual drops than the group where HDI stagnated. The dashboard that was designed to catch what GDP misses is also missing this.
 
 Only when you control for GDP does HDI start to look relevant (p=0.062, borderline significant). Which means: it's not development stagnation by itself. It's something about the combination — money improving while broader development doesn't — that seems to matter. But even then, the relationship is weak. Whatever is driving the residual isn't primarily captured by HDI either.
 
-Inside the 38-country group, I checked which of the WHR's own factors correlated most strongly with the residual decline. Health was the strongest signal at −0.306: where health worsened, the residual fell further. This is consistent with the pandemic leaving a deeper mark than the recovery statistics suggest — not just in mortality numbers but in how people experience their daily lives. But health alone doesn't close the gap. No single factor does.
+Inside the 38-country group, I checked which of the WHR's own factors correlated most strongly with the residual decline. Health was the strongest signal at −0.306: where health worsened, the residual fell further. This is consistent with the pandemic leaving a deeper mark than the recovery statistics suggest — not just in mortality numbers but in how people experience their daily lives.
 
 ![H1 subset: residual vs health factor, coloured by happiness](images/chapter_06_h1_health_scatter.png)
 
-The post-2019 wellbeing decline is multi-causal. That's the honest result, and it matters, because it means you can't fix it by targeting one thing.
+But health alone doesn't close the gap. No single factor does. The post-2019 wellbeing decline is multi-causal — that's the honest result, and it matters, because it means you can't fix it by targeting one thing.
 
 ![UK HDI 2010–2023 alongside happiness reference points](images/chapter_06_uk_hdi_happiness.png)
 
@@ -46,7 +50,7 @@ The United Kingdom makes all of this concrete. Its HDI went from 0.941 in 2019, 
 
 This is the finding that closes the loop opened in Session 4. The WHR's six factors missed the happiness drop. The HDI misses the happiness drop. The thing that's falling between 2019 and 2025 in countries like the UK, Canada, Austria, and Norway is not income stagnation, not health decline, not education decay, not any of the variables that development economics has built its measurement apparatus around. It is something that all of those frameworks were not designed to see.
 
-The book *Thinking in Wholes* calls this kind of failure a measurement trap — the tendency to mistake the map for the territory, to believe that what we can count is what exists. The GDP captures transactions. The HDI captures education years and life expectancy. The WHR captures six survey-based proxies. None of them are measuring the texture of daily life: the sense of meaning, the thickness of community, the presence or absence of institutions people trust, the feeling that the future is open. Those things are in the residual. They're what's falling.
+This is the failure mode the book *Thinking in Wholes* keeps returning to: when institutions measure what machines measure — output, efficiency, profit — and ignore what social systems require — trust, purpose, the quality of the relationships between people — their dashboards stop tracking what is actually happening. The GDP captures transactions. The HDI captures education years and life expectancy. The WHR captures six survey-based proxies. None of them are measuring the texture of daily life: the sense of meaning, the thickness of community, the presence or absence of institutions people trust, the feeling that the future is open. Those things are in the residual. They're what's falling.
 
 Session 5 ruled out two large explanations: income stagnation, and development stagnation. The investigation has narrowed the problem significantly. What remains is something that shows up in how people describe their lives when asked — but not in any standard economic or development metric. That's where Session 6 is going: into the language itself, to ask whether the shift the book describes is visible in what people actually say.
 
