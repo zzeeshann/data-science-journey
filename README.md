@@ -43,6 +43,7 @@ All free and public.
 ## Repo structure
 
 ```
+CLAUDE.md                    -- operational brief for Claude Code (auto-loaded)
 00_index.md                  -- the map (start here)
 01_working_agreement.md      -- rules of engagement
 02_project_brief.md          -- full project brief

@@ -19,6 +19,7 @@ A multi-year data science investigation into how humans describe consciousness, 
 ## The files in this repo
 
 ### Root — planning and rules
+- **[CLAUDE.md](CLAUDE.md)** — operational brief for Claude Code. Auto-loaded at session start. Covers current state, mechanical conventions, verification habits.
 - **[00_index.md](00_index.md)** — this file. The map.
 - **[01_working_agreement.md](01_working_agreement.md)** — how we work. The rules of engagement.
 - **[02_project_brief.md](02_project_brief.md)** — what the project is.
