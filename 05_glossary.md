@@ -119,9 +119,25 @@ A survey instrument the Gallup World Poll and World Happiness Report use to meas
 
 A single column in the World Happiness Report. It combines two things: the *Dystopia constant*, a time-invariant reference benchmark representing a hypothetical worst country (so every real country's contribution is positive), and the *residual*, which is the part of each country's happiness score that the six measured factors — GDP, social support, health, freedom, generosity, corruption — cannot explain. Because the Dystopia constant does not change over time, the *change* in this column between years is the *change in residual*: any year-over-year movement is the model's unexplained-component movement. Session 4 found this column fell in 98% of countries between 2019 and 2025 while measured factors rose in 99%, pointing to a systematic global variable the WHR model does not capture. First used in [Session 4](sessions/session_04.md).
 
+## H1 (growth ≠ development hypothesis)
+
+The first of the four hypotheses in the Wholeness Investigation: that economic growth (rising GDP) does not automatically produce human development (rising HDI), and that the countries where the two have decoupled are the same countries showing the largest falls in the happiness residual. Session 5 found H1 partially confirmed — 38 of 129 countries showed GDP up, HDI flat — but not a global law. The GDP–HDI correlation remained 0.32 globally. See [session_05.md](sessions/session_05.md).
+
+## Human Development Index (HDI)
+
+A composite index published annually by the United Nations Development Programme (UNDP) that measures human development across three dimensions: health (life expectancy at birth), education (mean and expected years of schooling), and standard of living (gross national income per capita, log-scaled). Ranges from 0 to 1. Designed as a counterweight to GDP-only thinking — its foundational argument is that income without health and education is not real development. First used in [session_05.md](sessions/session_05.md).
+
+## Inner join (data merge)
+
+A merge operation that keeps only rows present in both datasets. When Session 5 merged the WHR change panel (141 countries) with the HDI time series (206 countries) on country name, the result was 129 countries — only those appearing in both files. Countries dropped in the merge are typically ones where the naming convention differed between the two sources (e.g. "United States of America" vs "United States"). Always check what the merge dropped before drawing conclusions from the merged dataset. First used in [session_05.md](sessions/session_05.md).
+
 ## Line of best fit
 
 A straight line drawn through a scatter of points that minimises the squared distance between the line and the points (ordinary least squares). The simplest way to summarise a two-variable relationship with one line. In Python: `slope, intercept = np.polyfit(x, y, 1)` — the `1` means "degree-1 polynomial," i.e. a line. First used in [Session 4](sessions/session_04.md).
+
+## OLS (ordinary least squares)
+
+The standard method for fitting a straight line through a scatter of points by minimising the sum of squared vertical distances between each point and the line. Produces a slope (how much Y changes per unit of X), an intercept, and a p-value (the probability of seeing a slope this large by chance if the true slope were zero). In Session 5, OLS of HDI change on GDP-factor change gave slope = 0.037, p = 0.015. First used in [session_05.md](sessions/session_05.md).
 
 ## Panel data
 
