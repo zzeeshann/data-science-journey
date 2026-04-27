@@ -49,7 +49,9 @@ A multi-year data science investigation into how humans describe consciousness, 
 - **[chapter_05_measured_vs_unexplained.png](book/images/chapter_05_measured_vs_unexplained.png)** — global scatter, 141 countries, the big finding.
 - **[chapter_06_hdi_global_trend.png](book/images/chapter_06_hdi_global_trend.png)** — Mean global HDI 1990–2023 with 2019 marker. Thirty years of progress then a stall.
 - **[chapter_06_gdp_hdi_scatter.png](book/images/chapter_06_gdp_hdi_scatter.png)** — GDP-factor change vs HDI change, 129 countries. r=0.32, wide spread.
-- **[chapter_06_residual_hdi_scatter.png](book/images/chapter_06_residual_hdi_scatter.png)** — Residual change vs HDI change, happiness coloured. Weak bivariate relationship.
+- **[chapter_06_residual_hdi_scatter.png](book/images/chapter_06_residual_hdi_scatter.png)** — Residual change vs HDI change. Weak bivariate relationship (r=0.11).
+- **[chapter_06_residual_hdi_labelled.png](book/images/chapter_06_residual_hdi_labelled.png)** — Same scatter, labelled: UK, US, Canada, Finland, Viet Nam, India. Coloured by happiness change.
+- **[chapter_06_hdi_groups_boxplot.png](book/images/chapter_06_hdi_groups_boxplot.png)** — Residual change by HDI-change group (stagnating / middle / improving). Distributions barely differ.
 - **[chapter_06_h1_health_scatter.png](book/images/chapter_06_h1_health_scatter.png)** — H1 subset (38 countries): residual vs health factor. Strongest signal inside the group.
 - **[chapter_06_uk_hdi_happiness.png](book/images/chapter_06_uk_hdi_happiness.png)** — UK HDI 2010–2023 alongside happiness reference points. Flat development, falling happiness.
 

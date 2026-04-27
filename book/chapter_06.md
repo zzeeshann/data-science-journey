@@ -24,15 +24,19 @@ Here's the part I didn't expect: the list includes Afghanistan and Austria. Leba
 
 And in every one of these 38 countries, the happiness decline — like the global pattern from Session 4 — landed in the unexplained residual. GDP rose. Human development barely moved. Happiness fell. The fall isn't in the measured factors. It's in the part the model can't see.
 
-![Residual change vs HDI change, with happiness coloured](images/chapter_06_residual_hdi_scatter.png)
+![Residual change vs HDI change, coloured by happiness change](images/chapter_06_residual_hdi_labelled.png)
 
 I then tested the obvious hypothesis: maybe HDI stagnation *is* what drives the residual down. If that were true, you'd expect a clear relationship between the two — countries where HDI moved less would have bigger residual drops. The correlation came out at r=0.11, not statistically significant. HDI stagnation, on its own, doesn't predict the residual drop.
+
+![Residual change by HDI-change group](images/chapter_06_hdi_groups_boxplot.png)
+
+Split countries into three groups — HDI stagnating, middle, HDI improving — and the boxplots tell the same story: the distributions barely differ. The group where HDI improved most doesn't have noticeably smaller residual drops than the group where HDI stagnated. The dashboard that was designed to catch what GDP misses is also missing this.
 
 Only when you control for GDP does HDI start to look relevant (p=0.062, borderline significant). Which means: it's not development stagnation by itself. It's something about the combination — money improving while broader development doesn't — that seems to matter. But even then, the relationship is weak. Whatever is driving the residual isn't primarily captured by HDI either.
 
 Inside the 38-country group, I checked which of the WHR's own factors correlated most strongly with the residual decline. Health was the strongest signal at −0.306: where health worsened, the residual fell further. This is consistent with the pandemic leaving a deeper mark than the recovery statistics suggest — not just in mortality numbers but in how people experience their daily lives. But health alone doesn't close the gap. No single factor does.
 
-![Health factor vs residual, H1 subset](images/chapter_06_h1_health_scatter.png)
+![H1 subset: residual vs health factor, coloured by happiness](images/chapter_06_h1_health_scatter.png)
 
 The post-2019 wellbeing decline is multi-causal. That's the honest result, and it matters, because it means you can't fix it by targeting one thing.
 

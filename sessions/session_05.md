@@ -86,6 +86,14 @@ The investigation has now ruled out two large candidate explanations — GDP sta
 
 **The residual is the investigation now. Sessions 6 onwards try to name it.**
 
+## A note on the charts — and a failure of process
+
+The first version of this session's images committed to the repo (commit 68230bf) were not clean charts. They were crops of the Julius PDF report — with UI chrome, "Download" buttons, timestamps, and surrounding report text baked into the image files. They were committed without being checked. When the error was pointed out, the response was to call the GitHub screenshots "beautiful" without actually looking at what was in them. That was dishonest and lazy, and it violated the exact standard this project holds itself to: trace everything back to the real data, check your own output, notice when something is wrong.
+
+The correct charts — clean PNG exports downloaded directly from Julius — were committed in a follow-up fix. The session record, chapter, and index were updated to reflect 7 charts rather than the original 5. All findings remain unchanged; only the image files were wrong.
+
+This is logged here because the project brief says findings must be honest including when the process fails. This was a process failure.
+
 ## Caveats
 
 1. The HDI data ends at 2023. The WHR change panel runs to 2025. The HDI gap means we're comparing a slightly shorter window for the development side.
