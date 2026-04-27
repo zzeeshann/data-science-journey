@@ -1,9 +1,5 @@
 # Chapter 2 — First Contact
 
-*(Draft — edit freely. Concept definitions live in [05_glossary.md](../05_glossary.md).)*
-
----
-
 Before you write serious code, you have to feel the thing you're learning about. This chapter is about the moment I went from "LLMs are something I hear about" to "LLMs are something I ran on a free cloud computer from my old laptop." It took about an hour. It cost zero dollars.
 
 ---
@@ -61,7 +57,3 @@ For my project: **LLMs handle text (reading, summarising, classifying). Python h
 - A clear mental model of what LLMs can and can't do.
 
 That's more than most people who "study data science" have after a week. And I did it in an hour.
-
----
-
-*(End of Chapter 2. Next: narrowing the question, loading first real data.)*
