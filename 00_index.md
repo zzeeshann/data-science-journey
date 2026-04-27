@@ -34,6 +34,7 @@ A multi-year data science investigation into how humans describe consciousness, 
 - **[session_03.md](sessions/session_03.md)** — loaded William James 1890, first two-point comparison chart. Sub-question sharpened into the research plan.
 - **[session_04.md](sessions/session_04.md)** — Wholeness Investigation opens. Loaded WHR 2011–2025. Big finding: 99% of countries' measured factors rose, 98%' unexplained fell.
 - **[session_05.md](sessions/session_05.md)** — H1 test. Merged WHR with UNDP HDI 1990–2023. GDP and HDI didn't fully decouple globally (r=0.32) but 38 countries showed GDP up, HDI flat, residual collapsing. Neither income nor development metrics explain the happiness drop. Analysis run in Julius AI.
+- **[session_06.md](sessions/session_06.md)** — Process audit, not a finding session. Caught and fixed three image-placement issues and one fabricated book citation in Chapter 6 (Sonnet 4.6 draft, Opus 4.7 audit). Researches whether AI models "get worse over time" — citing Chen/Zaharia/Zou 2023 and Anthropic's April 23 2026 Claude Code postmortem — and folds three new verification habits into the standing process.
 
 ### `/book/` — the personal book, written as we go
 - **[chapter_01.md](book/chapter_01.md)** — Why I'm doing this.
@@ -74,7 +75,7 @@ A multi-year data science investigation into how humans describe consciousness, 
 
 - **Starting a new chat?** Upload this file + [01_working_agreement.md](01_working_agreement.md) + [02_project_brief.md](02_project_brief.md) + [research_plan_wholeness.md](research_plan_wholeness.md) + the most recent session record + the book *Thinking in Wholes*.
 - **Looking for a definition?** Check [05_glossary.md](05_glossary.md).
-- **Looking for what we did last?** Check [session_05.md](sessions/session_05.md).
+- **Looking for what we did last?** Check [session_06.md](sessions/session_06.md).
 - **Looking for the personal story?** Read `/book/` in order.
 - **Looking for project direction?** Read [research_plan_wholeness.md](research_plan_wholeness.md).
 - **Looking for the current hook?** "Name what is in the residual." Sessions 6–10 are for that.

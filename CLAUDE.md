@@ -24,9 +24,9 @@ If a question is about mechanics (commits, force-adds, file conventions, verific
 
 **Hook the investigation now orbits:** Across 141 countries between 2019 and 2025, measured factors in the World Happiness Report rose in 99% of countries while the unexplained residual fell in 98%. Session 5 ruled out HDI stagnation as the explanation — neither income nor development metrics can see what's falling. The rest of the investigation is trying to name it.
 
-**Last session committed:** Session 5 (commit `d6ef10f` includes the chart fix and a book-wide consistency pass).
+**Last session committed:** Session 6 (a process audit — caught and fixed lower-model errors in the Chapter 6 work, set up new verification habits and the asymmetric-pair pattern). The Wholeness Investigation did not advance this session.
 
-**Next session:** Session 6 — embeddings and language. Per `research_plan_wholeness.md`, this is the project's first real NLP session. Probable scope: load *Thinking in Wholes*, the Ackoff lecture, William James 1890, and a Reddit corpus or two; embed with a Hugging Face model; compare semantic similarity in the language of wholeness vs fragmentation across eras. Final scope is set in the next session-planning conversation.
+**Next session:** Session 7 — embeddings and language. Per `research_plan_wholeness.md`, this is the project's first real NLP session (it was originally the planned scope for Session 6 before Session 6 became a process audit). Probable scope: load *Thinking in Wholes*, the Ackoff lecture, William James 1890, and a Reddit corpus or two; embed with a Hugging Face model; compare semantic similarity in the language of wholeness vs fragmentation across eras. Final scope is set in the next session-planning conversation.
 
 ### Hypotheses status
 
@@ -126,8 +126,16 @@ The user's standing instruction is **"verify, don't trust."** Apply this wheneve
 3. **Open chart images visually with the `Read` tool.** Verify no PDF artefacts, no UI chrome, no watermarks, and that the values shown in the chart match the prose claims about them.
 4. **Verify cross-references.** Every glossary anchor referenced from a chapter (e.g. `#prompt-engineering-small-form`) must resolve to a real heading. Every `![](images/file.png)` must point to a file that exists.
 5. **If anything fails: stop, report, ask before committing.** Don't push to fix it later — fix it before the commit lands.
+6. **Citation grep before commit.** Whenever a chapter contains a phrase of the form *"the book says…"*, *"the book argues…"*, *"the book calls this…"*, or any direct quote attributed to *Thinking in Wholes*, grep it against `data/raw/thinking_in_wholes_2026.md` first. If the exact phrase isn't in the book, either pull a real quote from the book or rephrase the sentence in the chapter author's own voice. Putting words in the book's mouth that the book did not say is the cleanest possible self-betrayal of a project whose central claim is *trace everything back.*
+7. **Note model identity in session receipts.** Every session record names which model class drafted the prose and which verified it. This is part of the receipts, not a footnote.
 
-The Session 5 chart-fix episode (commits `68230bf` → `70d49f2` → addendum in `sessions/session_05.md`) is the cautionary precedent. PDF-cropped chart images were committed without visual verification, then defended without inspection. The session record now logs that as a process failure. Don't repeat it.
+The Session 5 chart-fix episode (commits `68230bf` → `70d49f2` → addendum in `sessions/session_05.md`) is the cautionary precedent for visual verification. The Session 6 audit (commits `1483826` and `sessions/session_06.md`) is the cautionary precedent for citation verification — a fabricated *"measurement trap"* attribution to the book that grep would have caught in two seconds. Both are logged as process failures so they don't recur.
+
+## Model use — the asymmetric-pair pattern
+
+Where it can be arranged, prose drafted by a smaller model gets read by a larger one before commit. Smaller models (Sonnet class) are well-suited to code generation, structured analysis, and routine pipeline work. Larger models (Opus class) are better-suited to careful citation, long-document recall, and voice consistency in a sustained book. Use both deliberately, not interchangeably.
+
+The Session 6 audit was an instance of this pattern: Sonnet 4.6 drafted Chapter 6 in earlier sessions; Opus 4.7 caught the four issues in Claude Code on April 28. The published evidence on this is consistent (HalluLens, Vectara hallucination leaderboard, Frontiers in AI 2025 survey): hallucination rates fall as model parameters and training compute rise, and citation fabrication is one of the failure modes most sensitive to model size. See `sessions/session_06.md` for the full reasoning and sources.
 
 ---
 
