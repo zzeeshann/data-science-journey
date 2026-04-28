@@ -59,7 +59,7 @@ A multi-year data science investigation into how humans describe consciousness, 
 
 ### `/data/raw/` — source files
 - **[hamming_lecture_01_1995.txt](data/raw/hamming_lecture_01_1995.txt)** — Hamming, "Learning to Learn" Lecture 1, 1995. Parked.
-- **[ackoff_lecture_systems_age.txt](data/raw/ackoff_lecture_systems_age.txt)** — Ackoff, "From Machine Age to Systems Age." Session 6 reference.
+- **[ackoff_lecture_systems_age.txt](data/raw/ackoff_lecture_systems_age.txt)** — Ackoff, "From Machine Age to Systems Age." Session 7 reference.
 - **[thinking_in_wholes_2026.md](data/raw/thinking_in_wholes_2026.md)** — *Thinking in Wholes* (2026). The lens.
 - **[WHR26_Data_Figure_2.1.xlsx](data/raw/WHR26_Data_Figure_2.1.xlsx)** — World Happiness Report 2026 panel. 2,116 rows × 13 cols.
 - **[HDR25_Composite_indices_complete_time_series.csv](data/raw/HDR25_Composite_indices_complete_time_series.csv)** — UNDP HDI complete time series 1990–2023, 206 countries, 1,112 columns. Source: hdr.undp.org. Force-add (gitignored).
@@ -78,7 +78,7 @@ A multi-year data science investigation into how humans describe consciousness, 
 - **Looking for what we did last?** Check [session_06.md](sessions/session_06.md).
 - **Looking for the personal story?** Read `/book/` in order.
 - **Looking for project direction?** Read [research_plan_wholeness.md](research_plan_wholeness.md).
-- **Looking for the current hook?** "Name what is in the residual." Sessions 6–10 are for that.
+- **Looking for the current hook?** "Name what is in the residual." Sessions 7–11 are for that. (Session 6 was a process audit, not a finding session — see [session_06.md](sessions/session_06.md).)
 
 ---
 

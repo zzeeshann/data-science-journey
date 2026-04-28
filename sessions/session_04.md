@@ -109,8 +109,8 @@ This is H2's real answer, pushed. The WHR's "social support" measure is a one-it
 
 ## Decisions deferred
 
-- Extend backward using pre-2019 raw Gallup data (Session 7+).
-- Merge residual change against external data: loneliness surveys, fertility, religious practice, trust, screen time (Sessions 7–10).
+- Extend backward using pre-2019 raw Gallup data (Session 8+).
+- Merge residual change against external data: loneliness surveys, fertility, religious practice, trust, screen time (Sessions 8–11).
 - Botswana mystery — deep below the line in both cross-section and change. Flag for later.
 - Generosity null correlation (r = +0.038). Almost certainly a measurement issue. Park.
 

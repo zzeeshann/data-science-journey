@@ -47,15 +47,16 @@ All free, all public.
 
 **The theoretical lens:**
 - *Thinking in Wholes* (2026), parked in `/data/raw/`. Supplies the categories the investigation measures the world against — wholeness, connection, development, system.
-- Ackoff's "Machine Age to Systems Age" lecture, parked for Session 6 (embeddings).
+- Ackoff's "Machine Age to Systems Age" lecture, parked for Session 7 (embeddings).
 
 ## Methods
 
 - **Phase 1 (Sessions 1–3):** Exploration. Load data. Count words. Simple charts. First two-point comparison.
 - **Phase 2 (Sessions 4–5):** Country-scale wellbeing and development. World Happiness Report, HDI, GDP. Cross-country panels, correlations, decompositions.
-- **Phase 3 (Sessions 6–7):** Embeddings and zero-shot classification. Semantic comparison of the book, Ackoff, James, Reddit corpora. Quantify the language of wholeness.
-- **Phase 4 (Sessions 8–9):** Cross-cultural values (World Values Survey) and topic modelling on large corpora.
-- **Phase 5 (Session 10 and beyond):** Synthesis. Pull every finding into one piece of writing. If the work is strong enough, it becomes a public artefact.
+- *Session 6 (process audit, off the main arc): caught and corrected lower-model errors in the Chapter 6 work and added new verification habits — see [session_06.md](sessions/session_06.md).*
+- **Phase 3 (Sessions 7–8):** Embeddings and zero-shot classification. Semantic comparison of the book, Ackoff, James, Reddit corpora. Quantify the language of wholeness.
+- **Phase 4 (Sessions 9–10):** Cross-cultural values (World Values Survey) and topic modelling on large corpora.
+- **Phase 5 (Session 11 and beyond):** Synthesis. Pull every finding into one piece of writing. If the work is strong enough, it becomes a public artefact.
 
 ## Deliverables
 

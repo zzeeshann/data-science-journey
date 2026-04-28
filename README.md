@@ -26,9 +26,10 @@ Session 4 delivered a real finding the rest of the investigation now orbits: acr
 
 - **Phase 1 (Sessions 1–3)** — Exploration. Load data. First cleaning and charts. First two-point comparison.
 - **Phase 2 (Sessions 4–5)** — Country-scale wellbeing and development. WHR, HDI, GDP. Panels, correlations, decompositions.
-- **Phase 3 (Sessions 6–7)** — Embeddings and zero-shot classification. Semantic comparison of the book, Ackoff, James, Reddit corpora.
-- **Phase 4 (Sessions 8–9)** — Cross-cultural values (World Values Survey) and topic modelling on large corpora.
-- **Phase 5 (Session 10+)** — Synthesis.
+- *Session 6 — process audit (off the main arc).*
+- **Phase 3 (Sessions 7–8)** — Embeddings and zero-shot classification. Semantic comparison of the book, Ackoff, James, Reddit corpora.
+- **Phase 4 (Sessions 9–10)** — Cross-cultural values (World Values Survey) and topic modelling on large corpora.
+- **Phase 5 (Session 11+)** — Synthesis.
 
 ## Data sources
 

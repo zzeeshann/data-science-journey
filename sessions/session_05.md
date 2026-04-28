@@ -84,7 +84,7 @@ H1 is filed. Not a global law, but a real pattern in a meaningful subgroup. The 
 
 The investigation has now ruled out two large candidate explanations — GDP stagnation (Session 4 showed GDP rose almost everywhere) and development stagnation (Session 5 shows HDI moved too). Whatever is in the residual is something that standard metrics of both economic and human progress don't capture.
 
-**The residual is the investigation now. Sessions 6 onwards try to name it.**
+**The residual is the investigation now. Sessions 7 onwards try to name it.**
 
 ## A note on the charts — and a failure of process
 
@@ -105,7 +105,7 @@ This is logged here because the project brief says findings must be honest inclu
 
 Seven charts ([`chapter_06_hdi_global_trend.png`](../book/images/chapter_06_hdi_global_trend.png), [`chapter_06_gdp_hdi_scatter.png`](../book/images/chapter_06_gdp_hdi_scatter.png), [`chapter_06_residual_hdi_scatter.png`](../book/images/chapter_06_residual_hdi_scatter.png), [`chapter_06_residual_hdi_labelled.png`](../book/images/chapter_06_residual_hdi_labelled.png), [`chapter_06_hdi_groups_boxplot.png`](../book/images/chapter_06_hdi_groups_boxplot.png), [`chapter_06_h1_health_scatter.png`](../book/images/chapter_06_h1_health_scatter.png), [`chapter_06_uk_hdi_happiness.png`](../book/images/chapter_06_uk_hdi_happiness.png)). One processed CSV ([`session_05_merged.csv`](../data/processed/session_05_merged.csv)). One new book chapter ([`chapter_06.md`](../book/chapter_06.md)).
 
-H1 is done. The residual is still unexplained. Session 6 moves into embeddings and language — the Ackoff text, *Thinking in Wholes*, Reddit corpora — to ask whether the language of wholeness and fragmentation is actually shifting in the years the data says something changed.
+H1 is done. The residual is still unexplained. Session 7 moves into embeddings and language — the Ackoff text, *Thinking in Wholes*, Reddit corpora — to ask whether the language of wholeness and fragmentation is actually shifting in the years the data says something changed.
 
 ---
 

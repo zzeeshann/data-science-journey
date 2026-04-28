@@ -36,8 +36,8 @@ From `research_plan_wholeness.md`:
 |---|---|---|
 | **H1** | Growth and development have decoupled | Tested in Session 5. Filed as partial pattern, not global law. 38 of 129 countries fit (GDP up, HDI flat, residual collapsing). |
 | **H2** | Connection predicts wellbeing better than wealth | Surface-tested in Session 4 cross-section. Inconclusive at noise level (0.812 vs 0.799). Needs richer connection measure than WHR's one-question social-support proxy. |
-| **H3** | The language of wholeness is rising in modern writing | Not tested. Phase 3 (Sessions 6–7). |
-| **H4** | Cultures vary systematically in wholeness vs machine language | Not tested. Phase 4 (Sessions 8–9). |
+| **H3** | The language of wholeness is rising in modern writing | Not tested. Phase 3 (Sessions 7–8). |
+| **H4** | Cultures vary systematically in wholeness vs machine language | Not tested. Phase 4 (Sessions 9–10). |
 
 ---
 
