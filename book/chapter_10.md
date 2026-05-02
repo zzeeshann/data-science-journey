@@ -1,0 +1,45 @@
+# Chapter 10 — What I Got Wrong, and How I Caught It
+
+This is the last chapter of the investigation. It is the most important chapter for a learner because it is the only one about the thing that actually went wrong. The earlier chapters tell what the project found. This one tells what the project's own framing claimed beyond what the data actually showed, how I caught it, and what to carry into the next project. If you only read one chapter to learn from this book, read this one.
+
+## What the investigation actually found
+
+Two findings, plainly stated, with nothing rhetorical between them.
+
+The first finding is country-scale. Across 141 countries between 2019 and 2025, the World Happiness Report's six measured factors collectively rose in 99% of countries while the unexplained component of its model fell in 98%. The model expects a substantially happier world than people actually report. Session 5 added a layer: 38 of 129 countries fit the strict pattern of "GDP up, human-development index flat, happiness decline landing entirely in the residual." Neither income nor development metrics can see what's pulling people's life evaluations down. The country-scale work in this book stops there. It does not name what is in the residual.
+
+The second finding is text-level. The cross-era language work in Sessions 7 through 9 produced one positive result and two clean falsifications. The positive result was that paragraphs of Reddit posts about meditation experience from the 2010s and paragraphs of William James's *Principles of Psychology* from 1890 sit semantically close to each other in vector space — top pairs at cosines 0.58 to 0.61, four of five hitting the same paragraph in James about the felt sense of attention pulling inward. Different prose registers, the same kind of subject matter, 130 years apart. The two falsifications: the structural "position-twelve cluster" across ancient texts turned out to be selection bias, and the "wholeness register reaching across eras" interpretation of a small cross-era cosine lift turned out to be a formal-prose-register effect rather than a wholeness-language effect once Reddit's modern conversational English was tested against the same passages. Both falsifications are real outputs of the project; they file specific interpretations as not-the-answer.
+
+Those are the four results. They stand on their own. None of them claims to name what is in the country-scale residual.
+
+## The mistake the chapters made
+
+Until I wrote this chapter, the book's framing claimed something different. Chapter 5 said the rest of the investigation would try to name the residual. Chapter 6 promised that Session 7 would point at the language to do that. Chapter 7 said the cross-era pair finding was "the first piece of language-level evidence the investigation has produced" toward the residual question. Chapter 9 said two candidate names for the residual had been filed and two more sessions remained to surface a third. The index hook paragraph said Phase 3 was "attacking the question through language." All of that was rhetoric layered onto data that did not actually support it.
+
+The mistake has a clean name: I crossed a unit-of-analysis boundary without building a statistical bridge. The country-scale work measures one thing per country: country X's residual change between 2019 and 2025. The text-level work measures one thing per pair of paragraphs: the cosine similarity between paragraph A and paragraph B. To honestly claim that the text-level work helps name the country-scale residual, I would have needed an analysis that has both units in it — for example, a country-level dataset of public discourse where each country's text features could be regressed against its WHR residual change. No such dataset exists in this project. The connection between the two halves of the book is the word "residual" used metaphorically, not a shared variable.
+
+This kind of mistake is hard to see because it does not feel wrong. The chapters read smoothly. Each session produced real numbers. The narrative *flowed.* That is exactly the failure mode: a story that connects findings the data don't actually connect feels more honest than two findings sitting next to each other without a story. The story does the work the statistics should be doing.
+
+## How to catch this on the next project
+
+The discipline that would have caught this mistake is one sentence long. **Before any session, ask: what is the unit I am measuring, and does that unit match the question I am trying to answer?** If the question is about countries, the data needs countries. If the question is about texts, the data needs texts. If the goal is to connect the two, the data needs both at once. A question framed at one level cannot be answered with data at a different level, no matter how interesting the data is.
+
+I did not ask this question consistently. The investigation's headline question was about countries — what is in the residual that the WHR cannot see across 141 countries — and I let the unit shift to paragraphs in Phase 3 without acknowledging that the question had quietly shifted with it. The chapters then framed the paragraph-level work as if it were still answering the country-level question. The framing was the lie. The numbers themselves were honest.
+
+The other discipline that would have caught it is something Session 6 already added to this project's standing process: read what you wrote and ask whether the data supports the claim. The Session 6 audit caught a fabricated quote because the discipline was a `grep` against the source document. The same discipline applied at the framing level would have asked: *does this chapter's claim that "the language work names the residual" have a regression in any session record that connects language features to country-level outcomes?* The answer would have been no, and the framing would have been corrected before it landed. The discipline existed; it was applied to citations and not to framing claims. That is one specific habit to widen on the next project.
+
+## What to carry into the next investigation
+
+Three things, written here so that future me, starting a different project on a different topic, has them in one place.
+
+First, write the unit of analysis at the top of every session brief, in one sentence, before any code runs. *"This session measures one number per country."* Or *"This session measures one number per paragraph pair."* If a session would need to bridge two units, the bridge is a separate piece of the brief — built deliberately, not assumed.
+
+Second, when a project has hypotheses written down at the start, include a status note next to each hypothesis as the work progresses, dated, with the specific evidence that updates the status. The four hypotheses in this project's research plan drifted between what they originally claimed and what was actually tested over nine sessions, without the plan being patched. The drift is invisible until somebody reads the plan and the session records side by side. A dated status note on each hypothesis, updated at the end of every session that touches it, would have caught the drift early.
+
+Third, when chapters make claims that connect findings, the connection itself is a claim that needs the same evidence discipline as a quoted sentence from a book. Session 6 added "citation grep before commit" because a fabricated quote slipped through from a lower-quality model. The equivalent habit for connection claims is *bridge grep before commit*: any sentence in a chapter that links two findings should have a corresponding session record entry showing the statistical link. If no such entry exists, either build the link or remove the claim. That is the specific verification habit this chapter adds to standing process.
+
+## Closing
+
+The Wholeness Investigation closes here. The country-scale finding from Sessions 4 and 5 is real and replicable. The Reddit↔James 1890 phenomenology finding from Session 9 is real and replicable. The two falsifications are real and replicable. The framing that wrapped them into one continuous investigation was not earned by the data and has now been corrected. Two more sessions remain in this book's wrap-up — Session 12 reads every chapter as if a beginner is encountering it and patches the readability gaps, Session 13 produces the four summary files the next investigation can be planned against. After Session 13, the book is complete and a different project begins on a different topic with a clearer head.
+
+The most useful artifact this project produced is not the residual finding or the cross-era pair. It is the discipline I now have for not making the same mistake on the next project. That discipline did not exist before Session 10. It exists now, named, written down, and committed to the repository alongside the work it grew from.

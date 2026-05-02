@@ -2,8 +2,8 @@
 
 *Sub-question 2, sharpened. A multi-session investigation inspired by Thinking in Wholes (2026).*
 
-**Status:** Plan drafted at end of Session 3. Sessions 4 onwards execute it.
-**Will take:** 6-10 sessions, honestly. Possibly more.
+**Status (updated 2026-05-02 after Session 10 audit):** Plan drafted at end of Session 3. Sessions 4–9 executed parts of it. **Investigation closed at Session 9.** The Session 10 audit (see [`project_state.md`](project_state.md)) surfaced that the country-scale work (Sessions 4–6) and text-level work (Sessions 7–9) are two distinct investigations the chapters glued together rhetorically, with no statistical bridge. Sessions 10–13 are wrap-up: audit (S10, done), lessons-learned chapter + framing patches (S11), book-readability pass (S12), four summary files (S13). After Session 13 the book is complete and the user moves to a different topic.
+**Original estimate:** 6-10 sessions, honestly. Possibly more.
 
 ---
 
@@ -21,13 +21,21 @@ The book makes specific, testable claims. We will test them.
 
 **H1 — Growth and development have decoupled.** Countries that grew fastest economically did not become happiest, healthiest, or most connected. Some countries developed (became more capable, more connected, higher quality of life) without growing. Others grew without developing.
 
+> *Status (Session 5 result, updated 2026-05-02):* **Partial.** Tested in Session 5. WHR GDP-factor change correlates with HDI change at r = 0.32 (p ≈ 0.015, n = 129) — moderate, not a global decoupling. 38 of 129 countries fit the strict "GDP up, HDI flat" pattern. H1 is a real subgroup pattern, not a global law. The original strong wording above is preserved as the originally-drafted hypothesis; it is not what the data showed.
+
 **H2 — Connection predicts wellbeing better than wealth.** Across countries and individuals, the strength of social bonds (trust, family, community, friendship) predicts life satisfaction more strongly than income, GDP, or material standard of living.
+
+> *Status (Session 4 result, updated 2026-05-02):* **Inconclusive.** Surface-tested in the Session 4 cross-section (n = 144 countries, 2025). Social support r = +0.812 vs Log GDP per capita r = +0.799 — gap of 0.013, within noise. WHR's "social support" is a one-question proxy that doesn't capture what the book means by connection. Not retested; the corpus needed for a richer test (e.g. WVS connection items) was originally planned for Session 10 but that session was repurposed as the audit.
 
 **H3 — The language of wholeness is rising in modern writing.** In the last 20 years, the language of connection, system, ecosystem, interdependence, meaning, purpose has become more common in public discourse. The language of pure mechanism, optimisation, individual achievement is plateauing or declining.
 
 *Corpus extension (added in Session 7 planning).* The H3 corpus extends to a small set of verified passages from the oldest written texts (Sumerian, Egyptian, Chinese, Levantine, Indus, Elamite, Minoan, Nubian sources) — initially the seven "12-cluster" passages and their position-11 / position-13 controls. The extension lets H3 be tested against a sharper question than "is the language of wholeness rising in modern writing": *is what's rising the same register the oldest texts already mapped?* Cross-era cosine similarity in Session 8 is the first test of the sharper version. Verified passages live in `ancient_voices/passages/`. The extension does not introduce a new top-level hypothesis — it widens H3's corpus.
 
+> *Status (Sessions 7–9 results, updated 2026-05-02):* **Drifted from the original claim.** The original H3 is about a *temporal rise* in modern writing — that would require comparing modern writing to older modern writing in the same genre. Sessions 7–9 did not test this. They tested cross-era resonance (Session 7), the structural-position-twelve cluster across ancient texts (Session 8, falsified), and whether modern lay-meditation prose shares the cross-era lift toward position-12 ancient passages (Session 9, wholeness-register interpretation falsified). What the corpus extension actually tested is a different hypothesis than the original H3. The cleanest result the language work produced: Reddit r/Meditation ↔ James 1890 phenomenology of introspection, mean cosine +0.1364, top pairs 0.58–0.61, on the felt sense of attention turning inward across 130 years.
+
 **H4 — Cultures vary systematically.** Some cultures (regions, language groups) describe consciousness, meaning, and the self in more "wholeness" terms; others in more "machine" terms. This varies measurably and connects to wellbeing outcomes.
+
+> *Status (updated 2026-05-02):* **Not tested.** Originally planned for Session 10 (World Values Survey). Session 10 was repurposed as the project audit when the user surfaced the bridge problem mid-conversation. H4 remains an open hypothesis the project did not get to. A future investigation could pick it up with country-level WVS data; the embedding pipeline from Sessions 7–9 is reusable but a different unit-of-analysis (country, not paragraph) would be the right next step.
 
 These four hypotheses give the project a spine. Every session contributes to one or more of them.
 
@@ -134,4 +142,4 @@ To stay honest:
 
 ---
 
-*Plan written end of Session 3. Session 4 begins by loading country-scale wellbeing data and asking the first big question: did growth and development actually decouple?*
+*Plan written end of Session 3. Session 4 began by loading country-scale wellbeing data and asking the first big question: did growth and development actually decouple? — see [`sessions/session_04.md`](sessions/session_04.md) and onwards. Investigation closed at Session 9; see [`project_state.md`](project_state.md) for what the audit found and [`book/chapter_10.md`](book/chapter_10.md) for the lessons-learned chapter that wraps the book.*
