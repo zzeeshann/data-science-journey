@@ -1,0 +1,29 @@
+TEXT: Ugaritic — "Birth of the Beautiful and Gracious Gods" (KTU 1.23), opening invocation
+POSITION: KTU 1.23, lines 1-15 (the invocation + the death of Death + the field of El)
+TRANSLATION: Karen R. Keen (2010), adapting Mark S. Smith's 2006 translation in *The Rituals and Myths of the Feast of the Goodly Gods of KTU/CAT 1.23* (Society of Biblical Literature)
+SOURCE_URL: User-provided PDF of Keen's Duke Divinity School Master of Theology thesis "Beyond Sacred Marriage: A Proposed New Reading of 'Birth of the Beautiful and Gracious Gods' (KTU 1.23)" (April 2010)
+LANGUAGE: Ugaritic (translated)
+DATE: ~1300 BCE (Late Bronze Age); 2006 CE English translation (Smith), 2010 CE emendations (Keen)
+NOTES: Fair-use academic research excerpt. The full Keen thesis adapts Smith's 2006 SBL translation with footnoted emendations. This excerpt is the opening invocation through the death-of-Death pericope — the most thematically threshold-loaded passage in the tablet. The viticultural metaphor (Death as a vine that is pruned, bound, and felled to the terrace; the field as belonging to El and Athirat waRahmay) parallels the death/threshold register the bundle's 12-cluster is supposed to test. **Important methodological caveat for Session 8:** KTU 1.23 is the 23rd tablet in the Dietrich/Loretz/Sanmartín catalogue — its "23" is a museum index, not a content position. KTU 1.23 is therefore *not* a 12-cluster member by the bundle's hypothesis. It is included here as a thematically-threshold Ugaritic wider-sample passage. The chapter for Session 8 should address the catalogue-vs-position methodological question that the Ugaritic case raises about the bundle's framing.
+
+Let me call the Goodly Gods,
+Indeed, the beautiful ones, sons of …
+Those given offerings on high …
+In the outback, on the heights …
+to their heads and …
+Eat of every food,
+And drink of every vintage wine.
+Peace, O King! Peace, O Queen!
+O enterers and guards!
+
+Death wsr sits
+In his hand a staff of childlessness,
+In his hand a staff of widowhood.
+The pruner prunes him (like) a vine,
+The binder binds him (like) a vine,
+He is felled to the terrace like a vine.
+
+Seven times it is recited over the dais
+And the enterers respond:
+"And the field is the field of El
+Field of Athirat waRahmay."

@@ -19,6 +19,8 @@
 | `pyramid_texts_unas_utterance_217.txt` | pyramidtextsonline.com | Faulkner / Piankoff / Speleer | Public domain | Wider-sample Unas utterance |
 | `gilgamesh_pennsylvania_tablet_dream.txt` | Wikisource | Stephen Langdon (1917) | Public domain | Old Babylonian "Tablet II" opening dream — *not* Standard Babylonian Tablet 12. Used as Gilgamesh wider-sample representative. |
 | `inanna_descent_opening.txt` | User-uploaded PDF | Wolkstein & Kramer (1983) | **Fair-use academic research excerpt** — translation in copyright through ~2083; ~25 lines from a 200+ page book; ETCSL would be the openly-licensed swap when reachable | Opening descent (position approximate; Inanna doesn't use conventional verse numbering) |
+| `ugaritic_ktu_1_4_baal_to_mot.txt` | User-uploaded PDF (JANES 33, 2018) | Yogev & Yona (2018) | **Fair-use academic research excerpt** — 3 lines from a published article; thematically threshold-loaded (Baal preparing to send messengers to Mot) | KTU 1.4 VIII 2-4 — wider-sample, *not* position 12 (KTU numbering is a catalogue index, not a content position) |
+| `ugaritic_ktu_1_23_invocation.txt` | User-uploaded PDF (Keen MTh thesis 2010) | Karen Keen (2010) adapting Mark Smith (2006) | **Fair-use academic research excerpt** — ~15 lines; thematically threshold-loaded (death of Death, the field of El) | KTU 1.23 lines 1-15 — wider-sample, *not* position 12 (catalogue index) |
 
 **Status by text:**
 - **Hammurabi:** complete with full position-11/12/13 ✓ (PD)
@@ -27,19 +29,19 @@
 - **Inanna's Descent:** opening passage saved as fair-use research excerpt ✓ — would migrate to ETCSL when reachable. No clean position-11/13 controls (the text is unnumbered).
 - **Pyramid Texts:** Spell 12 (Faulkner numbering) not in PD via Unas. Two wider-sample Unas utterances saved. Session 8 chapter should flag honestly that this text contributes wider-sample only, not the position-12 cluster test.
 - **Gilgamesh:** Standard Babylonian Tablet 12 not in PD via available sources. Pennsylvania Tablet (OB Tablet II) saved as wider-sample representative. Same note as Pyramid Texts for Session 8 chapter.
-- **Ugaritic KTU 1.12:** **SKIPPED for Session 8.** No PD English translation located despite multiple attempts. The user provided a 2013 academic paper (Yogev & Yona, *Ancient Near Eastern Studies* 50: 212–217) which describes the tablet's scribal context but does not include the text itself. The paper raises an important caveat the bundle didn't anticipate: KTU 1.12's "12" is a museum catalogue index (Dietrich/Loretz/Sanmartin numbering of Ugaritic tablets), not a content position — meaning Ugaritic KTU 1.12 may not be a valid 12-cluster member regardless of translation availability. See `ugaritic_ktu_1_12_NOTES.md` for full discussion.
+- **Ugaritic:** Two wider-sample passages saved as fair-use research excerpts (KTU 1.4 VIII 2-4 from Yogev & Yona 2018; KTU 1.23 lines 1-15 from Keen 2010). Both thematically threshold-loaded. **Important caveat:** KTU numbers are museum catalogue indices in the Dietrich/Loretz/Sanmartín numbering, *not* content positions — Ugaritic doesn't fit the bundle's "position-12" framing the way Hammurabi, Enuma Elish, and I Ching do. The Session 8 chapter should surface this catalogue-vs-position methodological question honestly.
 
-13 files in `passages/`. Three in `notes/` (this status doc, the superseded Wilhelm I Ching reference, and the Ugaritic working notes).
+15 files in `passages/`. Three in `notes/` (this status doc, the superseded Wilhelm I Ching reference, and the Ugaritic working notes).
 
 ## Session 8 — what's runnable now
 
-**Five of seven texts have something in `passages/`:**
+**All seven texts have at least one passage in `passages/`:**
 - 4 texts with full position-11/12/13: Hammurabi ✓, Enuma Elish ✓, I Ching ✓ + Inanna (12 only, no controls)
-- 2 texts with wider-sample passages only: Pyramid Texts (Unas), Gilgamesh (Pennsylvania Tablet)
+- 3 texts with wider-sample passages only: Pyramid Texts (Unas), Gilgamesh (Pennsylvania Tablet), Ugaritic (KTU 1.4 + 1.23)
 
-**The 12-cluster permutation test can run on three texts** (Hammurabi, Enuma Elish, I Ching) cleanly, with Inanna's opening counted on the 12-side without a 11/13 control. That's a meaningful test, with the chapter for Session 8 honestly noting what's been substituted and why.
+**The 12-cluster permutation test can run on three texts** (Hammurabi, Enuma Elish, I Ching) cleanly, with Inanna's opening counted on the 12-side without a 11/13 control. The remaining three texts (Pyramid Texts, Gilgamesh, Ugaritic) contribute as wider-sample baselines. That's a meaningful test, with the chapter for Session 8 honestly noting what's been substituted and why.
 
-The **only fully-pending text** is Ugaritic KTU 1.12. If you can find a PD or open-access KTU 1.12 translation (Wyatt 2002 is paywalled; older fragments in academic open access exist on academia.edu sometimes), Session 8 has its full seven-text corpus. If not, six texts is fine.
+**The catalogue-vs-position methodological question** raised by Pyramid Texts (Faulkner Spell 12 not inscribed in Unas), Gilgamesh (Tablet 12 paywalled in PD), and especially Ugaritic (KTU 1.4 / 1.12 / 1.23 are catalogue indices, not content positions) should be a centerpiece of the Session 8 chapter. The bundle's hypothesis assumed all "12"s across texts were comparable; verification reading shows they aren't.
 
 ## Pending — need copy-paste from one of these URLs
 

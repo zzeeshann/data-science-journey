@@ -1,0 +1,11 @@
+TEXT: Ugaritic — Baal Cycle, KTU 1.4, column VIII, lines 2-4
+POSITION: KTU 1.4, VIII, 2-4 (a tricolon with anaphoric "to" — Baal's instructions to messengers about the route to Mot's realm)
+TRANSLATION: Jonathan Yogev and Shamir Yona (2018), in "Visual Poetry in the Ugaritic Tablet KTU 1.4," *Journal of the Ancient Near Eastern Society* 33: 203–210
+SOURCE_URL: User-provided PDF of the JANES 33 (2018) article (Ben-Gurion University, open-access)
+LANGUAGE: Ugaritic (translated)
+DATE: ~1300 BCE (Standard Ugaritic / Late Bronze Age); 2018 CE English translation
+NOTES: Three-line fair-use academic research excerpt from a published article. The translation is by Yogev and Yona (Ben-Gurion University); their 2018 paper is itself a scholarly study of *visual poetry* in this tablet. This passage is the moment Baal first wishes to contact Mot, god of the underworld — directing his messengers Ugaru and Gapnu to descend to "the hills at world's end" where the underworld's threshold lies. Thematically threshold-loaded: this is a descent-to-death-realm passage. **Important methodological caveat for Session 8:** KTU 1.4 is the 4th tablet in the Dietrich/Loretz/Sanmartín catalogue of Ugaritic alphabetic texts (2013 ed.) — its "4" is a museum index, not a content position. It is *not* a 12-cluster member by the bundle's hypothesis. It is included as a thematically-threshold Ugaritic wider-sample passage. The bundle's hypothesis assumed catalogue numbers across texts were comparable; the Ugaritic numbering convention shows they are not. The chapter for Session 8 should surface this methodological question.
+
+To mount Trġzz
+To mount Ṯrmg
+To the hills at world's end
