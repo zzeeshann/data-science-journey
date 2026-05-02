@@ -25,14 +25,15 @@ A multi-year data science investigation into how humans describe consciousness, 
 ## The files in this repo
 
 ### Root — planning and rules
-- **[CLAUDE.md](CLAUDE.md)** — operational brief for Claude Code. Auto-loaded at session start. Covers current state, mechanical conventions, verification habits.
+- **[CLAUDE.md](CLAUDE.md)** — operational brief for Claude Code. Auto-loaded at session start. Covers current state, mechanical conventions, summary of verification habits (full version in `discipline.md`).
+- **[discipline.md](discipline.md)** — the rules. Twenty-two disciplines (organised by phase: pre-session, during-session, before-commit, plan-files, end-of-session) plus the drift-response protocol. Required reading every session. If a session is about to violate a rule (or already has), Claude stops, names the rule by number, cites the precedent, and asks before continuing. The single source of truth for *how* the project runs.
 - **[00_index.md](00_index.md)** — this file. The map.
-- **[01_working_agreement.md](01_working_agreement.md)** — how we work. The rules of engagement.
+- **[01_working_agreement.md](01_working_agreement.md)** — how we work. Voice and collaboration norms; complementary to `discipline.md` (which covers methodology).
 - **[02_project_brief.md](02_project_brief.md)** — what the project is.
 - **[03_project_structure.md](03_project_structure.md)** — folder layout, Mac setup, GitHub setup.
 - **[04_roadmap.md](04_roadmap.md)** — rough plan. Not a commitment, a compass.
 - **[05_glossary.md](05_glossary.md)** — definitions of terms. Single source of truth for concepts.
-- **[research_plan_wholeness.md](research_plan_wholeness.md)** — the multi-session investigation plan. Four hypotheses, country-scale data, Hugging Face models. **Read this for project direction.**
+- **[research_plan_wholeness.md](research_plan_wholeness.md)** — the Wholeness Investigation's plan file. Four hypotheses, country-scale data, Hugging Face models. **Historical record now (investigation closed at Session 9).** The next investigation will produce its own plan file.
 
 ### `/sessions/` — what we actually did
 - **[session_01.md](sessions/session_01.md)** — first session: Colab setup, first LLM run, first observation.

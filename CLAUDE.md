@@ -5,39 +5,45 @@ If you're a Claude Code agent picking up this repo in a new session, read this f
 ## Reading order at the start of a session
 
 1. **This file** — current state, mechanics, what's next.
-2. **[01_working_agreement.md](01_working_agreement.md)** — how we work. Voice, setup, end-of-session ritual. Source of truth on conduct.
-3. **[00_index.md](00_index.md)** — the map of every file in the repo.
-4. **[research_plan_wholeness.md](research_plan_wholeness.md)** — the active investigation. Four hypotheses, session arc, the "name what is in the residual" hook.
-5. **The most recent file in `sessions/`** — what just happened.
-6. **[02_project_brief.md](02_project_brief.md)** — what the project is. Multi-year investigative ambition. Read once; do not reintroduce the retracted six-month/job framing.
-7. **`data/raw/thinking_in_wholes_2026.md`** — the lens. Hypothesis source, not ground truth.
+2. **[discipline.md](discipline.md)** — the rules. Twenty-two disciplines + drift-response protocol. Required reading. If a session is about to violate a rule (or already has), Claude stops, names the rule by number, cites the precedent, and asks before continuing.
+3. **[01_working_agreement.md](01_working_agreement.md)** — how we work. Voice, setup, end-of-session ritual. Source of truth on conduct.
+4. **[00_index.md](00_index.md)** — the map of every file in the repo.
+5. **The active investigation's plan file** — currently none. The Wholeness Investigation closed at Session 9 and the book closed at Session 13. [`research_plan_wholeness.md`](research_plan_wholeness.md) remains as historical record. The next investigation will produce its own plan file when chosen.
+6. **The most recent file in `sessions/`** — what just happened. Currently [`sessions/session_13.md`](sessions/session_13.md).
+7. **[02_project_brief.md](02_project_brief.md)** — what the project is. Multi-year investigative ambition. Read once; do not reintroduce the retracted six-month/job framing.
+8. **The active investigation's lens text** — for the wholeness investigation that was [`data/raw/thinking_in_wholes_2026.md`](data/raw/thinking_in_wholes_2026.md). Future investigations may use a different lens; check the active plan file when one exists.
 
+If a question is about which rules apply or whether a step is required → `discipline.md`.
 If a question is about voice, scope, or working style → `01_working_agreement.md`.
-If a question is about content or where the project is going → `research_plan_wholeness.md` + the latest session record.
-If a question is about mechanics (commits, force-adds, file conventions, verification) → this file.
+If a question is about content or where the project is going → the active plan file + the latest session record.
+If a question is about mechanics (commits, force-adds, file conventions, verification specifics) → this file.
 
 ---
 
 ## Where the project is right now
 
-**Phase:** 3 of 5 (embeddings + cross-era language work) is open. Session 7 closed the first NLP session of the project.
+**State:** The Wholeness Investigation closed at Session 9. Sessions 10–13 wrapped the book. The book is now a complete, conclusive artefact — ten chapters, thirteen session records, glossary, plan, audit notes, and four summary files at repo root ([`mistakes_made.md`](mistakes_made.md), [`summary_for_a_reader.md`](summary_for_a_reader.md), [`improvements.md`](improvements.md), [`reader_glossary_audit.md`](reader_glossary_audit.md)). The project itself stays open. The next investigation has not been chosen.
 
-**Hook the investigation now orbits:** Across 141 countries between 2019 and 2025, measured factors in the World Happiness Report rose in 99% of countries while the unexplained residual fell in 98%. Session 5 ruled out HDI stagnation as the explanation — neither income nor development metrics can see what's falling. The rest of the investigation is trying to name it. Phase 3 attacks the question through language; Session 7 produced the first language-level data point.
+**Two findings the existing book documents:**
+- *Country-scale (Chapters 5–6).* Across 141 countries between 2019 and 2025, the WHR's six measured factors rose in 99% of countries while the unexplained residual fell in 98%. Session 5 ruled out HDI stagnation: 38 of 129 countries showed GDP up, HDI flat, residual collapsing. Neither income nor development metrics can see what's falling. The country-scale work in this book does not name what does.
+- *Text-level (Chapters 7–9).* Cross-era embedding work produced one positive finding (Reddit r/Meditation ↔ William James 1890 phenomenology of introspection at cosines 0.58–0.61, four of five top pairs hitting James paragraph #810) plus two clean falsifications (the structural position-twelve cluster filed as selection bias; the wholeness-register interpretation falsified by Reddit's negative paired-difference).
 
-**Last session committed:** Session 7 (embeddings: first encounter). 1,744 paragraph-level chunks across *Thinking in Wholes*, the Ackoff lecture, and James 1890 embedded with `all-MiniLM-L6-v2`. Reddit r/Meditation returned HTTP 403 (anonymous JSON access hardened) — deferred to Session 9. The unplanned cross-era finding: James 1890 ↔ *Thinking in Wholes* 2026 hit cosine 0.5376 on a real semantic resonance — *the meaningful properties are in the relationships, not the parts* — passing the falsification check. The 1890 voice is already in the room.
+**The two halves do not connect statistically.** The connecting word "residual" is metaphorical across them. Chapter 10 names this as the project's central methodological lesson; the bridge-grep habit (discipline rule 13) was added to standing process to prevent recurrence.
 
-**Next session:** Session 8 — The Oldest Voices. Reuse Session 7's pipeline. Add the verified ancient-text corpus from `ancient_voices/passages/` once primary-source verification produces the seven 12-cluster passages plus position-11/13 controls. Two pre-registered tests: 12-cluster vs permutation baseline; modern-wholeness ↔ ancient-12 cross-era resonance. See `start_session_08.md` and `ANCIENT_TEXTS_READING_GUIDE.md` at repo root for the verification reading order.
+**Last session committed:** [Session 13](sessions/session_13.md) — the four summary files at repo root. Commit `032e027`.
 
-### Hypotheses status
+**Next session:** None planned. When the user is ready to start the next investigation, it will be a fresh sub-question pick — Sessions-4-onward style — informed by everything in this book and committed to nothing in advance. Discipline rules 1–4 (unit-of-analysis discipline, statistical-bridge-up-front, exploratory-vs-confirmatory marking, pre-registration) apply from session zero. The next investigation will produce its own plan file.
 
-From `research_plan_wholeness.md`:
+### Hypotheses status (Wholeness Investigation, closed at Session 9)
 
-| | Hypothesis | Status |
+From [`research_plan_wholeness.md`](research_plan_wholeness.md), with Session 11's dated status notes folded in:
+
+| | Hypothesis | Final status |
 |---|---|---|
-| **H1** | Growth and development have decoupled | Tested in Session 5. Filed as partial pattern, not global law. 38 of 129 countries fit (GDP up, HDI flat, residual collapsing). |
-| **H2** | Connection predicts wellbeing better than wealth | Surface-tested in Session 4 cross-section. Inconclusive at noise level (0.812 vs 0.799). Needs richer connection measure than WHR's one-question social-support proxy. |
-| **H3** | The language of wholeness is rising in modern writing | Corpus extended in Session 7 planning to include verified ancient-text passages. Tested partially: Session 7 found a 1890 ↔ 2026 cross-era resonance on a small sample; Session 8 runs the first quantitative cross-era test on ancient texts; Session 9 (Reddit zero-shot) and Session 11 (BERTopic) close the modern half. |
-| **H4** | Cultures vary systematically in wholeness vs machine language | Not tested. Phase 4 (Session 10 onward). |
+| **H1** | Growth and development have decoupled | Partial. r = 0.32 globally between GDP-factor change and HDI change; not a global decoupling. 38 of 129 countries fit the strict "GDP up, HDI flat" pattern. |
+| **H2** | Connection predicts wellbeing better than wealth | Inconclusive. Social support r = 0.812 vs GDP r = 0.799 in 2025 cross-section; 0.013 gap is at noise level. |
+| **H3** | The language of wholeness is rising in modern writing | Drifted from original wording. Sessions 7–9 tested cross-era resonance and per-corpus paired-differences, not temporal rise in modern writing. The Session-7 1890↔2026 finding survived; Session-9 Reddit↔James phenomenology survived; the wholeness-register interpretation of the Session-8 cross-era lift was falsified. |
+| **H4** | Cultures vary systematically in wholeness vs machine language | Not started. The original plan deferred this to Phase 4; the Wholeness Investigation closed before Phase 4 ran. |
 
 ---
 
@@ -120,6 +126,8 @@ This came up with the 2 MB HDI source CSV.
 
 ## Verification habits ("don't trust")
 
+*The full numbered version of these lives in [`discipline.md`](discipline.md) §2 (rules 8–14). The summary below is the operational reminder; for drift response and override syntax see `discipline.md` §4.*
+
 The user's standing instruction is **"verify, don't trust."** Apply this whenever you're about to commit a non-trivial finding, or when asked to "double check":
 
 1. **Reproduce the headline numbers from the actual data files.** Write quick Python (`python3 <<EOF` inline or a `/tmp/verify.py`) to recompute the correlation, the country count, the filter outcome. Don't take prose at its word.
@@ -133,6 +141,8 @@ The user's standing instruction is **"verify, don't trust."** Apply this wheneve
 The Session 5 chart-fix episode (commits `68230bf` → `70d49f2` → addendum in `sessions/session_05.md`) is the cautionary precedent for visual verification. The Session 6 audit (commits `1483826` and `sessions/session_06.md`) is the cautionary precedent for citation verification — a fabricated *"measurement trap"* attribution to the book that grep would have caught in two seconds. Both are logged as process failures so they don't recur.
 
 ## Model use — the asymmetric-pair pattern
+
+*Discipline rule 15. Full table of which class to use for which job lives in [`discipline.md`](discipline.md) §3.*
 
 Where it can be arranged, prose drafted by a smaller model gets read by a larger one before commit. Smaller models (Sonnet class) are well-suited to code generation, structured analysis, and routine pipeline work. Larger models (Opus class) are better-suited to careful citation, long-document recall, and voice consistency in a sustained book. Use both deliberately, not interchangeably.
 
