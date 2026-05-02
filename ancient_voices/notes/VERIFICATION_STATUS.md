@@ -12,20 +12,34 @@
 | `enuma_elish_1_line_11.txt` | Project Gutenberg #9914 | E. A. Wallis Budge (1921) | Public domain | Position 11 (control) |
 | `enuma_elish_1_line_12.txt` | Project Gutenberg #9914 | E. A. Wallis Budge (1921) | Public domain | **Position 12 (cluster)** |
 | `enuma_elish_1_line_13.txt` | Project Gutenberg #9914 | E. A. Wallis Budge (1921) | Public domain | Position 13 (control) |
+| `iching_hexagram_11.txt` | sacred-texts.com | James Legge (1899) | Public domain | Position 11 (Thâi / Peace — *yin-yang complement of 12*; flag in chapter) |
+| `iching_hexagram_12.txt` | sacred-texts.com | James Legge (1899) | Public domain | **Position 12 (cluster — Phî / Standstill)** |
+| `iching_hexagram_13.txt` | sacred-texts.com | James Legge (1899) | Public domain | Position 13 (Thung Zăn / Union of Men) |
 | `pyramid_texts_unas_utterance_213.txt` | pyramidtextsonline.com | Faulkner / Piankoff / Speleer | Public domain | First inscribed Unas utterance — *not* Faulkner Spell 12 (Spell 12 is not in the Unas pyramid). Used as Pyramid Texts representative. |
 | `pyramid_texts_unas_utterance_217.txt` | pyramidtextsonline.com | Faulkner / Piankoff / Speleer | Public domain | Wider-sample Unas utterance |
 | `gilgamesh_pennsylvania_tablet_dream.txt` | Wikisource | Stephen Langdon (1917) | Public domain | Old Babylonian "Tablet II" opening dream — *not* Standard Babylonian Tablet 12. Used as Gilgamesh wider-sample representative. |
+| `inanna_descent_opening.txt` | User-uploaded PDF | Wolkstein & Kramer (1983) | **Fair-use academic research excerpt** — translation in copyright through ~2083; ~25 lines from a 200+ page book; ETCSL would be the openly-licensed swap when reachable | Opening descent (position approximate; Inanna doesn't use conventional verse numbering) |
 
 **Status by text:**
-- **Hammurabi:** complete with full position-11/12/13 ✓
-- **Enuma Elish:** complete with full position-11/12/13 ✓
-- **Pyramid Texts:** Spell 12 (Faulkner numbering) not in PD via Unas. Two wider-sample passages saved. Session 8 chapter should flag honestly.
-- **Gilgamesh:** Standard Babylonian Tablet 12 not in PD via available sources. Pennsylvania Tablet (OB Tablet II) saved as wider-sample representative.
-- **I Ching:** see `iching_hexagram_12_DRAFT_wilhelm.md` — Wilhelm-Baynes content uploaded but in copyright; need Legge 1899 for `passages/`.
-- **Inanna's Descent:** still pending. ETCSL unreachable from both automated fetcher and the user.
-- **Ugaritic KTU 1.12:** still pending. No clean PD source identified.
+- **Hammurabi:** complete with full position-11/12/13 ✓ (PD)
+- **Enuma Elish:** complete with full position-11/12/13 ✓ (PD)
+- **I Ching:** complete with full position-11/12/13 ✓ (PD, Legge 1899) — Wilhelm-Baynes draft superseded; remains in `notes/` as a translation-sensitivity reference only
+- **Inanna's Descent:** opening passage saved as fair-use research excerpt ✓ — would migrate to ETCSL when reachable. No clean position-11/13 controls (the text is unnumbered).
+- **Pyramid Texts:** Spell 12 (Faulkner numbering) not in PD via Unas. Two wider-sample Unas utterances saved. Session 8 chapter should flag honestly that this text contributes wider-sample only, not the position-12 cluster test.
+- **Gilgamesh:** Standard Babylonian Tablet 12 not in PD via available sources. Pennsylvania Tablet (OB Tablet II) saved as wider-sample representative. Same note as Pyramid Texts for Session 8 chapter.
+- **Ugaritic KTU 1.12:** still pending. No clean PD source identified. May be skipped in Session 8 with the absence noted plainly.
 
-Nine files in `passages/`. Two more in `notes/` as drafts.
+13 files in `passages/`. Two more in `notes/` (this status doc + the superseded Wilhelm I Ching reference).
+
+## Session 8 — what's runnable now
+
+**Five of seven texts have something in `passages/`:**
+- 4 texts with full position-11/12/13: Hammurabi ✓, Enuma Elish ✓, I Ching ✓ + Inanna (12 only, no controls)
+- 2 texts with wider-sample passages only: Pyramid Texts (Unas), Gilgamesh (Pennsylvania Tablet)
+
+**The 12-cluster permutation test can run on three texts** (Hammurabi, Enuma Elish, I Ching) cleanly, with Inanna's opening counted on the 12-side without a 11/13 control. That's a meaningful test, with the chapter for Session 8 honestly noting what's been substituted and why.
+
+The **only fully-pending text** is Ugaritic KTU 1.12. If you can find a PD or open-access KTU 1.12 translation (Wyatt 2002 is paywalled; older fragments in academic open access exist on academia.edu sometimes), Session 8 has its full seven-text corpus. If not, six texts is fine.
 
 ## Pending — need copy-paste from one of these URLs
 

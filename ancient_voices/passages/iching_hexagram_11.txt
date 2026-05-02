@@ -1,0 +1,21 @@
+TEXT: I Ching (Yî King) — Hexagram XI: Thâi (Peace)
+POSITION: Hexagram 11
+TRANSLATION: James Legge (1899)
+SOURCE_URL: https://www.sacred-texts.com/ich/ic11.htm
+LANGUAGE: Classical Chinese (translated)
+DATE: ~9th century BCE (Zhou dynasty composition); 1899 CE English translation
+NOTES: From James Legge's translation of the *Yî King* in *Sacred Books of the East*, Volume 16 (Oxford, 1899). Legge died 1897; translation fully public domain worldwide. Position-11 control for the position-12 cluster. Important: per the Session 8 brief, Hexagram 11 (Thâi / Peace) is the explicit yin-yang structural complement of Hexagram 12 (Phî / Standstill) — the I Ching is the only one of the seven texts where the position-11 entry is also thematically loaded. The Session 8 permutation test should be reported with and without I Ching position-11 included (sensitivity check).
+
+In Thâi (we see) the little gone and the great come. (It indicates that) there will be good fortune, with progress and success.
+
+1. The first NINE, undivided, suggests the idea of grass pulled up, and bringing with it other stalks with whose roots it is connected. Advance (on the part of its subject) will be fortunate.
+
+2. The second NINE, undivided, shows one who can bear with the uncultivated, will cross the Ho without a boat, does not forget the distant, and has no (selfish) friendships. Thus does he prove himself acting in accordance with the course of the due Mean.
+
+3. The third NINE, undivided, shows that, while there is no state of peace that is not liable to be disturbed, and no departure (of evil men) so that they shall not return, yet when one is firm and correct, as he realises the distresses that may arise, he will commit no error. There is no occasion for sadness at the certainty (of such recurring changes); and in this mood the happiness (of the present) may be (long) enjoyed.
+
+4. The fourth SIX, divided, shows its subject fluttering (down);—not relying on his own rich resources, but calling in his neighbours. (They all come) not as having received warning, but in the sincerity (of their hearts).
+
+5. The fifth six, divided, reminds us of (king) Tî-yî's (rule about the) marriage of his younger sister. By such a course there is happiness and there will be great good fortune.
+
+6. The sixth six, divided, shows us the city wall returned into the moat. It is not the time to use the army. (The subject of the line) may, indeed, announce his orders to the people of his own city; but however correct and firm he may be, he will have cause for regret.

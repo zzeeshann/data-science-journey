@@ -1,6 +1,6 @@
-# I Ching Hexagram 12 — DRAFT (Wilhelm-Baynes content; NOT cleared for `passages/`)
+# I Ching Hexagram 12 — DRAFT (Wilhelm-Baynes content; SUPERSEDED in `passages/` by Legge 1899)
 
-*This file holds Wilhelm-Baynes Hexagram 12 content for human reference only. It must not be moved into `passages/` until either (a) Richard Wilhelm's 1923 German edition's English translation rights have been verified to permit reproduction in this project, or (b) the content has been swapped for James Legge 1899 (genuinely public domain). The Wilhelm-Baynes English translation (Bollingen Foundation / Princeton 1950, Cary F. Baynes from Wilhelm's 1923 German) is in copyright through ~2046.*
+*Status: SUPERSEDED. The user located James Legge's 1899 translation (fully public domain) in May 2026 and `passages/iching_hexagram_11.txt`, `passages/iching_hexagram_12.txt`, and `passages/iching_hexagram_13.txt` now contain the Legge versions. This Wilhelm-Baynes file remains as a comparative reference only — useful for a Tier-2 sensitivity check (does choice of translation move the I Ching meaningfully in vector space?) but not as the primary embedding input. The Wilhelm-Baynes English translation (Bollingen Foundation / Princeton 1950, Cary F. Baynes from Wilhelm's 1923 German) is in copyright through ~2046.*
 
 ## Source
 

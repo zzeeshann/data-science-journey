@@ -1,0 +1,36 @@
+TEXT: Descent of Inanna to the Underworld
+POSITION: Opening passage (the abandonment of cities and preparation for descent)
+TRANSLATION: Diane Wolkstein and Samuel Noah Kramer (1983), in *Inanna: Queen of Heaven and Earth* (Harper & Row)
+SOURCE_URL: User-uploaded PDF of the Wolkstein-Kramer translation, opening section
+LANGUAGE: Sumerian (translated)
+DATE: Composed ~1900 BCE (Old Babylonian copies of older Sumerian original); 1983 CE English translation
+NOTES: This excerpt (~25 lines, ~250 words) is included as a fair-use academic research quotation under US copyright law. Wolkstein died 2013, Kramer 1990; the 1983 translation remains in copyright through ~2083. The use here is non-commercial academic research with full citation and constitutes a small fraction of the full 200+ page book — falling within the four fair-use factors (research purpose, published work, small portion, no market substitution). The openly-licensed alternative is ETCSL (etcsl.orinst.ox.ac.uk) which was unreachable from both automated fetcher and the user's browser at the time of this verification round.
+
+Inanna's Descent does not use conventional verse numbering — the bundle's "~line 12" is approximate. This opening passage covers what the bundle's brief calls "the framing of Inanna's descent and her abandonment of titles" and serves as the position-12 candidate. No clean position-11 / position-13 controls exist because the text is not numbered. If we obtain ETCSL access in a later session, the line numbering used by ETCSL can be adopted retroactively and this file replaced.
+
+From the Great Above she opened her ear to the Great Below.
+From the Great Above the goddess opened her ear to the Great Below.
+From the Great Above Inanna opened her ear to the Great Below.
+My Lady abandoned heaven and earth to descend to the underworld.
+Inanna abandoned heaven and earth to descend to the underworld.
+In Uruk she abandoned her temple to descend to the underworld.
+In Badtibira she abandoned her temple to descend to the underworld.
+In Zabalam she abandoned her temple to descend to the underworld.
+In Adab she abandoned her temple to descend to the underworld.
+In Nippur she abandoned her temple to descend to the underworld.
+In Kish she abandoned her temple to descend to the underworld.
+In Akkad she abandoned her temple to descend to the underworld.
+She gathered together the seven me.
+She took them into her hands.
+
+With the me in her possession, she prepared herself:
+She placed the shugurra, the crown of the steppe, on her head.
+She arranged the dark locks of hair across her forehead.
+She tied the small lapis beads around her neck.
+Let the double strand of beads fall to her breast,
+And wrapped the royal robe around her body.
+She daubed her eyes with ointment called 'let him come, let him come.'
+Bound the breast plate called 'Come, man, come!' around her chest,
+Slipped the gold ring over her wrist,
+And took the lapis measuring rod and line in her hand.
+Inanna set out for the underworld.

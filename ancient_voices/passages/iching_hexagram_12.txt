@@ -1,0 +1,21 @@
+TEXT: I Ching (Yî King) — Hexagram XII: Phî (Standstill / Stagnation)
+POSITION: Hexagram 12
+TRANSLATION: James Legge (1899)
+SOURCE_URL: https://www.sacred-texts.com/ich/ic12.htm
+LANGUAGE: Classical Chinese (translated)
+DATE: ~9th century BCE (Zhou dynasty composition); 1899 CE English translation
+NOTES: From James Legge's translation of the *Yî King* in *Sacred Books of the East*, Volume 16 (Oxford, 1899). Legge died 1897; translation fully public domain worldwide. This is the "12-cluster" candidate for the I Ching. Hexagram 12 (Phî / Standstill) is the structural complement of Hexagram 11 (Thâi / Peace) — see notes on `iching_hexagram_11.txt`.
+
+In Phî there is the want of good understanding between the (different classes of) men, and its indication is unfavourable to the firm and correct course of the superior man. We see in it the great gone and the little come.
+
+1. The first SIX, divided, suggests the idea of grass pulled up, and bringing with it other stalks with whose roots it is connected. With firm correctness (on the part of its subject), there will be good fortune and progress.
+
+2. The second SIX, divided, shows its subject patient and obedient. To the small man (comporting himself so) there will be good fortune. If the great man (comport himself) as the distress and obstruction require, he will have success.
+
+3. The third SIX, divided, shows its subject ashamed of the purpose folded (in his breast).
+
+4. The fourth NINE, undivided, shows its subject acting in accordance with the ordination (of Heaven), and committing no error. His companions will come and share in his happiness.
+
+5. In the fifth NINE, undivided, we see him who brings the distress and obstruction to a close,—the great man and fortunate. (But let him say), 'We may perish! We may perish!' (so shall the state of things become firm, as if) bound to a clump of bushy mulberry trees.
+
+6. The sixth NINE, undivided, shows the overthrow (and removal of) the condition of distress and obstruction. Before this there was that condition. Hereafter there will be joy.
