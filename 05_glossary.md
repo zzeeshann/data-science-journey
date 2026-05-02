@@ -115,9 +115,17 @@ Nothing hallucinated. The number came from real execution. LLM is the brain, Pyt
 
 A survey instrument the Gallup World Poll and World Happiness Report use to measure subjective wellbeing. Respondents are asked to imagine a ladder with steps numbered 0 to 10, where the top step represents the best possible life for them and the bottom step the worst possible life, and to say which step they currently stand on. The country score reported each year is a three-year average of responses. First used in [Session 4](sessions/session_04.md).
 
+## Cosine similarity
+
+A single number between −1 and +1 that measures how close two vectors point in the same direction. Computed as the dot product of two vectors divided by the product of their lengths — geometrically, the cosine of the angle between them. +1 means the same direction (very similar), 0 means orthogonal (unrelated), −1 means opposite directions. For text [embeddings](#embedding) the value is almost always between 0 and 1 because the vector spaces these models produce don't really use the negative half. The standard way to ask "how semantically close are these two pieces of text" once both have been embedded. First used in [session_07.md](sessions/session_07.md).
+
 ## Dystopia + residual
 
 A single column in the World Happiness Report. It combines two things: the *Dystopia constant*, a time-invariant reference benchmark representing a hypothetical worst country (so every real country's contribution is positive), and the *residual*, which is the part of each country's happiness score that the six measured factors — GDP, social support, health, freedom, generosity, corruption — cannot explain. Because the Dystopia constant does not change over time, the *change* in this column between years is the *change in residual*: any year-over-year movement is the model's unexplained-component movement. Session 4 found this column fell in 98% of countries between 2019 and 2025 while measured factors rose in 99%, pointing to a systematic global variable the WHR model does not capture. First used in [Session 4](sessions/session_04.md).
+
+## Embedding
+
+A list of numbers — a vector — that a neural network produces from a piece of text such that pieces of text with similar meaning produce similar vectors. The model has been trained on billions of sentences in a way that gradually shapes the geometry of its output space: paragraphs about meditation end up near each other, paragraphs about tax policy end up near each other, and the two clusters end up far apart. Once you have an embedding for every piece of text in a corpus, you can ask quantitative questions about meaning that previously required reading: "which paragraphs are closest to this one?", "which corpora overlap?", "what's the unusual neighbour of this passage?" The vector itself is opaque — for [all-MiniLM-L6-v2](#sentence-transformer) it's 384 numbers per chunk, and no individual number means anything legible. The geometry between vectors is what carries the signal. First used in [session_07.md](sessions/session_07.md).
 
 ## H1 (growth ≠ development hypothesis)
 
@@ -150,6 +158,10 @@ A single number between −1 and +1 that summarises how tightly two variables mo
 ## Residual
 
 The difference between an actual observed value and the value predicted by a model: `residual = actual − predicted`. For a line of best fit, each point has a residual equal to its vertical distance above (positive) or below (negative) the line. In a more complex model like the World Happiness Report's six-factor regression, the residual is everything about the outcome the model's predictors cannot explain. Large residuals, plural, moving together across countries, are not noise — they are a signal that the model is missing a variable. First used in [Session 4](sessions/session_04.md).
+
+## Sentence-transformer
+
+A specific kind of [embedding](#embedding) model — a neural network trained so that whole sentences (and short paragraphs) get one vector each, with the geometry tuned for *semantic* similarity. Built on top of transformer architectures (BERT, MPNet, DistilBERT etc.) but with a final pooling step that collapses many word-vectors into one sentence-vector. The Python library `sentence-transformers` makes them one-liner-loadable from Hugging Face. The default Session 7 model is `all-MiniLM-L6-v2` — small (~80 MB, 22M parameters), fast, 384-dimensional output, runs comfortably on a [T4](#t4) and even on CPU for small corpora. The heavier sibling `all-mpnet-base-v2` produces sharper distinctions but is overkill for first contact. First used in [session_07.md](sessions/session_07.md).
 
 ## The mental division for this project
 

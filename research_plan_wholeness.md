@@ -25,6 +25,8 @@ The book makes specific, testable claims. We will test them.
 
 **H3 — The language of wholeness is rising in modern writing.** In the last 20 years, the language of connection, system, ecosystem, interdependence, meaning, purpose has become more common in public discourse. The language of pure mechanism, optimisation, individual achievement is plateauing or declining.
 
+*Corpus extension (added in Session 7 planning).* The H3 corpus extends to a small set of verified passages from the oldest written texts (Sumerian, Egyptian, Chinese, Levantine, Indus, Elamite, Minoan, Nubian sources) — initially the seven "12-cluster" passages and their position-11 / position-13 controls. The extension lets H3 be tested against a sharper question than "is the language of wholeness rising in modern writing": *is what's rising the same register the oldest texts already mapped?* Cross-era cosine similarity in Session 8 is the first test of the sharper version. Verified passages live in `ancient_voices/passages/`. The extension does not introduce a new top-level hypothesis — it widens H3's corpus.
+
 **H4 — Cultures vary systematically.** Some cultures (regions, language groups) describe consciousness, meaning, and the self in more "wholeness" terms; others in more "machine" terms. This varies measurably and connects to wellbeing outcomes.
 
 These four hypotheses give the project a spine. Every session contributes to one or more of them.
@@ -49,6 +51,9 @@ All free, all public.
 **The book itself:**
 - *Thinking in Wholes* (2026) — saved to `/data/raw/`. Functions as the **theoretical lens** that supplies the categories we measure (wholeness, connection, development, system) — not as a data point in the comparison.
 
+**Verified ancient text passages:**
+- `ancient_voices/passages/` — primary-source-verified passages from the oldest writing (Gilgamesh, Enuma Elish, Hammurabi, Descent of Inanna, I Ching, Pyramid Texts, Ugaritic, plus controls). Loaded into the embedding pipeline alongside the modern corpus from Session 8 onward. Format spec in `ancient_voices/passages/README.md`.
+
 ## The Hugging Face models we will use
 
 Each session introduces one new tool from the modern AI toolkit. By the end you will have used:
@@ -63,7 +68,7 @@ Each session introduces one new tool from the modern AI toolkit. By the end you 
 
 Each session has one clear job. The book chapter and session record after each one becomes part of the long story.
 
-*Note on numbering: an unplanned Session 6 was inserted as a process audit (lower-model errors caught in Chapter 6 — see [sessions/session_06.md](sessions/session_06.md)). The originally-planned Sessions 6 through 10 below have therefore shifted to Sessions 7 through 11. Total arc is now 11 sessions instead of 10.*
+*Note on numbering: an unplanned Session 6 was inserted as a process audit (lower-model errors caught in Chapter 6 — see [sessions/session_06.md](sessions/session_06.md)). The originally-planned Sessions 6 through 10 shifted to Sessions 7 through 11. A further insertion was added in Session 7 planning: Session 8 — The Oldest Voices — extends the embedding pipeline from Session 7 to a verified ancient-text corpus, providing the first quantitative test of the 12-cluster and the first cross-era resonance test under H3. Originally-planned Sessions 8–11 therefore shift to Sessions 9–12. Total arc is now 12 sessions.*
 
 ### Session 4 — Country-scale wellbeing baseline
 **Job:** Load the World Happiness Report data. Build a country-by-country, year-by-year picture of happiness, social support, GDP, freedom, trust. Make the first cross-country comparison chart. Begin testing **H1** (growth ≠ development) and **H2** (connection > wealth).
@@ -80,22 +85,27 @@ Each session has one clear job. The book chapter and session record after each o
 **New skill:** what an embedding is; loading a HF model; cosine similarity; the first "the model found something I didn't tell it to look for" moment.
 **Output:** similarity matrix; surprising matches and surprising mismatches written up honestly.
 
-### Session 8 — Mapping the language of wholeness across Reddit
+### Session 8 — The Oldest Voices: embeddings meet ancient texts
+**Job:** Reuse Session 7's embedding pipeline. Add a verified ancient-text corpus from `ancient_voices/passages/` — the seven "12-cluster" passages, their position-11 / position-13 controls, plus a wider random sample from the same texts. Run two specific tests: (1) is the 12-cluster's mean within-similarity above the 95th percentile of a permutation distribution drawn from the pooled ancient corpus? (2) are modern wholeness texts closer to the "12" passages than to the wider ancient sample?
+**New skill:** working with multiple corpora in one embedding space; permutation testing; cross-era comparison; pre-registered prediction.
+**Output:** falsification result on the 12-cluster (positive, null, or borderline — all valid findings); cross-era similarity numbers; UMAP chart of combined modern + ancient embedding space.
+
+### Session 9 — Mapping the language of wholeness across Reddit
 **Job:** Pull a large corpus from r/decidingtobebetter or r/Meditation (or both). Use zero-shot classification to label each post on dimensions: connection, isolation, growth-language, systems-language, meaning, purpose, mechanism. Quantify the language of wholeness in modern lay writing. First test of **H3**.
 **New skill:** zero-shot classification; large-corpus processing on Colab; dealing with messy social text.
 **Output:** distribution chart — what % of posts in each subreddit lean wholeness vs machine. Sample passages for each.
 
-### Session 9 — Cross-cultural values via World Values Survey
+### Session 10 — Cross-cultural values via World Values Survey
 **Job:** Load WVS data. Identify which countries cluster on "wholeness" values (trust in others, sense of community, meaning, traditional bonds) vs "machine" values (individual achievement, material success, optimisation). Cross-reference with happiness data. Test **H4**.
 **New skill:** cluster analysis; categorical data; large multi-country surveys.
 **Output:** map or chart of "wholeness clusters" of countries. Honest discussion of what this does and doesn't show.
 
-### Session 10 — Topic modelling: what the world is actually saying
+### Session 11 — Topic modelling: what the world is actually saying
 **Job:** Use BERTopic on a multi-year news or text corpus. Let the model find topics without us telling it what to look for. See whether the language of connection, system, wholeness has actually risen over time in public discourse.
 **New skill:** unsupervised topic modelling; reading model output sceptically.
 **Output:** topic trends over time; honest discussion of whether the H3 prediction holds.
 
-### Session 11 — Synthesis: the wholeness investigation
+### Session 12 — Synthesis: the wholeness investigation
 **Job:** Pull every finding into one piece of writing. State which hypotheses survived, which didn't, and what the data actually showed. The book's biggest chapter so far.
 **New skill:** putting research together. Writing a real argument backed by your own work.
 **Output:** chapter, possibly multi-part, that's the strongest thing in the book so far. Possibly the whole project's first publishable artefact.

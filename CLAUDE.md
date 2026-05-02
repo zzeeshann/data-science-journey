@@ -20,13 +20,13 @@ If a question is about mechanics (commits, force-adds, file conventions, verific
 
 ## Where the project is right now
 
-**Phase:** 2 of 5 (country-scale wellbeing/development) is complete. Phase 3 (embeddings) is next.
+**Phase:** 3 of 5 (embeddings + cross-era language work) is open. Session 7 closed the first NLP session of the project.
 
-**Hook the investigation now orbits:** Across 141 countries between 2019 and 2025, measured factors in the World Happiness Report rose in 99% of countries while the unexplained residual fell in 98%. Session 5 ruled out HDI stagnation as the explanation — neither income nor development metrics can see what's falling. The rest of the investigation is trying to name it.
+**Hook the investigation now orbits:** Across 141 countries between 2019 and 2025, measured factors in the World Happiness Report rose in 99% of countries while the unexplained residual fell in 98%. Session 5 ruled out HDI stagnation as the explanation — neither income nor development metrics can see what's falling. The rest of the investigation is trying to name it. Phase 3 attacks the question through language; Session 7 produced the first language-level data point.
 
-**Last session committed:** Session 6 (a process audit — caught and fixed lower-model errors in the Chapter 6 work, set up new verification habits and the asymmetric-pair pattern). The Wholeness Investigation did not advance this session.
+**Last session committed:** Session 7 (embeddings: first encounter). 1,744 paragraph-level chunks across *Thinking in Wholes*, the Ackoff lecture, and James 1890 embedded with `all-MiniLM-L6-v2`. Reddit r/Meditation returned HTTP 403 (anonymous JSON access hardened) — deferred to Session 9. The unplanned cross-era finding: James 1890 ↔ *Thinking in Wholes* 2026 hit cosine 0.5376 on a real semantic resonance — *the meaningful properties are in the relationships, not the parts* — passing the falsification check. The 1890 voice is already in the room.
 
-**Next session:** Session 7 — embeddings and language. Per `research_plan_wholeness.md`, this is the project's first real NLP session (it was originally the planned scope for Session 6 before Session 6 became a process audit). Probable scope: load *Thinking in Wholes*, the Ackoff lecture, William James 1890, and a Reddit corpus or two; embed with a Hugging Face model; compare semantic similarity in the language of wholeness vs fragmentation across eras. Final scope is set in the next session-planning conversation.
+**Next session:** Session 8 — The Oldest Voices. Reuse Session 7's pipeline. Add the verified ancient-text corpus from `ancient_voices/passages/` once primary-source verification produces the seven 12-cluster passages plus position-11/13 controls. Two pre-registered tests: 12-cluster vs permutation baseline; modern-wholeness ↔ ancient-12 cross-era resonance. See `start_session_08.md` and `ANCIENT_TEXTS_READING_GUIDE.md` at repo root for the verification reading order.
 
 ### Hypotheses status
 
@@ -36,8 +36,8 @@ From `research_plan_wholeness.md`:
 |---|---|---|
 | **H1** | Growth and development have decoupled | Tested in Session 5. Filed as partial pattern, not global law. 38 of 129 countries fit (GDP up, HDI flat, residual collapsing). |
 | **H2** | Connection predicts wellbeing better than wealth | Surface-tested in Session 4 cross-section. Inconclusive at noise level (0.812 vs 0.799). Needs richer connection measure than WHR's one-question social-support proxy. |
-| **H3** | The language of wholeness is rising in modern writing | Not tested. Phase 3 (Sessions 7–8). |
-| **H4** | Cultures vary systematically in wholeness vs machine language | Not tested. Phase 4 (Sessions 9–10). |
+| **H3** | The language of wholeness is rising in modern writing | Corpus extended in Session 7 planning to include verified ancient-text passages. Tested partially: Session 7 found a 1890 ↔ 2026 cross-era resonance on a small sample; Session 8 runs the first quantitative cross-era test on ancient texts; Session 9 (Reddit zero-shot) and Session 11 (BERTopic) close the modern half. |
+| **H4** | Cultures vary systematically in wholeness vs machine language | Not tested. Phase 4 (Session 10 onward). |
 
 ---
 
@@ -88,6 +88,7 @@ data/raw/ackoff_lecture_systems_age.txt
 data/raw/thinking_in_wholes_2026.md
 data/raw/WHR26_Data_Figure_2.1.xlsx
 data/raw/HDR25_Composite_indices_complete_time_series.csv
+data/raw/james_principles_psychology_1890.txt
 data/processed/whr2025_clean.csv
 data/processed/whr_changes_2019_2025.csv
 data/processed/session_05_merged.csv
