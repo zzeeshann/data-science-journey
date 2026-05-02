@@ -1,0 +1,19 @@
+TEXT: Pyramid Texts of Unas
+POSITION: Utterance 217 (Sarcophagus Chamber, South Wall — the four cardinal directions invocation)
+TRANSLATION: After Faulkner / Piankoff / Speleer (compiled, public domain via pyramidtextsonline.com)
+SOURCE_URL: https://www.pyramidtextsonline.com/translation.html
+LANGUAGE: Old Egyptian (translated)
+DATE: ~2350 BCE; modern compiled translation
+NOTES: Wider-sample passage from the Unas Pyramid Texts. Utterance 217 is the four-cardinal-direction declaration of Unas's apotheosis ("Unas comes to you, an Imperishable Spirit"), repeated four times to gods of South, North, West, East. Used as a Pyramid Texts wider-sample passage for Session 8's permutation baseline.
+
+To say the words: "Re-Atum, Unas comes to you, an Imperishable Spirit, Lord of Dispensation in the site of the four papyrus columns. Your son comes to you, this Unas comes to you, that you (both) may stride over the sky, united in darkness, that you may rise on the horizon in the place where you like to be.
+
+Seth and Nephtys, hurry! Announce to the gods of the South and their spirits: He comes indeed, this Unas, an Imperishable Spirit! If he wills that you will die, you will die; If he wills that you will live, you will live.
+
+Osiris and Isis, hurry! Announce to the gods of the North and their spirits: He comes indeed, this Unas, an Imperishable Spirit, like the honored (star) over the Nile, so that the spirits in the waters honor him. Whom he wills that he live, he lives. Whom he will that he die, he dies.
+
+Thoth, hurry! Announce to the gods of the West and their spirits: He comes indeed, this Unas, an Imperishable Spirit, decked like Anubis on the neck, who rules over the Western Mountain, that he may reckon hearts and that he may have power over breasts! Whom he wills that he live, he lives. Whom he will that he die, he dies.
+
+Horus, hurry! Announce to the gods of the East and their spirits: He comes indeed, this Unas, an Imperishable Spirit! Whom he wills that he live, he lives. Whom he will that he die, he dies.
+
+Re-Atum! your son comes to you, Unas comes to you. Let him ascend to you! Enfold him in your embrace! This is the son of your body, eternally."

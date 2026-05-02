@@ -1,0 +1,11 @@
+TEXT: Pyramid Texts of Unas
+POSITION: Utterance 213 (Sarcophagus Chamber, South Wall — first inscribed utterance of Unas's pyramid)
+TRANSLATION: After Faulkner / Piankoff / Speleer (compiled, public domain via pyramidtextsonline.com)
+SOURCE_URL: https://www.pyramidtextsonline.com/translation.html
+LANGUAGE: Old Egyptian (translated)
+DATE: ~2350 BCE (Unas, last king of 5th Dynasty); modern compiled translation
+NOTES: The Unas pyramid is the oldest pyramid bearing inscribed religious texts. Faulkner Spells 11, 12, 13 are not inscribed in Unas — the lowest-numbered utterance in Unas is 23. This file is therefore Unas's *first inscribed* utterance (Utterance 213) rather than the Faulkner-numbered Spell 12; thematically, however, it is the opening declaration of the Unas afterlife program ("you have not gone dead, you have gone alive") and serves as the Pyramid Texts representative for the death/threshold theme the 12-cluster tests. Position 12 in Faulkner numbering would require access to Teti or Pepi I pyramid translations in PD, which were not located.
+
+O Unas, you have not gone dead, you have gone alive to sit on the throne of Osiris. Your scepter is in your hand that you may give orders to the living, the handle of your lotus-shaped scepter in your hand. Give orders to those of the Mysterious Sites (the dead)!
+
+Your arm is that of Atum, your shoulders are those of Atum, your belly is that of Atum, your back is that of Atum, your bottom is that of Atum, your two legs are those of Atum, your face is that of Anubis. The sites of Horus serve you, the sites of Seth serve you.

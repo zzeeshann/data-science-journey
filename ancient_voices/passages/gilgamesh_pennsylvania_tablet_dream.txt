@@ -1,0 +1,17 @@
+TEXT: Epic of Gilgamesh — Pennsylvania Tablet (Old Babylonian recension, "Tablet II")
+POSITION: Opening dream sequence (lines 1–25 of Langdon's transliteration / translation)
+TRANSLATION: Stephen Langdon (1917)
+SOURCE_URL: https://en.wikisource.org/wiki/The_Epic_of_Gilgamish
+LANGUAGE: Akkadian / Old Babylonian (translated)
+DATE: Composed ~1800 BCE (Old Babylonian); 1917 CE English translation
+NOTES: This is NOT the canonical Standard Babylonian Tablet 12 (the netherworld appendix to the late recension). The Pennsylvania Tablet is an Old Babylonian fragment published by Stephen Langdon in 1917 (University of Pennsylvania, *The Epic of Gilgamish*, vol. X, no. 3 of the Babylonian Section publications). Andrew George 1999 corresponds it to "Tablet II" of his composite Old Babylonian arrangement. Langdon 1917 is fully in the public domain (author died 1937; published before 1929). The canonical Tablet 12 of the Standard Babylonian recension is not available in a public-domain English translation that I could fetch automatedly. This passage is therefore Gilgamesh's wider-sample representative for Session 8, not the position-12 candidate.
+
+Gilgamish arose interpreting dreams, addressing his mother.
+
+"My mother! during my night I, having become lusty, wandered about in the midst of omens. And there came out stars in the heavens, Like a … of heaven he fell upon me. I bore him but he was too heavy for me. He bore a net but I was not able to bear it. I summoned the land to assemble unto him, that heroes might kiss his feet. He stood up before me and they stood over against me. I lifted him and carried him away unto thee."
+
+The mother of Gilgamish she that knows all things, said unto Gilgamish:—
+
+"Truly oh Gilgamish he is born in the fields like thee. The mountains have reared him. Thou beholdest him and art distracted(?). Heroes kiss his feet. Thou shalt spare him…. Thou shalt lead him to me."
+
+Again he dreamed and saw another dream and reported it unto his mother.

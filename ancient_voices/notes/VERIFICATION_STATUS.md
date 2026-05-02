@@ -4,16 +4,28 @@
 
 ## Done — in `passages/`
 
-| File | Source | Translator + year | License |
-|---|---|---|---|
-| `hammurabi_law_11.txt` | Project Gutenberg #17150 | C. H. W. Johns (1903) | Public domain |
-| `hammurabi_law_12.txt` | Project Gutenberg #17150 | C. H. W. Johns (1903) | Public domain |
-| `hammurabi_law_13.txt` | Project Gutenberg #17150 | C. H. W. Johns (1903) | Public domain |
-| `enuma_elish_1_line_11.txt` | Project Gutenberg #9914 | E. A. Wallis Budge (1921) | Public domain |
-| `enuma_elish_1_line_12.txt` | Project Gutenberg #9914 | E. A. Wallis Budge (1921) | Public domain |
-| `enuma_elish_1_line_13.txt` | Project Gutenberg #9914 | E. A. Wallis Budge (1921) | Public domain |
+| File | Source | Translator + year | License | Position |
+|---|---|---|---|---|
+| `hammurabi_law_11.txt` | Project Gutenberg #17150 | C. H. W. Johns (1903) | Public domain | Position 11 (control) |
+| `hammurabi_law_12.txt` | Project Gutenberg #17150 | C. H. W. Johns (1903) | Public domain | **Position 12 (cluster)** |
+| `hammurabi_law_13.txt` | Project Gutenberg #17150 | C. H. W. Johns (1903) | Public domain | Position 13 (control) |
+| `enuma_elish_1_line_11.txt` | Project Gutenberg #9914 | E. A. Wallis Budge (1921) | Public domain | Position 11 (control) |
+| `enuma_elish_1_line_12.txt` | Project Gutenberg #9914 | E. A. Wallis Budge (1921) | Public domain | **Position 12 (cluster)** |
+| `enuma_elish_1_line_13.txt` | Project Gutenberg #9914 | E. A. Wallis Budge (1921) | Public domain | Position 13 (control) |
+| `pyramid_texts_unas_utterance_213.txt` | pyramidtextsonline.com | Faulkner / Piankoff / Speleer | Public domain | First inscribed Unas utterance — *not* Faulkner Spell 12 (Spell 12 is not in the Unas pyramid). Used as Pyramid Texts representative. |
+| `pyramid_texts_unas_utterance_217.txt` | pyramidtextsonline.com | Faulkner / Piankoff / Speleer | Public domain | Wider-sample Unas utterance |
+| `gilgamesh_pennsylvania_tablet_dream.txt` | Wikisource | Stephen Langdon (1917) | Public domain | Old Babylonian "Tablet II" opening dream — *not* Standard Babylonian Tablet 12. Used as Gilgamesh wider-sample representative. |
 
-That's two of the seven texts done with full controls — six files in place.
+**Status by text:**
+- **Hammurabi:** complete with full position-11/12/13 ✓
+- **Enuma Elish:** complete with full position-11/12/13 ✓
+- **Pyramid Texts:** Spell 12 (Faulkner numbering) not in PD via Unas. Two wider-sample passages saved. Session 8 chapter should flag honestly.
+- **Gilgamesh:** Standard Babylonian Tablet 12 not in PD via available sources. Pennsylvania Tablet (OB Tablet II) saved as wider-sample representative.
+- **I Ching:** see `iching_hexagram_12_DRAFT_wilhelm.md` — Wilhelm-Baynes content uploaded but in copyright; need Legge 1899 for `passages/`.
+- **Inanna's Descent:** still pending. ETCSL unreachable from both automated fetcher and the user.
+- **Ugaritic KTU 1.12:** still pending. No clean PD source identified.
+
+Nine files in `passages/`. Two more in `notes/` as drafts.
 
 ## Pending — need copy-paste from one of these URLs
 
