@@ -111,6 +111,10 @@ The real fix to the math problem. The LLM doesn't do the math — it **writes Py
 
 Nothing hallucinated. The number came from real execution. LLM is the brain, Python is the calculator. This is how all serious 2026 AI systems work. "Agents" = LLMs with tools attached.
 
+## Ancient Voices
+
+A deliberately narrow corpus of verified primary-source passages from civilisations with no confirmed direct contact, kept in `ancient_voices/passages/` as one `.txt` file per passage. Each file carries a citation header — text, position, translator, source URL, language, date — and a body of the passage in a single human translation. Translations are public-domain where possible (Hammurabi from Johns 1903, Enuma Elish from Budge 1921, I Ching from Legge 1899) and explicit fair-use research excerpts where no PD English translation exists (Inanna's Descent, Ugaritic). Used as the fourth corpus in the Session 8 embedding pipeline alongside *Thinking in Wholes*, the Ackoff lecture, and James 1890. First used in [session_08.md](sessions/session_08.md).
+
 ## Cantril ladder
 
 A survey instrument the Gallup World Poll and World Happiness Report use to measure subjective wellbeing. Respondents are asked to imagine a ladder with steps numbered 0 to 10, where the top step represents the best possible life for them and the bottom step the worst possible life, and to say which step they currently stand on. The country score reported each year is a three-year average of responses. First used in [Session 4](sessions/session_04.md).
@@ -126,6 +130,10 @@ A single column in the World Happiness Report. It combines two things: the *Dyst
 ## Embedding
 
 A list of numbers — a vector — that a neural network produces from a piece of text such that pieces of text with similar meaning produce similar vectors. The model has been trained on billions of sentences in a way that gradually shapes the geometry of its output space: paragraphs about meditation end up near each other, paragraphs about tax policy end up near each other, and the two clusters end up far apart. Once you have an embedding for every piece of text in a corpus, you can ask quantitative questions about meaning that previously required reading: "which paragraphs are closest to this one?", "which corpora overlap?", "what's the unusual neighbour of this passage?" The vector itself is opaque — for [all-MiniLM-L6-v2](#sentence-transformer) it's 384 numbers per chunk, and no individual number means anything legible. The geometry between vectors is what carries the signal. First used in [session_07.md](sessions/session_07.md).
+
+## Falsification
+
+In this project's sense: writing the prediction down before running the test, then accepting whatever the test produces — including outcomes that contradict the prediction. The opposite of running the test, seeing the result, and *then* deciding what counts as "expected." A pre-registered prediction sitting next to a null result is data the project keeps; a result interpreted only after the fact is storytelling. Borderline outcomes are reported as borderline rather than nudged into one column. Session 8 wrote two pre-registered predictions, ran two tests, and reported a rejection on one ([twelve-cluster](#twelve-cluster)) and a support on the other (cross-era resonance). First used in [session_08.md](sessions/session_08.md).
 
 ## H1 (growth ≠ development hypothesis)
 
@@ -155,6 +163,10 @@ A dataset with both a cross-section dimension (e.g. country) and a time dimensio
 
 A single number between −1 and +1 that summarises how tightly two variables move together in a straight-line relationship. +1 = perfect positive line, 0 = no linear relationship, −1 = perfect negative line. Invariant under positive linear transforms, so scaling or shifting either variable doesn't change *r*. Does **not** capture non-linear relationships and is vulnerable to outliers — see the Venezuela moment in [Session 4](sessions/session_04.md), where dropping one broken row shifted *r* from +0.745 to +0.799. In pandas: `df['a'].corr(df['b'])`.
 
+## Permutation test
+
+A way of asking *"could this number have come up by chance?"* by re-running the calculation thousands of times on randomly-shuffled or randomly-resampled data, building a *null distribution* of what the calculation produces under chance, and seeing where the real number falls within it. If the real number sits at the ninety-ninth percentile of the random distribution, fewer than one per cent of random arrangements would produce something that extreme — strong evidence the real number isn't chance. If it sits at the fiftieth, the real arrangement is indistinguishable from chance. Session 8 used a 10,000-iteration permutation test on the [twelve-cluster](#twelve-cluster) by pooling all fifteen ancient passages, sampling four at random ten thousand times, and asking where the observed sim_12 fell in the resulting null distribution. It fell at the forty-fifth percentile. First used in [session_08.md](sessions/session_08.md).
+
 ## Residual
 
 The difference between an actual observed value and the value predicted by a model: `residual = actual − predicted`. For a line of best fit, each point has a residual equal to its vertical distance above (positive) or below (negative) the line. In a more complex model like the World Happiness Report's six-factor regression, the residual is everything about the outcome the model's predictors cannot explain. Large residuals, plural, moving together across countries, are not noise — they are a signal that the model is missing a variable. First used in [Session 4](sessions/session_04.md).
@@ -162,6 +174,14 @@ The difference between an actual observed value and the value predicted by a mod
 ## Sentence-transformer
 
 A specific kind of [embedding](#embedding) model — a neural network trained so that whole sentences (and short paragraphs) get one vector each, with the geometry tuned for *semantic* similarity. Built on top of transformer architectures (BERT, MPNet, DistilBERT etc.) but with a final pooling step that collapses many word-vectors into one sentence-vector. The Python library `sentence-transformers` makes them one-liner-loadable from Hugging Face. The default Session 7 model is `all-MiniLM-L6-v2` — small (~80 MB, 22M parameters), fast, 384-dimensional output, runs comfortably on a [T4](#t4) and even on CPU for small corpora. The heavier sibling `all-mpnet-base-v2` produces sharper distinctions but is overkill for first contact. First used in [session_07.md](sessions/session_07.md).
+
+## Twelve-cluster
+
+The pre-registered hypothesis tested in Session 8: that across several ancient civilisations with no confirmed direct contact (Hammurabi, Enuma Elish, the I Ching, the Descent of Inanna, the Pyramid Texts, Gilgamesh, the Ugaritic Baal cycle), the passage at structural position twelve in canonical works clusters in [embedding](#embedding) space tightly enough to be statistically distinguishable from a random selection of passages from the same texts. Tested as one candidate name for what's in the residual. The 10,000-iteration [permutation test](#permutation-test) put the observed cluster at the forty-fifth percentile of the null distribution — *below* the median of arbitrary four-passage selections. The hypothesis was rejected and the cluster filed as selection bias. Verification reading between sessions also surfaced a methodological problem the original framing hadn't anticipated: position-twelve isn't the same kind of unit across texts (KTU 1.12 is a museum catalogue index, Faulkner Spell 12 is a scholar's catalogue number, Gilgamesh Tablet 12 is the appended Sumerian source), so three of the seven planned texts contributed wider-sample-only. First used in [session_08.md](sessions/session_08.md).
+
+## UMAP
+
+Uniform Manifold Approximation and Projection. A dimensionality-reduction algorithm that takes high-dimensional vectors (e.g. 384-dimensional [embeddings](#embedding)) and projects them to 2D for plotting, while attempting to preserve local neighbourhood structure: points that were close in the original space stay close on the chart. UMAP charts are useful for visual gut-checks but the 2D distances on the page are *not* the actual cosines — the chart is for the eye, not for measurement. Conclusions about clustering structure must be backed by the underlying similarity matrix, not just the projection. Sessions 7 and 8 both use UMAP with `n_neighbors=15`, `min_dist=0.1`, `metric="cosine"`, `random_state=42`. First used in [session_07.md](sessions/session_07.md).
 
 ## The mental division for this project
 
