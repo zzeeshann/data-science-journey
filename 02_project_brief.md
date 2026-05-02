@@ -3,8 +3,8 @@
 *A multi-year data science investigation into how humans describe consciousness, meaning, and the self — and how societies around the world are actually doing under the categories the project's theoretical lens names.*
 
 **Started:** April 2026
-**Status:** Wholeness Investigation in progress (Sessions 4 onwards).
-**Related:** [03_project_structure.md](03_project_structure.md) · [04_roadmap.md](04_roadmap.md) · [research_plan_wholeness.md](research_plan_wholeness.md)
+**Status (updated 2026-05-03):** The project's first major investigation — the Wholeness Investigation, on sub-question 2 — closed at Session 9. Sessions 10–13 wrapped the existing book into a complete and conclusive artefact. The project itself remains open; the next investigation has not been chosen.
+**Related:** [discipline.md](discipline.md) · [03_project_structure.md](03_project_structure.md) · [04_roadmap.md](04_roadmap.md) · [research_plan_wholeness.md](research_plan_wholeness.md) · [summary_for_a_reader.md](summary_for_a_reader.md)
 
 ---
 
@@ -57,6 +57,8 @@ All free, all public.
 - **Phase 3 (Sessions 7–8):** Embeddings and zero-shot classification. Semantic comparison of the book, Ackoff, James, Reddit corpora. Quantify the language of wholeness.
 - **Phase 4 (Sessions 9–10):** Cross-cultural values (World Values Survey) and topic modelling on large corpora.
 - **Phase 5 (Session 11 and beyond):** Synthesis. Pull every finding into one piece of writing. If the work is strong enough, it becomes a public artefact.
+
+**Status (2026-05-03) — what actually ran.** Phases 1–3 ran roughly as planned through Session 9. Phases 4–5 were superseded mid-execution by the Session 10 audit, which surfaced a unit-of-analysis problem the chapter framing had hidden (see [`project_state.md`](project_state.md) and [`book/chapter_10.md`](book/chapter_10.md)). The decision was Option C — honest close. Sessions 10–13 became the wrap-up: Session 10 audited; Session 11 wrote Chapter 10 (the lessons-learned chapter) and patched bridge sentences across chapters 5/6/7/9; Session 12 ran the readability audit; Session 13 produced the four summary files at repo root ([`mistakes_made.md`](mistakes_made.md), [`summary_for_a_reader.md`](summary_for_a_reader.md), [`improvements.md`](improvements.md), [`reader_glossary_audit.md`](reader_glossary_audit.md)) plus [`discipline.md`](discipline.md). World Values Survey work and BERTopic topic modelling never ran. The original 6-to-10-session arc estimate became a 9-substantive-plus-4-wrap-up arc. The book is now complete; the next investigation will produce its own plan file.
 
 ## Deliverables
 

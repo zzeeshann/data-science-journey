@@ -1,6 +1,6 @@
 # Chapter 10 — What I Got Wrong, and How I Caught It
 
-This is the last chapter of the investigation. It is the most important chapter for a learner because it is the only one about the thing that actually went wrong. The earlier chapters tell what the project found. This one tells what the project's own framing claimed beyond what the data actually showed, how I caught it, and what to carry into the next project. If you only read one chapter to learn from this book, read this one.
+This is the last chapter of the investigation. It is the most important chapter for a learner because it is the only one about the thing that actually went wrong. The earlier chapters tell what the project found. This one tells what the project's own framing claimed beyond what the data actually showed, how I caught it, and what to carry into the next investigation. If you only read one chapter to learn from this book, read this one.
 
 ## What the investigation actually found
 
@@ -20,17 +20,17 @@ The mistake has a clean name: I crossed a unit-of-analysis boundary without buil
 
 This kind of mistake is hard to see because it does not feel wrong. The chapters read smoothly. Each session produced real numbers. The narrative *flowed.* That is exactly the failure mode: a story that connects findings the data don't actually connect feels more honest than two findings sitting next to each other without a story. The story does the work the statistics should be doing.
 
-## How to catch this on the next project
+## How to catch this on the next investigation
 
 The discipline that would have caught this mistake is one sentence long. **Before any session, ask: what is the unit I am measuring, and does that unit match the question I am trying to answer?** If the question is about countries, the data needs countries. If the question is about texts, the data needs texts. If the goal is to connect the two, the data needs both at once. A question framed at one level cannot be answered with data at a different level, no matter how interesting the data is.
 
 I did not ask this question consistently. The investigation's headline question was about countries — what is in the residual that the WHR cannot see across 141 countries — and I let the unit shift to paragraphs in Phase 3 without acknowledging that the question had quietly shifted with it. The chapters then framed the paragraph-level work as if it were still answering the country-level question. The framing was the lie. The numbers themselves were honest.
 
-The other discipline that would have caught it is something Session 6 already added to this project's standing process: read what you wrote and ask whether the data supports the claim. The Session 6 audit caught a fabricated quote because the discipline was a `grep` against the source document. The same discipline applied at the framing level would have asked: *does this chapter's claim that "the language work names the residual" have a regression in any session record that connects language features to country-level outcomes?* The answer would have been no, and the framing would have been corrected before it landed. The discipline existed; it was applied to citations and not to framing claims. That is one specific habit to widen on the next project.
+The other discipline that would have caught it is something Session 6 already added to this project's standing process: read what you wrote and ask whether the data supports the claim. The Session 6 audit caught a fabricated quote because the discipline was a `grep` against the source document. The same discipline applied at the framing level would have asked: *does this chapter's claim that "the language work names the residual" have a regression in any session record that connects language features to country-level outcomes?* The answer would have been no, and the framing would have been corrected before it landed. The discipline existed; it was applied to citations and not to framing claims. That is one specific habit to widen on the next investigation.
 
 ## What to carry into the next investigation
 
-Three things, written here so that future me, starting a different project on a different topic, has them in one place.
+Three things, written here so that future me, starting the next investigation in this project on a topic yet to be chosen, has them in one place.
 
 First, write the unit of analysis at the top of every session brief, in one sentence, before any code runs. *"This session measures one number per country."* Or *"This session measures one number per paragraph pair."* If a session would need to bridge two units, the bridge is a separate piece of the brief — built deliberately, not assumed.
 
@@ -40,6 +40,6 @@ Third, when chapters make claims that connect findings, the connection itself is
 
 ## Closing
 
-The Wholeness Investigation closes here. The country-scale finding from Sessions 4 and 5 is real and replicable. The Reddit↔James 1890 phenomenology finding from Session 9 is real and replicable. The two falsifications are real and replicable. The framing that wrapped them into one continuous investigation was not earned by the data and has now been corrected. Two more sessions remain in this book's wrap-up — Session 12 reads every chapter as if a beginner is encountering it and patches the readability gaps, Session 13 produces the four summary files the next investigation can be planned against. After Session 13, the book is complete and a different project begins on a different topic with a clearer head.
+The Wholeness Investigation closes here. The country-scale finding from Sessions 4 and 5 is real and replicable. The Reddit↔James 1890 phenomenology finding from Session 9 is real and replicable. The two falsifications are real and replicable. The framing that wrapped them into one continuous investigation was not earned by the data and has now been corrected. Two more sessions remain in this book's wrap-up — Session 12 reads every chapter as if a beginner is encountering it and patches the readability gaps, Session 13 produces the four summary files the next investigation can be planned against. After Session 13, the book is a complete and conclusive artefact. The project itself stays open; the next investigation begins on a topic yet to be chosen, with a clearer head.
 
-The most useful artifact this project produced is not the residual finding or the cross-era pair. It is the discipline I now have for not making the same mistake on the next project. That discipline did not exist before Session 10. It exists now, named, written down, and committed to the repository alongside the work it grew from.
+The most useful artifact this project produced is not the residual finding or the cross-era pair. It is the discipline I now have for not making the same mistake on the next investigation. That discipline did not exist before Session 10. It exists now, named, written down, and committed to the repository alongside the work it grew from.
