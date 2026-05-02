@@ -19,7 +19,7 @@ That last one is most important, and naming it is the point. Confidence isn't bu
 
 I'm not a total beginner — I know some coding — but I'm willing to start like one, because I'd rather have real foundations than fake speed.
 
-My machine is a 2016 MacBook Pro. It's old. It can't run big models locally. That's fine. My real setup is four things: my laptop for reading and writing, Google Colab for compute, Hugging Face for models and data, and a large LLM as my thinking partner. Zero cost. Enough to do real work.
+My machine is a 2016 MacBook Pro. It's old. It can't run big models locally. That's fine. My real setup is four things: my laptop for reading and writing, [Google Colab](../05_glossary.md#google-colab) for compute, [Hugging Face](../05_glossary.md#hugging-face) for models and data, and a large LLM as my thinking partner. Zero cost. Enough to do real work.
 
 ## The four steps (what data science actually is)
 

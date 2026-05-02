@@ -46,6 +46,7 @@ A multi-year data science investigation into how humans describe consciousness, 
 - **[session_09.md](sessions/session_09.md)** — Reddit Lands. Reddit fetch fixed via Hugging Face streaming (`sentence-transformers/reddit-title-body`, filtered to subreddit==Meditation, 76 posts after a 500k-row scan). Three pre-registered tests, one direct attack on Session 8's open question. **Test 2 (translation-register confound retest): wholeness-register interpretation falsified** — Reddit's paired-diff toward pos-12 came in *negative* at −0.0045 (42.1% positive) while the three formal-prose corpora all sat in the +0.012–+0.018 band. The Session 8 cross-era lift is a formal-English-prose register effect, not wholeness language. **Test 1 surfaced the cleanest cross-era finding so far**: Reddit↔James 1890 mean cosine +0.1364 (highest Reddit-to-modern), top pairs at 0.58–0.61 cosine, four of five hitting James paragraph #810 on the phenomenology of inward attention. Modern lay-meditation prose and 19th-century introspection science describe the same kind of moment.
 - **[session_10.md](sessions/session_10.md)** — The Honest Pass. Project-level audit, not a finding session. Triggered by user asking *"are we even doing correct investigation?"* Read all 9 sessions + 9 chapters cold; produced [`project_state.md`](project_state.md) at repo root surfacing the structural problem: country-scale work (Sessions 4–6) and text-level work (Sessions 7–9) are two separate investigations the chapters glue together with the word "residual" — the bridge is rhetorical, not empirical. Five options surfaced (A–E). **Decision: Option C with strong Chapter 10** — honest close of Phase 3, with the bridge lesson made the most teachable chapter in the book. Sessions 11–13 wrap up.
 - **[session_11.md](sessions/session_11.md)** — Wrap-up 1 of 3. Wrote [`book/chapter_10.md`](book/chapter_10.md) — the lessons-learned chapter — and applied six surgical patches removing the rhetorical-bridge sentences flagged by the Session 10 audit (Chapters 5/6/7/9 and the index hook paragraph). Added dated status notes to all four hypotheses in [`research_plan_wholeness.md`](research_plan_wholeness.md) reflecting what the evidence actually showed vs the original wording. Investigation closed at Session 9; Sessions 12 (book-readability audit) and 13 (summary files) remain.
+- **[session_12.md](sessions/session_12.md)** — Wrap-up 2 of 3. Book-readability audit: the 14-year-old pass. Cold-read every chapter into [`notes/book_audit_findings.md`](notes/book_audit_findings.md), then patched in place. Seven new glossary entries (Bootstrap CI, p-value, Paired-difference test, Register, Sign-flip permutation, Subreddit & Pushshift, Vector / vector space) added to [`05_glossary.md`](05_glossary.md). Scale-anchor parentheticals added on first appearance of each dense statistic per chapter (cosines, correlations, p-values, paired-differences); cross-links added on first use of every technical term that has a glossary entry. No rewrites. The chapters' findings, numbers, and voice all stay; only readability changes. Citation-grep verification (Session 6 precedent) caught two paraphrases of *Thinking in Wholes* — both verified clean against the source book. Session 13 (summary files) remains.
 
 ### `/book/` — the personal book, written as we go
 - **[chapter_01.md](book/chapter_01.md)** — Why I'm doing this.
@@ -101,10 +102,16 @@ A multi-year data science investigation into how humans describe consciousness, 
 - **[session_08_embeddings.py](notebooks/session_08_embeddings.py)** — Session 8 pipeline. Forks the Session 7 script. Adds the ancient-corpus loader (15 verified passages, fetched by raw URL), the 12-cluster falsification block (10,000-iteration permutation test with iching-hex-11 sensitivity rerun), the cross-era paired-difference test (bootstrap CI + sign-flip p), and the combined modern + ancient UMAP chart.
 - **[session_09_embeddings.py](notebooks/session_09_embeddings.py)** — Session 9 pipeline. Forks the Session 8 script. Replaces the broken anonymous-Reddit-API fetch with a streaming Hugging Face load (`sentence-transformers/reddit-title-body`, subreddit filter, optional `HF_TOKEN` from Colab secrets). Adds the translation-register confound retest (per-corpus paired-difference table including Reddit) and the descriptive Reddit-landing receipts. UMAP chart now spans all five corpora.
 
+### `/notes/` — working notes the audit produced
+
+- **[notes/book_audit_findings.md](notes/book_audit_findings.md)** — Session 12 audit's per-chapter findings list (line-number-specific). Cross-cutting items (new glossary entries, missing cross-links) noted at the bottom. Working doc, not chapter prose.
+
 ### Repo-root working docs
 
 - **[ANCIENT_TEXTS_READING_GUIDE.md](ANCIENT_TEXTS_READING_GUIDE.md)** — primary-source reading order for the 12-cluster verification, between Sessions 7 and 8.
 - **[start_session_08.md](start_session_08.md)** — brief for Session 8 (drafted in a session-planning chat). Reference-only now that Session 8 has run; the falsification rules and pre-registration discipline in this file landed verbatim in [session_08.md](sessions/session_08.md).
+- **[start_session_13_book_audit.md](start_session_13_book_audit.md)** — brief for the book-readability audit. Filename frozen at "13" because the queue position shifted; the audit ran as Session 12. The brief itself stays current — Session 13 will use it again as the authoritative reference for the four summary files (`mistakes_made.md`, `summary_for_a_reader.md`, `improvements.md`, `reader_glossary_audit.md`).
+- **[project_state.md](project_state.md)** — the Session 10 project-level audit document. Working doc, not chapter prose. Compares chapter framing against session evidence; surfaces the bridge problem; lists five options A–E. Decision was Option C, executed across Sessions 11–13.
 
 ---
 
@@ -112,10 +119,10 @@ A multi-year data science investigation into how humans describe consciousness, 
 
 - **Starting a new chat?** Upload this file + [01_working_agreement.md](01_working_agreement.md) + [02_project_brief.md](02_project_brief.md) + [research_plan_wholeness.md](research_plan_wholeness.md) + the most recent session record + the book *Thinking in Wholes*.
 - **Looking for a definition?** Check [05_glossary.md](05_glossary.md).
-- **Looking for what we did last?** Check [session_09.md](sessions/session_09.md).
+- **Looking for what we did last?** Check [session_12.md](sessions/session_12.md).
 - **Looking for the personal story?** Read `/book/` in order.
 - **Looking for project direction?** Read [research_plan_wholeness.md](research_plan_wholeness.md).
-- **Looking for the current hook?** "Name what is in the residual." Sessions 7–12 are Phase 3: embeddings + cross-era comparison + Reddit zero-shot + WVS + topic modelling, ending in a synthesis. Session 7 is the first NLP session. (Session 6 was a process audit, not a finding session — see [session_06.md](sessions/session_06.md).)
+- **Looking for the current hook?** The investigation closed at Session 9. Two findings stand on their own: the country-scale residual fall (Chapters 5–6) and the cross-era Reddit↔James phenomenology resonance (Chapters 7–9). The two halves do not connect statistically — see Chapter 10 for the lessons-learned account. Sessions 11–13 are wrap-up. After Session 13 the book is complete.
 
 ---
 

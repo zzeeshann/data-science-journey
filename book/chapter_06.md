@@ -2,7 +2,7 @@
 
 The obvious follow-up question after Session 4's finding was: maybe what's falling in the residual is just development. Maybe the countries where people are getting less happy despite rising incomes are the same countries where the broader picture — health, education, life expectancy — has also quietly stalled. If that were true, it would be a cleaner story. The dashboard missed it because it was looking at the wrong development metric, not because something fundamentally unmeasurable was happening.
 
-So I loaded thirty years of Human Development Index data — 206 countries, every year from 1990 to 2023 — and asked that question properly.
+So I loaded thirty years of [Human Development Index](../05_glossary.md#human-development-index-hdi) data — 206 countries, every year from 1990 to 2023 — and asked that question properly.
 
 The HDI is a composite. It takes three things: how long people live, how many years of education they get, and how much income they have, and rolls them into a single number between zero and one. It was designed specifically to push back against GDP-only thinking, to say: wealth without health and education isn't really development. It's been running since 1990. It's the closest thing we have to a thirty-year record of whether human lives are actually improving.
 
@@ -14,7 +14,7 @@ But that isn't the main finding.
 
 ![GDP-factor change vs HDI change, 129 countries](images/chapter_06_gdp_hdi_scatter.png)
 
-When I merged the HDI panel with the happiness change data from Session 4, the correlation between GDP-factor changes and HDI changes came out at 0.32 — moderate, statistically significant. Countries that got richer in the WHR sense also tended to improve on health and education. So the clean version of what I expected to find — that growth stopped translating into development everywhere — isn't true. On average, they still move together.
+When I merged the HDI panel with the happiness change data from Session 4, the [Pearson correlation](../05_glossary.md#pearson-correlation) between GDP-factor changes and HDI changes came out at 0.32 — moderate (in cross-country panel data, 0.7+ is strong, around 0.3 is a real but loose link, and below 0.2 is essentially noise) and [statistically significant](../05_glossary.md#p-value-statistical-significance). Countries that got richer in the WHR sense also tended to improve on health and education. So the clean version of what I expected to find — that growth stopped translating into development everywhere — isn't true. On average, they still move together.
 
 But averages hide a lot. Look at the scatter plot. The relationship is real but the spread is enormous. A large cluster of countries sits on the right side — GDP factor rose — but near zero on the vertical axis — HDI barely moved. Those are the countries I'm interested in.
 
