@@ -1,0 +1,25 @@
+TEXT: Enuma Elish (Babylonian Creation Epic)
+POSITION: Tablet 1, Line 13 (centred; passage covers lines 9–17)
+TRANSLATION: E. A. Wallis Budge (1921)
+SOURCE_URL: https://www.gutenberg.org/cache/epub/9914/pg9914.txt
+LANGUAGE: Akkadian (translated)
+DATE: ~1100 BCE (composition, oldest surviving copies); 1921 CE (English translation)
+NOTES: From Budge's "The Babylonian Legends of the Creation," Project Gutenberg ebook #9914. Translation made from transcripts of British Museum and Berlin fragments (Cuneiform Texts XIII; Ebeling Keilschrifttexte aus Assur 117–118). The line numbering follows Budge. Position-13 control for the position-12 cluster. Line 13 begins at the fifth line of this extract ("Long were the days…").
+
+The gods came into being in the midst of them.
+
+The god Lakhmu and the goddess Lakhamu were made to shine, they were named.
+
+[Together] they increased in stature, they grew tall.
+
+Anshar and Kishar came into being, and others besides them.
+
+Long were the days, the years increased.
+
+The god Anu, their son, the equal of his fathers, [was created].
+
+The god Anshar made his eldest son Anu in his own image.
+
+And the god Anu begat Nudimmud (Ea) the image of himself.
+
+The god Nudimmud was the first among his fathers,

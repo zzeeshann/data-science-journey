@@ -1,0 +1,9 @@
+TEXT: Code of Hammurabi
+POSITION: Law 13
+TRANSLATION: C. H. W. Johns (1903)
+SOURCE_URL: https://www.gutenberg.org/cache/epub/17150/pg17150.txt
+LANGUAGE: Akkadian (translated)
+DATE: ~1750 BCE (laws); 1903 CE (English translation)
+NOTES: Public-domain translation by C. H. W. Johns, transcribed from the 1903 T. & T. Clark edition (Edinburgh) onto Project Gutenberg as ebook #17150. Johns calls each law a "section." Position-13 control for the position-12 cluster.
+
+If that man has not his witnesses near, the judge shall set him a fixed time, up to six months, and if within six months he has not driven in his witnesses, that man has lied, he himself shall bear the blame of that case.

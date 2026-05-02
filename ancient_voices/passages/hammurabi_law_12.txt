@@ -1,0 +1,9 @@
+TEXT: Code of Hammurabi
+POSITION: Law 12
+TRANSLATION: C. H. W. Johns (1903)
+SOURCE_URL: https://www.gutenberg.org/cache/epub/17150/pg17150.txt
+LANGUAGE: Akkadian (translated)
+DATE: ~1750 BCE (laws); 1903 CE (English translation)
+NOTES: Public-domain translation by C. H. W. Johns, transcribed from the 1903 T. & T. Clark edition (Edinburgh) onto Project Gutenberg as ebook #17150. Johns calls each law a "section." This file is the "12-cluster" candidate for the Code of Hammurabi.
+
+If the giver has betaken himself to his fate, the buyer shall take from the house of the giver fivefold as the penalty of that case.
