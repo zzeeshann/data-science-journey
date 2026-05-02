@@ -27,9 +27,9 @@
 - **Inanna's Descent:** opening passage saved as fair-use research excerpt ✓ — would migrate to ETCSL when reachable. No clean position-11/13 controls (the text is unnumbered).
 - **Pyramid Texts:** Spell 12 (Faulkner numbering) not in PD via Unas. Two wider-sample Unas utterances saved. Session 8 chapter should flag honestly that this text contributes wider-sample only, not the position-12 cluster test.
 - **Gilgamesh:** Standard Babylonian Tablet 12 not in PD via available sources. Pennsylvania Tablet (OB Tablet II) saved as wider-sample representative. Same note as Pyramid Texts for Session 8 chapter.
-- **Ugaritic KTU 1.12:** still pending. No clean PD source identified. May be skipped in Session 8 with the absence noted plainly.
+- **Ugaritic KTU 1.12:** **SKIPPED for Session 8.** No PD English translation located despite multiple attempts. The user provided a 2013 academic paper (Yogev & Yona, *Ancient Near Eastern Studies* 50: 212–217) which describes the tablet's scribal context but does not include the text itself. The paper raises an important caveat the bundle didn't anticipate: KTU 1.12's "12" is a museum catalogue index (Dietrich/Loretz/Sanmartin numbering of Ugaritic tablets), not a content position — meaning Ugaritic KTU 1.12 may not be a valid 12-cluster member regardless of translation availability. See `ugaritic_ktu_1_12_NOTES.md` for full discussion.
 
-13 files in `passages/`. Two more in `notes/` (this status doc + the superseded Wilhelm I Ching reference).
+13 files in `passages/`. Three in `notes/` (this status doc, the superseded Wilhelm I Ching reference, and the Ugaritic working notes).
 
 ## Session 8 — what's runnable now
 
