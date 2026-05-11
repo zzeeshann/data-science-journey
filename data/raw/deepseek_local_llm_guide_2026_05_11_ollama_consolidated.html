@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Science Journey - Complete Setup Guide (Ollama Edition)</title>
+<style>
+  :root {
+    --bg: #0f172a; --card: #1e293b; --text: #e2e8f0; --heading: #f8fafc;
+    --accent: #38bdf8; --green: #4ade80; --orange: #fb923c; --red: #f87171;
+    --border: #334155; --code-bg: #0d1117; --inline-code: #facc15;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--text); line-height: 1.8; padding: 2rem;
+    max-width: 1000px; margin: 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  }
+  h1 { font-size: 2.5rem; color: var(--heading); margin: 2rem 0 1rem; border-bottom: 3px solid var(--accent); padding-bottom: 0.5rem; }
+  h2 { font-size: 1.8rem; color: var(--accent); margin: 2.5rem 0 1rem; }
+  h3 { font-size: 1.3rem; color: var(--heading); margin: 1.8rem 0 0.75rem; }
+  p, li { margin: 0.75rem 0; }
+  ul, ol { padding-left: 1.5rem; }
+  code { background: var(--code-bg); color: var(--inline-code); padding: 0.2rem 0.4rem; border-radius: 4px; font-size: 0.9em; }
+  pre { background: var(--code-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; overflow-x: auto; margin: 1.5rem 0; font-size: 0.85rem; line-height: 1.7; }
+  pre code { background: none; color: #e2e8f0; padding: 0; }
+  table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
+  th { background: var(--card); color: var(--accent); text-align: left; padding: 0.75rem 1rem; border: 1px solid var(--border); }
+  td { padding: 0.75rem 1rem; border: 1px solid var(--border); }
+  tr:nth-child(even) { background: var(--card); }
+  .note { background: #1e3a5f; border-left: 4px solid var(--accent); padding: 1rem 1.5rem; border-radius: 0 8px 8px 0; margin: 1.5rem 0; }
+  .warning { background: #3f1e1e; border-left: 4px solid var(--red); padding: 1rem 1.5rem; border-radius: 0 8px 8px 0; margin: 1.5rem 0; }
+  .success { background: #1e3f2f; border-left: 4px solid var(--green); padding: 1rem 1.5rem; border-radius: 0 8px 8px 0; margin: 1.5rem 0; }
+  .file-box { background: var(--code-bg); border: 1px dashed var(--accent); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; }
+  .file-box h4 { color: var(--accent); margin-bottom: 0.5rem; }
+  hr { border: 1px solid var(--border); margin: 2rem 0; }
+</style>
+</head>
+<body>
+
+<h1>🧠 Data Science Journey<br><span style="font-size:1.2rem;color:#94a3b8;">Complete Project Setup & Knowledge Guide</span></h1>
+
+<div class="success">
+<strong>🎯 Project Goal:</strong> Learn data science by analyzing real news articles with a local AI model (Qwen 2.5 14B) running on a Mac M4 Pro. All analysis runs locally — zero cloud costs, fully private.
+</div>
+
+<div class="note">
+<strong>📂 GitHub Repo:</strong> https://github.com/zzeeshann/data-science-journey<br>
+<strong>💻 Machine:</strong> Mac Mini M4 Pro, 24GB RAM, macOS 26.3<br>
+<strong>🤖 Local AI:</strong> Qwen 2.5 14B via <strong>Ollama</strong><br>
+<strong>📊 Dataset:</strong> AG News (120,000 articles, 4 categories)<br>
+<strong>📓 Environment:</strong> JupyterLab 4.5.7 with Python virtual environment
+</div>
+
+<hr>
+
+<!-- SECTION 1: THE JOURNEY -->
+<h2>1. The Journey (What We Learned)</h2>
+
+<h3>LM Studio → Ollama Migration</h3>
+<table>
+  <tr><th>Attempt</th><th>Tool</th><th>Result</th><th>Lesson</th></tr>
+  <tr><td>1st</td><td>LM Studio</td><td>✅ Worked initially (~28 tok/sec)</td><td>MLX 4-bit models are perfect for Apple Silicon</td></tr>
+  <tr><td>2nd</td><td>LM Studio</td><td>❌ Engine error: <code>libpython3.11.dylib</code> not found</td><td>LM Studio auto-updates can break paths. Known bug.</td></tr>
+  <tr><td>3rd</td><td>LM Studio</td><td>❌ "No LM Runtime found for format 'safetensors'"</td><td>Format confusion: GGUF vs MLX vs Safetensors. LM Studio needs MLX specifically.</td></tr>
+  <tr><td>4th</td><td><strong>Ollama</strong></td><td>✅ Works perfectly. One-command install.</td><td><strong>Ollama is the stable choice.</strong> No format guessing. No engine errors.</td></tr>
+</table>
+
+<h3>Jupyter AI Extension → Back to Core Notebook</h3>
+<table>
+  <tr><th>Attempt</th><th>Tool</th><th>Result</th><th>Lesson</th></tr>
+  <tr><td>1st</td><td><code>jupyter-ai</code> v3.0.0</td><td>❌ Settings UI missing. Chat panel opened but couldn't connect to Ollama.</td><td>Jupyter AI v3.0.0 has known UI registration bugs. Not production-ready for local models.</td></tr>
+  <tr><td>2nd</td><td><strong>Core notebook + <code>ask_qwen()</code></strong></td><td>✅ Works perfectly. Plain English → LLM → Code → Results.</td><td><strong>The simplest solution is often the best.</strong> A custom function is more reliable than an extension.</td></tr>
+</table>
+
+<hr>
+
+<!-- SECTION 2: FINAL SETUP -->
+<h2>2. Final Working Setup</h2>
+
+<h3>Architecture</h3>
+<pre><code>You (Jupyter Notebook)
+    │
+    │ ask_qwen(prompt, article)
+    ▼
+Ollama Server (localhost:11434)
+    │
+    │ Runs qwen2.5:14b
+    ▼
+Qwen 2.5 14B Model (9 GB, on your Mac)
+    │
+    │ Returns classification / summary / analysis
+    ▼
+Results displayed in Jupyter</code></pre>
+
+<h3>Step 1: Install Ollama</h3>
+<pre><code>curl -fsSL https://ollama.com/install.sh | sh</code></pre>
+
+<h3>Step 2: Download Qwen 2.5 14B</h3>
+<pre><code>ollama pull qwen2.5:14b</code></pre>
+
+<h3>Step 3: Set Up Python Project</h3>
+<pre><code># Navigate to your projects folder
+cd ~/pro/news-data-science
+
+# Activate virtual environment
+source venv/bin/activate
+
+# If venv doesn't exist, create it first:
+# python3 -m venv venv
+# source venv/bin/activate
+
+# Install packages (if not already installed)
+pip install datasets jupyter requests pandas matplotlib seaborn</code></pre>
+
+<h3>Step 4: Start JupyterLab</h3>
+<pre><code>cd ~/pro/news-data-science
+source venv/bin/activate
+jupyter lab</code></pre>
+
+<h3>Step 5: The Core Function</h3>
+<pre><code>import requests
+
+def ask_qwen(prompt, article_text):
+    """Send text to local Qwen via Ollama and get analysis back."""
+    response = requests.post(
+        "http://localhost:11434/v1/chat/completions",
+        json={
+            "model": "qwen2.5:14b",
+            "messages": [
+                {"role": "system", "content": prompt},
+                {"role": "user", "content": article_text}
+            ],
+            "temperature": 0.1
+        }
+    )
+    return response.json()["choices"][0]["message"]["content"]</code></pre>
+
+<hr>
+
+<!-- SECTION 3: RESULTS -->
+<h2>3. Results Achieved</h2>
+
+<table>
+  <tr><th>Metric</th><th>Value</th></tr>
+  <tr><td>Model</td><td>Qwen 2.5 14B (4-bit quantized, ~9 GB)</td></tr>
+  <tr><td>Speed</td><td>~28 tokens/second</td></tr>
+  <tr><td>Articles processed</td><td>50 from AG News dataset</td></tr>
+  <tr><td>Accuracy</td><td><strong>92%</strong> (46/50 correct)</td></tr>
+  <tr><td>Cost</td><td><strong>$0.00</strong> (all local)</td></tr>
+  <tr><td>Internet required</td><td><strong>No</strong> (after model download)</td></tr>
+</table>
+
+<hr>
+
+<!-- SECTION 4: COMMANDS REFERENCE -->
+<h2>4. All Commands Reference</h2>
+
+<table>
+  <tr><th>Action</th><th>Command</th></tr>
+  <tr><td>Install Ollama</td><td><code>curl -fsSL https://ollama.com/install.sh | sh</code></td></tr>
+  <tr><td>Download Qwen model</td><td><code>ollama pull qwen2.5:14b</code></td></tr>
+  <tr><td>List downloaded models</td><td><code>ollama list</code></td></tr>
+  <tr><td>Start Ollama (usually auto-starts)</td><td><code>ollama serve</code></td></tr>
+  <tr><td>Chat with model in terminal</td><td><code>ollama run qwen2.5:14b</code></td></tr>
+  <tr><td>Navigate to project</td><td><code>cd ~/pro/news-data-science</code></td></tr>
+  <tr><td>Activate virtual environment</td><td><code>source venv/bin/activate</code></td></tr>
+  <tr><td>Install Python packages</td><td><code>pip install datasets jupyter requests pandas matplotlib seaborn</code></td></tr>
+  <tr><td>Start JupyterLab</td><td><code>jupyter lab</code></td></tr>
+  <tr><td>Rebuild JupyterLab (if needed)</td><td><code>jupyter lab build</code></td></tr>
+  <tr><td>Clean JupyterLab extensions</td><td><code>jupyter lab clean --all</code></td></tr>
+  <tr><td>Uninstall jupyter-ai</td><td><code>pip uninstall jupyter-ai jupyter-ai-acp-client jupyter-ai-chat-commands jupyter-ai-persona-manager jupyter-ai-router jupyter-ai-tools -y</code></td></tr>
+  <tr><td>Delete LM Studio completely</td><td><code>rm -rf ~/.lmstudio</code> then drag app to Trash</td></tr>
+  <tr><td>Create startup alias</td><td><code>echo 'alias news="cd ~/pro/news-data-science && source venv/bin/activate && jupyter lab"' >> ~/.zshrc && source ~/.zshrc</code></td></tr>
+</table>
+
+<hr>
+
+<!-- SECTION 5: PROJECT FILES -->
+<h2>5. Repo Structure</h2>
+
+<pre><code>data-science-journey/
+├── README.md                    # Project overview
+├── guide.html                   # This complete guide
+├── notebooks/
+│   └── news-analysis.ipynb      # Main analysis notebook
+├── requirements.txt             # Python dependencies
+└── .gitignore                   # Files to exclude from git</code></pre>
+
+<h3>requirements.txt</h3>
+<pre><code>datasets
+jupyter
+requests
+pandas
+matplotlib
+seaborn</code></pre>
+
+<h3>.gitignore</h3>
+<pre><code>venv/
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.DS_Store
+data/
+.ollama/</code></pre>
+
+<h3>README.md</h3>
+<pre><code># 🧠 Data Science Journey
+
+Learning data science by building real AI-powered analysis pipelines — all running locally on a Mac M4 Pro.
+
+## What's Inside
+- **Local AI**: Qwen 2.5 14B via Ollama (zero-cost, offline)
+- **Real Dataset**: AG News (120,000 articles) from Hugging Face
+- **Jupyter Notebooks**: Step-by-step analysis with explanations
+
+## Quick Start
+```bash
+# 1. Install Ollama
+curl -fsSL https://ollama.com/install.sh | sh
+# 2. Download model
+ollama pull qwen2.5:14b
+# 3. Set up Python
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+# 4. Start Jupyter
+jupyter lab

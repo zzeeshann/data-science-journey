@@ -1,6 +1,6 @@
 # Session 14 — Record
 
-*First session of the post-book project. The Wholeness Investigation closed at Session 9; Sessions 10–13 wrapped the book. Session 14 is the methods-acquisition step for the next investigation: a local LLM analysis stack stood up on the user's M4 Pro Mac. The session ran in two phases on the same day (2026-05-11). **Phase A** stood up the stack on **LM Studio** following one DeepSeek tutorial and hit engine bugs in use. **Phase B** removed LM Studio, installed **Ollama**, and switched the pipeline to `localhost:11434` following a second DeepSeek tutorial. Ollama is the working stack at the end of the session. No sub-question chosen yet. Exploratory / capability work, not a hypothesis test.*
+*First session of the post-book project. The Wholeness Investigation closed at Session 9; Sessions 10–13 wrapped the book. Session 14 is the methods-acquisition step for the next investigation: a local LLM analysis stack stood up on the user's M4 Pro Mac (Mac Mini, 24 GB RAM, macOS 26.3). The session ran on a single day (2026-05-11) through three iterations of the tooling. **Phase A** stood up the stack on **LM Studio** with Qwen 2.5 14B Instruct MLX 4-bit and hit two specific engine errors. **Phase A.5** tried the `jupyter-ai` v3.0.0 Jupyter extension as the in-notebook driver; that hit UI registration bugs and was abandoned in favour of a plain `ask_qwen()` function. **Phase B** removed LM Studio, installed **Ollama**, pulled `qwen2.5:14b`, and pointed `ask_qwen()` at `localhost:11434`. **Ollama + plain `ask_qwen()` + JupyterLab 4.5.7 is the working stack at the end of the session**, running at ~28 tokens/sec. No sub-question chosen yet. Exploratory / capability work, not a hypothesis test.*
 
 ---
 
@@ -12,15 +12,21 @@ This is the *capability acquisition* step, not the start of an investigation. Th
 
 ## What actually happened
 
-The session ran in two phases on the same day.
+The session ran in three iterations of tooling on the same day. The user worked through three DeepSeek-authored tutorials in sequence — DeepSeek is the chatbot at deepseek.com; specific model name/version is not declared in any of the three documents.
 
-**Phase A — LM Studio.** The user worked through the first of two tutorials authored by **DeepSeek** (the chatbot at deepseek.com — model class not specified in either document). That tutorial — now parked at [`data/raw/deepseek_local_llm_guide_2026_05_11.html`](../data/raw/deepseek_local_llm_guide_2026_05_11.html) and its condensed Markdown sibling — walks through installing **LM Studio**, downloading **Qwen 2.5 14B Instruct MLX 4-bit**, starting the local server on port **1234**, and writing an `ask_qwen()` function that POSTs to `localhost:1234/v1/chat/completions`. The pipeline came up. The user ran the tutorial's 50-article AG News validation and reported **46/50 = 92% accuracy** matching the tutorial's expected figure. Then, in further use, LM Studio's serving engine surfaced bugs — exactly which bugs is not recorded in the receipts (see Caveats #3) but the second DeepSeek tutorial labels this directly: *"❌ We switched away due to engine bugs."*
+**Phase A — LM Studio.** The user worked through the first DeepSeek tutorial, now parked at [`data/raw/deepseek_local_llm_guide_2026_05_11.html`](../data/raw/deepseek_local_llm_guide_2026_05_11.html). It walks through installing **LM Studio**, downloading **Qwen 2.5 14B Instruct MLX 4-bit**, starting the local server on port **1234**, and writing an `ask_qwen()` function that POSTs to `localhost:1234/v1/chat/completions`. The pipeline came up on the first attempt and ran at ~28 tokens/sec — a speed the consolidated tutorial confirms is what MLX 4-bit on Apple Silicon delivers for this model. The 50-article AG News validation produced **46/50 = 92% accuracy**.
 
-**Phase B — Ollama.** The user removed LM Studio and worked through a second DeepSeek tutorial — now parked at [`data/raw/deepseek_local_llm_guide_2026_05_11_ollama.html`](../data/raw/deepseek_local_llm_guide_2026_05_11_ollama.html). That tutorial walks through installing **Ollama** (`curl -fsSL https://ollama.com/install.sh | sh`), pulling **`qwen2.5:14b`** (~9 GB, GGUF Q4_K_M by Ollama's default), and rewriting `ask_qwen()` to POST to `localhost:11434/v1/chat/completions` with `model: "qwen2.5:14b"`. The OpenAI-API contract is identical between the two stacks — only the URL, port, and model identifier changed. The same 46/50 = 92% figure is also reported in the second tutorial; whether that was a genuine re-run on Ollama or a copy of the Phase-A number is unclear from the receipts available (see Caveats #2 again). Ollama is the working stack at the end of the session.
+LM Studio then broke twice in a row on subsequent invocations. The third tutorial documents the failures specifically: *Attempt 2 — engine error, `libpython3.11.dylib` not found* (an auto-update broke an internal Python library path on the user's machine; the tutorial calls this a known LM Studio bug). *Attempt 3 — "No LM Runtime found for format 'safetensors'"* (LM Studio's runtime registration confused itself between GGUF, MLX, and Safetensors model formats). Two real, reproducible-by-symptom failures, both on the same M4 Pro Mac, both within the same day.
 
-The Ollama tutorial also introduces two cells beyond the LM Studio version — a batch loop with progress reporting and a Seaborn-rendered confusion matrix — but neither is recorded as having been run; they're available as next steps.
+**Phase A.5 — `jupyter-ai` extension, abandoned.** Between the LM Studio failures and the Ollama install, the user tried the `jupyter-ai` v3.0.0 Jupyter extension as an alternative way to chat with the local model from inside the notebook. The settings UI failed to register and the chat panel couldn't connect to Ollama. The third DeepSeek tutorial flags this as a known v3.0.0 issue and recommends going back to a plain `ask_qwen()` function. The extension was uninstalled (the third tutorial gives the multi-package uninstall command verbatim) and the pipeline reverted to the plain-function design.
 
-This session record was drafted by Opus 4.7 (1M context) inside Claude Code on 2026-05-11, working from the three DeepSeek source files plus the user's confirmation of the LM Studio→Ollama switch. No model was used to *do* analysis in this session — only to document the work, copy the files into the repo, and integrate the new capability into the project's standing notes.
+**Phase B — Ollama + plain `ask_qwen()` + JupyterLab.** The user removed LM Studio (`rm -rf ~/.lmstudio` plus dragging the app to Trash, both per the consolidated tutorial), installed **Ollama** with `curl -fsSL https://ollama.com/install.sh | sh`, and pulled **`qwen2.5:14b`** (~9 GB, GGUF Q4_K_M by Ollama's default). `ask_qwen()` was repointed at `localhost:11434/v1/chat/completions` with `model: "qwen2.5:14b"`. The OpenAI-API contract is identical between the two stacks — only the URL, port, and model identifier changed, so the rest of the notebook needed no rework. The notebook environment also moved from `jupyter notebook` (Phase A's tutorial) to **JupyterLab 4.5.7** (the third tutorial's recommendation), run from a venv at `~/pro/news-data-science`. The same 46/50 = 92% figure is reported in the second and third tutorials; whether that's an independent re-run on Ollama or a copy of the Phase-A number is undetermined from the receipts available (see Caveats #2).
+
+The second DeepSeek tutorial — parked at [`data/raw/deepseek_local_llm_guide_2026_05_11_ollama.html`](../data/raw/deepseek_local_llm_guide_2026_05_11_ollama.html) — also introduces two cells beyond the basic pipeline: a batch loop with progress reporting and a Seaborn-rendered confusion matrix. Neither is recorded as having been run; they're available as next steps.
+
+The third tutorial — [`data/raw/deepseek_local_llm_guide_2026_05_11_ollama_consolidated.html`](../data/raw/deepseek_local_llm_guide_2026_05_11_ollama_consolidated.html), titled *"Complete Setup Guide (Ollama Edition)"* — is the **canonical commands reference** for this stack going forward. It includes the LM-Studio→Ollama migration story as a four-attempt table, the `jupyter-ai`→plain-function migration as a two-attempt table, the architecture diagram for the working stack, and a complete commands table from `curl ... install.sh` through `jupyter lab` and the startup `alias news=…`. A future session that needs to rebuild this stack from scratch should read that file before this session record.
+
+This session record was drafted by Opus 4.7 (1M context) inside Claude Code on 2026-05-11, working from the four DeepSeek source files plus the user's confirmation of the LM Studio failures and the subsequent migrations. No model was used to *do* analysis in this session — only to document the work, copy the files into the repo, and integrate the new capability into the project's standing notes.
 
 ## The data (files touched)
 
@@ -29,9 +35,10 @@ This session record was drafted by Opus 4.7 (1M context) inside Claude Code on 2
 | `data/raw/deepseek_local_llm_guide_2026_05_11.html` | created — DeepSeek-authored Phase-A tutorial (LM Studio path), full HTML version. Force-add (`data/raw/*` is gitignored). |
 | `data/raw/deepseek_local_llm_guide_2026_05_11.md` | created — Phase-A tutorial, condensed Markdown version. Force-add. |
 | `data/raw/deepseek_local_llm_guide_2026_05_11_ollama.html` | created — DeepSeek-authored Phase-B tutorial (Ollama path), full HTML version. Adds the LM-Studio-vs-Ollama comparison, the batch-50 cell, the confusion-matrix cell. Force-add. |
-| `sessions/session_14.md` | created and updated in place across both phases — this file |
-| `00_index.md` | updated — Session 14 entry, three new `data/raw/` entries, *last-we-did* and *current-hook* lines refreshed |
-| `05_glossary.md` | updated — five new entries in the alphabetical Sessions-4+ block: AG News, LM Studio, Local LLM, Ollama, Quantization (4-bit) |
+| `data/raw/deepseek_local_llm_guide_2026_05_11_ollama_consolidated.html` | created — DeepSeek-authored consolidated reference, titled *"(Ollama Edition)"*. Includes the LM-Studio→Ollama 4-attempt migration table with specific bug receipts, the `jupyter-ai`→plain-function 2-attempt migration table, architecture diagram, results table (~28 tok/sec, 92%), and a complete commands reference. **The canonical setup guide for this stack going forward.** Force-add. |
+| `sessions/session_14.md` | created and updated in place across all three phases — this file |
+| `00_index.md` | updated — Session 14 entry, four new `data/raw/` entries, *last-we-did* and *current-hook* lines refreshed |
+| `05_glossary.md` | updated — six new entries in the alphabetical Sessions-4+ block: AG News, JupyterLab, LM Studio, Local LLM, Ollama, Quantization (4-bit) |
 | `CLAUDE.md` | updated — *State*, *Last session committed*, *Next session* sections + force-tracked file list updated |
 
 No chapters edited. No images produced. No `.ipynb` saved to `/notebooks/` — see Caveats #2.
@@ -70,7 +77,7 @@ Session 14's contribution to that future: when the next question is picked, the 
 
 2. **The notebook used to run the 50-article test was not preserved with this session record, and it is unclear whether the 92% figure was independently re-run on Ollama after the switch.** Sessions 7, 8, and 9 each have a corresponding `.py` file in `/notebooks/`. Session 14 does not. The run(s) happened inside Jupyter on the user's Mac during the tutorial walkthroughs, and no notebook was saved out for either phase. Both DeepSeek tutorials report the same 46/50 = 92% number — that consistency could be a genuine result on both stacks (MLX-quantized Qwen on LM Studio in Phase A and GGUF-quantized Qwen on Ollama in Phase B, on the same 50 AG News articles, both with `temperature=0.1`) or it could be the tutorial-author copying the Phase-A figure into the Phase-B writeup. The receipts in this repo cannot distinguish those cases. **Standing-process habit added (proposed rule 16):** any future session that produces an analytical result must save the `.ipynb` (or `.py` export) to `/notebooks/` before commit. Session 14's experience is the precedent. See [`discipline.md`](../discipline.md).
 
-3. **LM Studio was deleted from the user's machine before a full diagnosis of which engine bug was hitting.** The second DeepSeek tutorial labels the move *"engine bugs"* and lists "occasionally buggy" as LM Studio's downside compared to Ollama. The user does not have an independent record of exactly which symptom triggered the switch (which inference call failed, which error string appeared, on which model variant). The decision was pragmatic — switch to the tool that works — but a future investigation that wants to *recommend* one stack over the other in print would need its own reproducibility test, not a reference back to this caveat.
+3. **The LM Studio failures are recorded by symptom, not by independent reproducibility test.** The consolidated tutorial preserves two specific error states — *Attempt 2: `libpython3.11.dylib` not found*, attributed in the tutorial to an LM Studio auto-update breaking an internal path; *Attempt 3: "No LM Runtime found for format 'safetensors'"*, attributed to runtime-registration confusion across GGUF/MLX/Safetensors formats. Both are real strings the user encountered today on this machine. They are NOT independently verified against LM Studio's issue tracker or release notes for this project; the tutorial document is the only source. The decision to uninstall was pragmatic — switch to the tool that works — and the move-on cost was zero because the OpenAI-API contract is shared. A future investigation that wants to *recommend* one stack over the other in print would need its own reproducibility test on a clean machine, not a reference back to this caveat.
 
 4. **The tutorials were authored by an external LLM, not by the user or by this project.** DeepSeek wrote both HTML guides. The user's contribution was running them end-to-end and confirming the pipeline worked. The analytical *understanding* of why the pipeline works has not been independently re-derived — for example, this session record doesn't reconstruct from first principles what `temperature=0.1` does, why GGUF Q4_K_M and MLX 4-bit both land at ~9 GB for a 14B-parameter model, or what the OpenAI-API contract actually requires for compliance. Those are now in the glossary (Quantization, Local LLM, Ollama, LM Studio entries) and inline in the tutorial files, available for reference. If a future investigation depends on the *details* of how this pipeline behaves at the edges, those details need to be re-derived from sources outside these tutorials.
 
@@ -80,9 +87,9 @@ Session 14's contribution to that future: when the next question is picked, the 
 
 ## Status at end of session
 
-- Local LLM stack running on the user's M4 Pro Mac: **Ollama serving `qwen2.5:14b` (GGUF Q4_K_M, ~9 GB) on `localhost:11434`**, driven from Jupyter via the OpenAI-compatible chat-completions API. LM Studio has been uninstalled.
-- All three DeepSeek tutorial files (Phase-A HTML + Markdown, Phase-B HTML) are in [`data/raw/`](../data/raw/) as parked source material.
-- This session record is written across both phases. [`00_index.md`](../00_index.md), [`05_glossary.md`](../05_glossary.md), and [`CLAUDE.md`](../CLAUDE.md) are updated.
+- Local LLM stack running on the user's M4 Pro Mac (Mac Mini, 24 GB RAM, macOS 26.3): **Ollama serving `qwen2.5:14b` (GGUF Q4_K_M, ~9 GB) on `localhost:11434`**, driven from **JupyterLab 4.5.7** via the OpenAI-compatible chat-completions API, at ~28 tokens/sec. The notebook venv lives at `~/pro/news-data-science/venv`. LM Studio is uninstalled (`~/.lmstudio` removed, app trashed). The `jupyter-ai` extension is uninstalled.
+- All four DeepSeek tutorial files (Phase-A HTML + Markdown, Phase-B HTML, Phase-C consolidated HTML) are in [`data/raw/`](../data/raw/) as parked source material. [`deepseek_local_llm_guide_2026_05_11_ollama_consolidated.html`](../data/raw/deepseek_local_llm_guide_2026_05_11_ollama_consolidated.html) is the canonical commands reference for the working stack.
+- This session record is written across all three phases. [`00_index.md`](../00_index.md), [`05_glossary.md`](../05_glossary.md), and [`CLAUDE.md`](../CLAUDE.md) are updated.
 - The next investigation question has not been chosen. When it is, it will produce its own plan file, run under [`discipline.md`](../discipline.md)'s rules from session zero, and may use either or both of the project's two analytical primitives (embeddings, local LLM classification) as the question demands.
 - The book ([Chapters 1–10](../book/), [Sessions 1–13](../sessions/)) stays closed.
 
@@ -90,9 +97,26 @@ Session 14's contribution to that future: when the next question is picked, the 
 
 ### The pipeline at end of session
 
-**Environment:** macOS 26.3 on a Mac Mini M4 Pro with 24 GB RAM. Python 3 in a venv at `~/news-data-science/venv`. Jupyter notebook served from the same venv. **Ollama running locally**, model `qwen2.5:14b` pulled and loaded (`ollama list` shows it; the model file is ~9 GB GGUF Q4_K_M by Ollama's default for this name).
+**Environment (end of session):** macOS 26.3 on a Mac Mini M4 Pro with 24 GB RAM. Python 3 in a venv at `~/pro/news-data-science/venv`. **JupyterLab 4.5.7** served from the same venv via `jupyter lab`. **Ollama running locally**, model `qwen2.5:14b` pulled and loaded (`ollama list` shows it; the model file is ~9 GB GGUF Q4_K_M by Ollama's default for this name). Inference speed ~28 tokens/sec.
 
 **Installed Python packages:** `datasets`, `jupyter`, `requests`, `pandas`, `matplotlib`, `seaborn`.
+
+**Minimal command set to rebuild the stack from scratch** (the consolidated tutorial holds the full version; this is the smallest set a future reader needs):
+
+```bash
+# 1. Local LLM runtime
+curl -fsSL https://ollama.com/install.sh | sh
+ollama pull qwen2.5:14b           # ~9 GB, GGUF Q4_K_M
+
+# 2. Python project
+mkdir -p ~/pro/news-data-science && cd ~/pro/news-data-science
+python3 -m venv venv
+source venv/bin/activate
+pip install datasets jupyter requests pandas matplotlib seaborn
+
+# 3. Notebook
+jupyter lab                       # opens at http://localhost:8888
+```
 
 **Dataset loader (unchanged across both phases):**
 ```python
@@ -164,6 +188,7 @@ These are recovery-target items for the next session that uses this pipeline.
 - [`data/raw/deepseek_local_llm_guide_2026_05_11.html`](../data/raw/deepseek_local_llm_guide_2026_05_11.html) — Phase A (LM Studio) tutorial, full HTML. 15 KB. Eight parts: big picture, tools installed, the connection (Jupyter↔Qwen), what the experiment did, complete setup commands, key concepts, lessons, where to go next.
 - [`data/raw/deepseek_local_llm_guide_2026_05_11.md`](../data/raw/deepseek_local_llm_guide_2026_05_11.md) — Phase A tutorial, condensed Markdown. 1.6 KB. Ends partway through Part 5 (the setup-commands block is truncated in the source). The Phase-A HTML is the complete reference.
 - [`data/raw/deepseek_local_llm_guide_2026_05_11_ollama.html`](../data/raw/deepseek_local_llm_guide_2026_05_11_ollama.html) — Phase B (Ollama) tutorial, full HTML. ~20 KB. Six sections: project overview, full system setup, the main notebook (five cells including batch loop and confusion matrix), restart commands, concepts explained (notably the Ollama-vs-LM-Studio comparison table that documents *why* the switch happened), recommended repo structure.
+- [`data/raw/deepseek_local_llm_guide_2026_05_11_ollama_consolidated.html`](../data/raw/deepseek_local_llm_guide_2026_05_11_ollama_consolidated.html) — Phase C consolidated reference, *"Complete Setup Guide (Ollama Edition)"*. ~10 KB. Five sections: the journey (LM Studio→Ollama 4-attempt table and jupyter-ai→plain-function 2-attempt table, both with specific error strings), final working setup (architecture diagram, the five install steps, the `ask_qwen()` function), results achieved (28 tok/sec, 92% accuracy), complete commands reference (one table of every CLI command the project uses), and recommended repo structure (`requirements.txt`, `.gitignore`, `README.md` templates). **The canonical setup guide a future reader or student should use to rebuild this stack.**
 
 ### Models used in this session
 

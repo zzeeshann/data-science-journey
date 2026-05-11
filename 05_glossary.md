@@ -155,6 +155,10 @@ A composite index published annually by the United Nations Development Programme
 
 A merge operation that keeps only rows present in both datasets. When Session 5 merged the WHR change panel (141 countries) with the HDI time series (206 countries) on country name, the result was 129 countries — only those appearing in both files. Countries dropped in the merge are typically ones where the naming convention differed between the two sources (e.g. "United States of America" vs "United States"). Always check what the merge dropped before drawing conclusions from the merged dataset. First used in [session_05.md](sessions/session_05.md).
 
+## JupyterLab
+
+The newer, more capable evolution of the [classic Jupyter Notebook](#google-colab) interface. Same underlying engine — Python kernels running cells in a web browser — but with a tab-based workspace that can hold multiple notebooks, terminals, file browsers, and text editors side by side. Launched with `jupyter lab` from a virtual environment instead of `jupyter notebook`. Session 14 standardised on **JupyterLab 4.5.7** as the local notebook environment after a brief Phase-A.5 experiment with the `jupyter-ai` v3.0.0 chat extension was abandoned for UI registration bugs — the project went back to a plain notebook driven by an [Ollama](#ollama)-backed `ask_qwen()` function, which has the same end effect (write a prompt, get a response inline) but with one less moving part to fail. First used in [session_14.md](sessions/session_14.md).
+
 ## Line of best fit
 
 A straight line drawn through a scatter of points that minimises the squared distance between the line and the points (ordinary least squares). The simplest way to summarise a two-variable relationship with one line. In Python: `slope, intercept = np.polyfit(x, y, 1)` — the `1` means "degree-1 polynomial," i.e. a line. First used in [Session 4](sessions/session_04.md).
