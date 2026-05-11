@@ -1,5 +1,16 @@
+# Embedding pipeline (Sessions 7–9, runs on Colab + T4)
 transformers
 accelerate
-datasets
 sentence-transformers
 umap-learn
+
+# Local LLM pipeline (Session 14+, runs on Mac via Ollama)
+# Ollama itself is installed separately — see guide.html
+requests
+jupyter
+
+# Shared across both pipelines
+datasets
+pandas
+matplotlib
+seaborn

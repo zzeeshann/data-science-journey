@@ -24,6 +24,10 @@ A multi-year data science investigation into how humans describe consciousness, 
 
 ## The files in this repo
 
+### Root — front-door files
+- **[README.md](README.md)** — project overview for someone who lands on the GitHub page. Status, three sub-questions, methods-as-they-unfolded, repo structure, hardware/compute setup, quick start for the local LLM stack.
+- **[guide.html](guide.html)** — canonical setup guide for the **local LLM analysis stack** (Ollama + Qwen 2.5 14B + JupyterLab on the user's Mac). Open in a browser. Includes the architecture diagram, the LM-Studio→Ollama migration story with specific bug receipts, and a complete commands reference. Authored by DeepSeek, parked alongside its source-of-truth copy in [`data/raw/`](data/raw/) (Session 14, 2026-05-11). The first file a new student should open.
+
 ### Root — planning and rules
 - **[CLAUDE.md](CLAUDE.md)** — operational brief for Claude Code. Auto-loaded at session start. Covers current state, mechanical conventions, summary of verification habits (full version in `discipline.md`).
 - **[discipline.md](discipline.md)** — the rules. Twenty-two disciplines (organised by phase: pre-session, during-session, before-commit, plan-files, end-of-session) plus the drift-response protocol. Required reading every session. If a session is about to violate a rule (or already has), Claude stops, names the rule by number, cites the precedent, and asks before continuing. The single source of truth for *how* the project runs.
