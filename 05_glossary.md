@@ -111,6 +111,10 @@ The real fix to the math problem. The LLM doesn't do the math — it **writes Py
 
 Nothing hallucinated. The number came from real execution. LLM is the brain, Python is the calculator. This is how all serious 2026 AI systems work. "Agents" = LLMs with tools attached.
 
+## AG News
+
+A labelled news-classification dataset published on Hugging Face as `ag_news`. 120,000 articles in the training split plus 7,600 in the test split, each one a short news passage (headline plus first paragraph or two) carrying a category label: 0 = World, 1 = Sports, 2 = Business, 3 = Sci/Tech. The four categories are well-separated by topic, which makes AG News a standard sanity-check benchmark for new text-classification pipelines — easy enough that a properly-wired system should land above 85%, hard enough that a broken pipeline (e.g. always-predict-majority-class) lands at 25%. Session 14 used a 50-article slice from the training split to validate that the local-LLM-classification pipeline (LM Studio + Qwen 2.5 14B + Jupyter) was wired correctly, and saw 92% accuracy — a tutorial-grade sanity check, not a benchmark claim. First used in [session_14.md](sessions/session_14.md).
+
 ## Ancient Voices
 
 A deliberately narrow corpus of verified primary-source passages from civilisations with no confirmed direct contact, kept in `ancient_voices/passages/` as one `.txt` file per passage. Each file carries a citation header — text, position, translator, source URL, language, date — and a body of the passage in a single human translation. Translations are public-domain where possible (Hammurabi from Johns 1903, Enuma Elish from Budge 1921, I Ching from Legge 1899) and explicit fair-use research excerpts where no PD English translation exists (Inanna's Descent, Ugaritic). Used as the fourth corpus in the Session 8 embedding pipeline alongside *Thinking in Wholes*, the Ackoff lecture, and James 1890. First used in [session_08.md](sessions/session_08.md).
@@ -155,6 +159,14 @@ A merge operation that keeps only rows present in both datasets. When Session 5 
 
 A straight line drawn through a scatter of points that minimises the squared distance between the line and the points (ordinary least squares). The simplest way to summarise a two-variable relationship with one line. In Python: `slope, intercept = np.polyfit(x, y, 1)` — the `1` means "degree-1 polynomial," i.e. a line. First used in [Session 4](sessions/session_04.md).
 
+## LM Studio
+
+A desktop application that downloads and runs open-weight language models locally and exposes them through an OpenAI-compatible HTTP API on `localhost`. The app handles the awkward parts — model file download, [quantization](#quantization-4-bit) selection, GPU/CPU memory allocation, the OpenAI-API contract — and presents a single Start/Stop server button. Once running, any Python script can talk to the local model with the same `requests.post` call structure used to talk to OpenAI's cloud, just pointed at `http://localhost:1234/v1/chat/completions` instead. This lets the project run analysis on the user's own machine with no data leaving the laptop, no per-token cost, and no network round-trip. Session 14 used LM Studio on the user's M4 Pro Mac to serve [Qwen 2.5 14B Instruct](https://huggingface.co/Qwen/Qwen2.5-14B-Instruct) at MLX 4-bit quantization for the AG News classification test. First used in [session_14.md](sessions/session_14.md).
+
+## Local LLM
+
+A language model running on the user's own machine rather than as a cloud API call. The category is defined by *where the inference happens*, not by what the model can do — a "local LLM" can be a 1-billion-parameter laptop model or a 70-billion-parameter workstation model. The trade-off vs. a cloud model: smaller maximum size and slower for very large models, but private (no data leaves the machine), free per token (no API bill), available offline, and reproducible (the exact model weights stay frozen on disk and don't shift under your feet between runs). This project's first local LLM is Qwen 2.5 14B Instruct, served by [LM Studio](#lm-studio) on the user's M4 Pro Mac and added as the project's second analytical primitive in [Session 14](sessions/session_14.md) alongside the [embedding](#embedding) pipeline from Sessions 7–9. The two primitives are complementary: embeddings answer *what is this close to in semantic space*, a local LLM with a prompt answers *what is this saying, in our terms*. First used in [session_14.md](sessions/session_14.md).
+
 ## OLS (ordinary least squares)
 
 The standard method for fitting a straight line through a scatter of points by minimising the sum of squared vertical distances between each point and the line. Produces a slope (how much Y changes per unit of X), an intercept, and a [p-value](#p-value-statistical-significance) (the probability of seeing a slope this large by chance if the true slope were zero). In Session 5, OLS of HDI change on GDP-factor change gave slope = 0.037, p = 0.015. First used in [session_05.md](sessions/session_05.md).
@@ -178,6 +190,10 @@ A single number between −1 and +1 that summarises how tightly two variables mo
 ## Permutation test
 
 A way of asking *"could this number have come up by chance?"* by re-running the calculation thousands of times on randomly-shuffled or randomly-resampled data, building a *null distribution* of what the calculation produces under chance, and seeing where the real number falls within it. If the real number sits at the ninety-ninth percentile of the random distribution, fewer than one per cent of random arrangements would produce something that extreme — strong evidence the real number isn't chance. If it sits at the fiftieth, the real arrangement is indistinguishable from chance. Session 8 used a 10,000-iteration permutation test on the [twelve-cluster](#twelve-cluster) by pooling all fifteen ancient passages, sampling four at random ten thousand times, and asking where the observed sim_12 fell in the resulting null distribution. It fell at the forty-fifth percentile. First used in [session_08.md](sessions/session_08.md).
+
+## Quantization (4-bit)
+
+A compression technique that shrinks a language model's file size and memory footprint by storing each of its numerical [parameters](#parameters) with fewer bits of precision than it was originally trained at. A full-precision parameter takes 16 or 32 bits; a 4-bit-quantized parameter takes 4 bits — roughly a 4–8× reduction in disk and RAM. The trade-off is small accuracy loss: at 4-bit, modern quantization schemes typically lose 1–3% of benchmark performance, which is often invisible at the application level. The MLX 4-bit variant of Qwen 2.5 14B used in Session 14 fits in ~9 GB instead of the ~28 GB the full-precision weights would need, which is what lets a 14-billion-parameter model run comfortably on a 24 GB M4 Pro Mac. *MLX* is Apple's Mac-optimised numerical library; *4-bit* is the precision; together they describe the specific build of Qwen the project's [LM Studio](#lm-studio) instance serves. First used in [session_14.md](sessions/session_14.md).
 
 ## Register (linguistic)
 

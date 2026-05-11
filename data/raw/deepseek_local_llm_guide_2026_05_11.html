@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Build Your Own AI News Analyzer - Complete Beginner's Guide</title>
+<style>
+  :root {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --text: #e2e8f0;
+    --heading: #f8fafc;
+    --accent: #38bdf8;
+    --green: #4ade80;
+    --orange: #fb923c;
+    --red: #f87171;
+    --border: #334155;
+    --code-bg: #0f172a;
+    --inline-code: #facc15;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.8;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 2.5rem;
+    color: var(--heading);
+    margin: 2rem 0 1rem;
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.5rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+    color: var(--accent);
+    margin: 2.5rem 0 1rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+    color: var(--heading);
+    margin: 1.5rem 0 0.75rem;
+  }
+  p, li { margin: 0.75rem 0; }
+  ul, ol { padding-left: 1.5rem; }
+  a { color: var(--accent); }
+  strong { color: var(--heading); }
+  code {
+    background: var(--code-bg);
+    color: var(--inline-code);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  pre {
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+  pre code {
+    background: none;
+    color: #e2e8f0;
+    padding: 0;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+  }
+  th {
+    background: var(--card);
+    color: var(--accent);
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border);
+  }
+  td {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border);
+  }
+  tr:nth-child(even) { background: var(--card); }
+  .note {
+    background: #1e3a5f;
+    border-left: 4px solid var(--accent);
+    padding: 1rem 1.5rem;
+    border-radius: 0 8px 8px 0;
+    margin: 1.5rem 0;
+  }
+  .warning {
+    background: #3f1e1e;
+    border-left: 4px solid var(--red);
+    padding: 1rem 1.5rem;
+    border-radius: 0 8px 8px 0;
+    margin: 1.5rem 0;
+  }
+  .success {
+    background: #1e3f2f;
+    border-left: 4px solid var(--green);
+    padding: 1rem 1.5rem;
+    border-radius: 0 8px 8px 0;
+    margin: 1.5rem 0;
+  }
+  hr { border: 1px solid var(--border); margin: 2rem 0; }
+  @media print {
+    body { background: white; color: black; max-width: 100%; }
+    pre { background: #f5f5f5; border: 1px solid #ccc; }
+    code { background: #f5f5f5; color: black; }
+  }
+</style>
+</head>
+<body>
+
+<h1>🧠 Build Your Own AI News Analyzer<br><span style="font-size:1.2rem;color:#94a3b8;">A Complete Beginner's Guide</span></h1>
+
+<div class="success">
+<strong>🎯 What you will accomplish:</strong> Run a powerful AI model on your own Mac, load 120,000 real news articles, and analyze them — all for free, with no internet required after setup.
+</div>
+
+<h2>Part 1: The Big Picture</h2>
+
+<h3>The Problem We're Solving</h3>
+<p>Imagine you have 120,000 news articles. You want to read each one and decide: is this about <strong>World news, Sports, Business, or Science?</strong> Reading them all yourself would take weeks. But a computer program with AI can do it in hours — for <strong>free</strong>, on your own machine, with <strong>no internet required</strong>.</p>
+
+<h3>The Three Building Blocks</h3>
+<table>
+<tr><th>Block</th><th>What It Is</th><th>Real-World Analogy</th></tr>
+<tr><td><strong>The AI Model (Qwen)</strong></td><td>A program that reads, understands, and makes decisions</td><td>The "brain" that does the thinking</td></tr>
+<tr><td><strong>The Dataset (AG News)</strong></td><td>120,000 news articles with correct labels</td><td>The "textbook" the brain learns from</td></tr>
+<tr><td><strong>The Notebook (Jupyter)</strong></td><td>Interactive workspace for writing and running code</td><td>The "lab bench" for experiments</td></tr>
+</table>
+
+<h3>How They Connect</h3>
+<div class="note">
+<strong>You write a question in Jupyter</strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;⬇️<br>
+<strong>Jupyter sends the news article to Qwen</strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;⬇️<br>
+<strong>Qwen reads it and gives an answer</strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;⬇️<br>
+<strong>Jupyter shows you the result</strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;⬇️<br>
+<strong>You learn something new 🎉</strong>
+</div>
+
+<h3>Why Do This on Your Own Computer?</h3>
+<table>
+<tr><th>Cloud AI (ChatGPT, Claude)</th><th>Your Local AI (Qwen)</th></tr>
+<tr><td>Costs money per use 💰</td><td><strong>Completely free</strong> ✅</td></tr>
+<tr><td>Needs internet 🌐</td><td><strong>Works offline</strong> ✈️</td></tr>
+<tr><td>Limited by company rules 🚫</td><td><strong>No limits, no censorship</strong> 🔓</td></tr>
+<tr><td>Your data goes to their servers ☁️</td><td><strong>Everything stays on your Mac</strong> 🔒</td></tr>
+<tr><td>Slow when busy 🐌</td><td><strong>Always fast, just for you</strong> ⚡</td></tr>
+</table>
+
+<hr>
+
+<h2>Part 2: What We Installed and Why</h2>
+
+<table>
+<tr><th>Tool</th><th>What It Does</th><th>Why We Need It</th></tr>
+<tr><td><strong>Python</strong></td><td>The programming language we write in</td><td>Most popular language for data science and AI</td></tr>
+<tr><td><strong>Jupyter Notebook</strong></td><td>Interactive coding environment in your browser</td><td>Lets us write code in small chunks, see results immediately</td></tr>
+<tr><td><strong>LM Studio</strong></td><td>App that downloads and runs AI models</td><td>Makes running powerful AI as easy as installing an app</td></tr>
+<tr><td><strong>Qwen 2.5 14B</strong></td><td>The AI brain — 14 billion parameters</td><td>Powerful enough to analyze text, small enough for your Mac</td></tr>
+<tr><td><strong>HuggingFace Datasets</strong></td><td>Library with thousands of free datasets</td><td>Gives us AG News with one line of code</td></tr>
+<tr><td><strong>Pandas</strong></td><td>Makes data look like Excel spreadsheets</td><td>Organizes results into clean, filterable tables</td></tr>
+<tr><td><strong>Requests</strong></td><td>Lets Python talk to websites and APIs</td><td>Connects Jupyter to Qwen running in LM Studio</td></tr>
+</table>
+
+<hr>
+
+<h2>Part 3: The Connection — How Jupyter Talks to Qwen</h2>
+
+<div class="note">
+<strong>This is the most important concept in the whole project. Read it twice.</strong>
+</div>
+
+<h3>The Restaurant Analogy</h3>
+<table>
+<tr><th>Restaurant Role</th><th>Our Project Equivalent</th></tr>
+<tr><td>Kitchen (where food is made)</td><td><strong>LM Studio</strong> (where the AI runs)</td></tr>
+<tr><td>Waiter (takes orders to kitchen)</td><td><strong>Jupyter Notebook</strong> (sends questions to AI)</td></tr>
+<tr><td>Order window (pass-through)</td><td><strong>localhost:1234</strong> (the connection address)</td></tr>
+<tr><td>Menu item ordered</td><td><strong>Your prompt + news article</strong></td></tr>
+<tr><td>Dish served</td><td><strong>Qwen's answer</strong></td></tr>
+</table>
+
+<h3>The Function That Makes It Work</h3>
+<pre><code>def ask_qwen(prompt, article_text):
+    response = requests.post(
+        "http://localhost:1234/v1/chat/completions",  # The order window
+        json={
+            "model": "qwen2.5-14b-instruct",  # Which chef to use
+            "messages": [
+                {"role": "system", "content": prompt},  # Instructions for the chef
+                {"role": "user", "content": article_text}  # What to cook
+            ],
+            "temperature": 0.1  # How creative the chef should be
+        }
+    )
+    return response.json()["choices"][0]["message"]["content"]  # The dish</code></pre>
+
+<h3>What Each Part Means</h3>
+<table>
+<tr><th>Line</th><th>Plain English</th></tr>
+<tr><td><code>def ask_qwen(prompt, article_text):</code></td><td>"Create a reusable recipe for asking Qwen questions"</td></tr>
+<tr><td><code>requests.post(...)</code></td><td>"Send a request to the kitchen window"</td></tr>
+<tr><td><code>localhost:1234</code></td><td>"The kitchen is on this computer, window number 1234"</td></tr>
+<tr><td><code>role: system</code></td><td>"Here are your instructions, chef"</td></tr>
+<tr><td><code>role: user</code></td><td>"Here is the article you need to work on"</td></tr>
+<tr><td><code>temperature: 0.1</code></td><td>"Be consistent and precise, not creative"</td></tr>
+<tr><td><code>return response.json()...</code></td><td>"Bring me back whatever the chef made"</td></tr>
+</table>
+
+<hr>
+
+<h2>Part 4: What Our Experiment Actually Did</h2>
+
+<h3>The Full Pipeline, Step by Step</h3>
+<ol>
+<li><strong>LOAD DATA:</strong> Downloaded 120,000 news articles, each with text + label</li>
+<li><strong>DEFINE THE AI CALL:</strong> Created a function that takes instructions + article and returns AI's answer</li>
+<li><strong>RUN THE EXPERIMENT:</strong> For 50 articles, asked Qwen "What category is this?" and compared to true label</li>
+<li><strong>CALCULATE RESULTS:</strong> 46/50 correct = <strong>92% accuracy</strong></li>
+</ol>
+
+<h3>What 92% Accuracy Actually Means</h3>
+<table>
+<tr><th>Metric</th><th>Value</th><th>What It Tells Us</th></tr>
+<tr><td>Total articles tested</td><td>50</td><td>A small but meaningful sample</td></tr>
+<tr><td>Correct predictions</td><td>46</td><td>Qwen got most of them right</td></tr>
+<tr><td>Incorrect predictions</td><td>4</td><td>Qwen made 4 mistakes — these teach us where it's weak</td></tr>
+<tr><td>Accuracy</td><td><strong>92%</strong></td><td>Qwen is very reliable for news classification</td></tr>
+</table>
+
+<hr>
+
+<h2>Part 5: Complete Setup Reference (Start to Finish)</h2>
+
+<h3>Prerequisites</h3>
+<ul>
+<li>Mac with Apple Silicon (M1, M2, M3, or M4)</li>
+<li>At least 16GB RAM (24GB recommended)</li>
+<li>macOS up to date</li>
+</ul>
+
+<h3>Full Command Reference</h3>
+<pre><code># Step 1: Open Terminal (Applications → Utilities → Terminal)
+
+# Step 2: Create a project folder
+mkdir ~/news-data-science
+cd ~/news-data-science
+
+# Step 3: Create a virtual environment (isolated Python space)
+python3 -m venv venv
+source venv/bin/activate
+
+# Step 4: Install all required packages
+pip install datasets jupyter requests pandas matplotlib seaborn
+
+# Step 5: Start Jupyter
+jupyter notebook
+
+# Step 6: In your browser, create a new notebook
+# Click New → Python 3
+
+# Step 7: In your first cell, import everything
+from datasets import load_dataset
+import requests
+import pandas as pd
+
+# Step 8: Load the dataset
+dataset = load_dataset("ag_news")
+categories = {0: "World", 1: "Sports", 2: "Business", 3: "Sci/Tech"}
+
+# Step 9: Create the Qwen connection function
+def ask_qwen(prompt, article_text):
+    response = requests.post(
+        "http://localhost:1234/v1/chat/completions",
+        json={
+            "model": "qwen2.5-14b-instruct",
+            "messages": [
+                {"role": "system", "content": prompt},
+                {"role": "user", "content": article_text}
+            ],
+            "temperature": 0.1
+        }
+    )
+    return response.json()["choices"][0]["message"]["content"]
+
+# Step 10: Test with one article
+test = dataset["train"][0]
+result = ask_qwen(
+    "Classify this news into ONE category: World, Sports, Business, or Sci/Tech.",
+    test["text"][:1000]
+)
+print("Qwen says:", result)
+print("True label:", categories[test["label"]])</code></pre>
+
+<h3>LM Studio Checklist</h3>
+<ul>
+<li>✅ Downloaded from <strong>lmstudio.ai</strong></li>
+<li>✅ <strong>Qwen 2.5 14B Instruct MLX 4-bit</strong> downloaded</li>
+<li>✅ Model loaded (green indicator)</li>
+<li>✅ Local Server tab → <strong>Server Running</strong> on port 1234</li>
+<li>✅ Developer Mode turned ON in settings</li>
+</ul>
+
+<hr>
+
+<h2>Part 6: Key Concepts Explained Simply</h2>
+
+<h3>What is a Dataset?</h3>
+<p>A dataset is just a big collection of examples. AG News has 120,000 rows, each with <strong>text</strong> (the news article) and <strong>label</strong> (0=World, 1=Sports, 2=Business, 3=Sci/Tech). Think of it like a giant spreadsheet where someone already filled in the correct answers.</p>
+
+<h3>What is a Model?</h3>
+<p>A model is a mathematical function trained on billions of examples. When you give it new text, it uses patterns it learned to predict things. Qwen has "14 billion parameters" — think of these as <strong>14 billion knobs</strong> that were tuned during training to make it good at understanding language.</p>
+
+<h3>What is an API?</h3>
+<p>API = "Application Programming Interface." It's just a standard way for two programs to talk. When you call <code>http://localhost:1234/v1/chat/completions</code>, you're using LM Studio's API — the agreed-upon format for sending questions and getting answers.</p>
+
+<h3>What is Quantization (4-bit)?</h3>
+<p>A full AI model takes up a lot of space. Quantization compresses it by storing numbers with less precision — like saving a photo as a smaller JPEG instead of a huge RAW file. 4-bit quantization makes the model 4x smaller with only a tiny quality loss. That's how a 28GB model fits into 9GB and runs on your Mac.</p>
+
+<h3>Why Use a Virtual Environment?</h3>
+<p>Python projects need different versions of packages. A virtual environment creates an isolated bubble so your news project's packages don't conflict with other projects. <strong>Always use one.</strong></p>
+
+<hr>
+
+<h2>Part 7: What We Learned</h2>
+
+<table>
+<tr><th>Lesson</th><th>Why It Matters</th></tr>
+<tr><td><strong>AI can run locally</strong></td><td>You don't need the cloud. Your Mac is powerful enough.</td></tr>
+<tr><td><strong>One function connects everything</strong></td><td>The <code>ask_qwen()</code> function is a reusable tool for any AI task.</td></tr>
+<tr><td><strong>Accuracy tells a story</strong></td><td>92% means Qwen is reliable. The 8% mistakes teach us where it's weakest.</td></tr>
+<tr><td><strong>Data science is a pipeline</strong></td><td>Load → Process → Analyze → Visualize. Same pattern for any project.</td></tr>
+<tr><td><strong>Tools build on each other</strong></td><td>Python + Jupyter + Datasets + LM Studio = complete AI lab.</td></tr>
+</table>
+
+<hr>
+
+<h2>Part 8: Where to Go From Here</h2>
+
+<table>
+<tr><th>Try This</th><th>Prompt to Give Qwen</th></tr>
+<tr><td>Summarization</td><td>"Summarize this article in exactly 2 sentences."</td></tr>
+<tr><td>Sentiment analysis</td><td>"Is this article positive, negative, or neutral? Return one word."</td></tr>
+<tr><td>Entity extraction</td><td>"Extract all person names and company names from this article."</td></tr>
+<tr><td>Bias detection</td><td>"Does this article show political bias? Why or why not?"</td></tr>
+<tr><td>Generate a quiz</td><td>"Write 3 quiz questions based on this article."</td></tr>
+</table>
+
+<hr>
+
+<p style="text-align:center;color:#94a3b8;margin-top:3rem;">Built step by step on an M4 Pro Mac • Qwen 2.5 14B • AG News Dataset • May 2026</p>
+
+</body>
+</html>

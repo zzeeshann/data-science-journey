@@ -22,7 +22,7 @@ If a question is about mechanics (commits, force-adds, file conventions, verific
 
 ## Where the project is right now
 
-**State:** The Wholeness Investigation closed at Session 9. Sessions 10–13 wrapped the book. The book is now a complete, conclusive artefact — ten chapters, thirteen session records, glossary, plan, audit notes, and four summary files at repo root ([`mistakes_made.md`](mistakes_made.md), [`summary_for_a_reader.md`](summary_for_a_reader.md), [`improvements.md`](improvements.md), [`reader_glossary_audit.md`](reader_glossary_audit.md)). The project itself stays open. The next investigation has not been chosen.
+**State:** The Wholeness Investigation closed at Session 9. Sessions 10–13 wrapped the book. The book is now a complete, conclusive artefact — ten chapters, thirteen session records, glossary, plan, audit notes, and four summary files at repo root ([`mistakes_made.md`](mistakes_made.md), [`summary_for_a_reader.md`](summary_for_a_reader.md), [`improvements.md`](improvements.md), [`reader_glossary_audit.md`](reader_glossary_audit.md)). The project itself stays open. Session 14 (2026-05-11) opened the post-book project: a **local LLM analysis stack** now runs on the user's M4 Pro Mac — LM Studio + Qwen 2.5 14B Instruct MLX 4-bit + Jupyter, driven via the `localhost:1234` OpenAI-compatible API. Capability acquisition, not a finding. The next investigation question has not been chosen.
 
 **Two findings the existing book documents:**
 - *Country-scale (Chapters 5–6).* Across 141 countries between 2019 and 2025, the WHR's six measured factors rose in 99% of countries while the unexplained residual fell in 98%. Session 5 ruled out HDI stagnation: 38 of 129 countries showed GDP up, HDI flat, residual collapsing. Neither income nor development metrics can see what's falling. The country-scale work in this book does not name what does.
@@ -30,9 +30,9 @@ If a question is about mechanics (commits, force-adds, file conventions, verific
 
 **The two halves do not connect statistically.** The connecting word "residual" is metaphorical across them. Chapter 10 names this as the project's central methodological lesson; the bridge-grep habit (discipline rule 13) was added to standing process to prevent recurrence.
 
-**Last session committed:** [Session 13](sessions/session_13.md) — the four summary files at repo root. Commit `032e027`.
+**Last session committed:** [Session 14](sessions/session_14.md) — local LLM stack stood up on the user's Mac (LM Studio + Qwen 2.5 14B + Jupyter); AG News 50-article validation at 92% accuracy as a tutorial-grade sanity check; project's analytical toolkit now has two primitives — embeddings (Sessions 7–9, runs on Colab+T4) and LLM-classification-via-prompt (Session 14, runs on user's Mac).
 
-**Next session:** None planned. When the user is ready to start the next investigation, it will be a fresh sub-question pick — Sessions-4-onward style — informed by everything in this book and committed to nothing in advance. Discipline rules 1–4 (unit-of-analysis discipline, statistical-bridge-up-front, exploratory-vs-confirmatory marking, pre-registration) apply from session zero. The next investigation will produce its own plan file.
+**Next session:** When the user is ready, the next investigation question gets picked — fresh sub-question pick, Sessions-4-onward style. Discipline rules 1–4 (unit-of-analysis, statistical-bridge-up-front, exploratory-vs-confirmatory marking, pre-registration) apply from session zero. The new investigation will produce its own plan file when the question is named. Either or both analytical primitives are available; which one fits depends on the question.
 
 ### Hypotheses status (Wholeness Investigation, closed at Session 9)
 
@@ -95,6 +95,8 @@ data/raw/thinking_in_wholes_2026.md
 data/raw/WHR26_Data_Figure_2.1.xlsx
 data/raw/HDR25_Composite_indices_complete_time_series.csv
 data/raw/james_principles_psychology_1890.txt
+data/raw/deepseek_local_llm_guide_2026_05_11.html
+data/raw/deepseek_local_llm_guide_2026_05_11.md
 data/processed/whr2025_clean.csv
 data/processed/whr_changes_2019_2025.csv
 data/processed/session_05_merged.csv
