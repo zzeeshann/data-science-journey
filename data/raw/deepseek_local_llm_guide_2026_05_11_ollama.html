@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Science Journey - Complete Setup Guide</title>
+<style>
+  :root {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --text: #e2e8f0;
+    --heading: #f8fafc;
+    --accent: #38bdf8;
+    --green: #4ade80;
+    --orange: #fb923c;
+    --red: #f87171;
+    --border: #334155;
+    --code-bg: #0d1117;
+    --inline-code: #facc15;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.8;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 2.5rem;
+    color: var(--heading);
+    margin: 2rem 0 1rem;
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.5rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+    color: var(--accent);
+    margin: 2.5rem 0 1rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+    color: var(--heading);
+    margin: 1.8rem 0 0.75rem;
+  }
+  p, li { margin: 0.75rem 0; }
+  ul, ol { padding-left: 1.5rem; }
+  a { color: var(--accent); }
+  strong { color: var(--heading); }
+  code {
+    background: var(--code-bg);
+    color: var(--inline-code);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  pre {
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    font-size: 0.85rem;
+    line-height: 1.7;
+  }
+  pre code {
+    background: none;
+    color: #e2e8f0;
+    padding: 0;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+  }
+  th {
+    background: var(--card);
+    color: var(--accent);
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border);
+  }
+  td {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border);
+  }
+  tr:nth-child(even) { background: var(--card); }
+  .note {
+    background: #1e3a5f;
+    border-left: 4px solid var(--accent);
+    padding: 1rem 1.5rem;
+    border-radius: 0 8px 8px 0;
+    margin: 1.5rem 0;
+  }
+  .warning {
+    background: #3f1e1e;
+    border-left: 4px solid var(--red);
+    padding: 1rem 1.5rem;
+    border-radius: 0 8px 8px 0;
+    margin: 1.5rem 0;
+  }
+  .success {
+    background: #1e3f2f;
+    border-left: 4px solid var(--green);
+    padding: 1rem 1.5rem;
+    border-radius: 0 8px 8px 0;
+    margin: 1.5rem 0;
+  }
+  .file-box {
+    background: var(--code-bg);
+    border: 1px dashed var(--accent);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+  }
+  .file-box h4 {
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+  }
+  hr { border: 1px solid var(--border); margin: 2rem 0; }
+</style>
+</head>
+<body>
+
+<h1>🧠 Data Science Journey<br><span style="font-size:1.2rem;color:#94a3b8;">Complete Project Setup & Knowledge Guide</span></h1>
+
+<div class="success">
+<strong>🎯 Project Goal:</strong> Learn data science by analyzing real news articles with a local AI model (Qwen 2.5 14B) running on a Mac M4 Pro. All analysis runs locally — zero cloud costs, fully private.
+</div>
+
+<div class="note">
+<strong>📂 GitHub Repo:</strong> https://github.com/zzeeshann/data-science-journey<br>
+<strong>💻 Machine:</strong> Mac Mini M4 Pro, 24GB RAM, macOS 26.3<br>
+<strong>🤖 Local AI:</strong> Qwen 2.5 14B via Ollama<br>
+<strong>📊 Dataset:</strong> AG News (120,000 articles, 4 categories)
+</div>
+
+<hr>
+
+<!-- ============================================ -->
+<!-- SECTION 1: PROJECT OVERVIEW -->
+<!-- ============================================ -->
+<h2>1. What This Project Is</h2>
+
+<h3>The Big Picture</h3>
+<p>This project teaches data science by doing. You run a powerful AI model (Qwen 2.5 14B) <strong>entirely on your own Mac</strong>, load 120,000 real news articles, and analyze them programmatically. Every step is documented. Every concept is explained. The project is designed for absolute beginners.</p>
+
+<h3>What You Will Learn</h3>
+<ul>
+  <li>How to run a large language model locally (no internet, no API keys, no costs)</li>
+  <li>How to load and explore real-world datasets using Python</li>
+  <li>How to connect Python to a local AI model for automated analysis</li>
+  <li>How to classify, summarize, and analyze text at scale</li>
+  <li>How to evaluate AI accuracy and visualize results</li>
+  <li>How to structure a data science project for reproducibility</li>
+</ul>
+
+<h3>The Three Building Blocks</h3>
+<table>
+  <tr><th>Component</th><th>What It Is</th><th>Real-World Analogy</th></tr>
+  <tr><td><strong>Ollama + Qwen 2.5 14B</strong></td><td>Local AI that reads, understands, and classifies text</td><td>The "brain" doing the thinking</td></tr>
+  <tr><td><strong>AG News Dataset</strong></td><td>120,000 labeled news articles from Hugging Face</td><td>The "textbook" we learn from</td></tr>
+  <tr><td><strong>Jupyter Notebook</strong></td><td>Interactive Python environment in the browser</td><td>The "lab bench" for experiments</td></tr>
+</table>
+
+<h3>Why Local AI Instead of Cloud AI?</h3>
+<table>
+  <tr><th>Cloud AI (ChatGPT, Claude)</th><th>Local AI (Qwen via Ollama)</th></tr>
+  <tr><td>Costs money per API call 💰</td><td><strong>Completely free, unlimited calls</strong></td></tr>
+  <tr><td>Requires internet 🌐</td><td><strong>Works fully offline</strong></td></tr>
+  <tr><td>Rate-limited and censored 🚫</td><td><strong>No limits, no content filters</strong></td></tr>
+  <tr><td>Your data goes to their servers ☁️</td><td><strong>Everything stays on your machine</strong></td></tr>
+  <tr><td>Slow when servers are busy 🐌</td><td><strong>Always fast, dedicated to you</strong></td></tr>
+</table>
+
+<hr>
+
+<!-- ============================================ -->
+<!-- SECTION 2: FULL SYSTEM SETUP -->
+<!-- ============================================ -->
+<h2>2. Complete System Setup (From Zero)</h2>
+
+<div class="warning">
+<strong>⚠️ Prerequisites:</strong> Mac with Apple Silicon (M1/M2/M3/M4), 16GB+ RAM recommended, macOS up to date.
+</div>
+
+<h3>Step 1: Install Ollama (Local AI Runtime)</h3>
+<pre><code># Download and install Ollama with one command
+curl -fsSL https://ollama.com/install.sh | sh
+
+# Verify it's installed
+ollama --version</code></pre>
+
+<h3>Step 2: Download the Qwen 2.5 14B Model</h3>
+<pre><code># Pull the 14B parameter Qwen model (9GB download)
+ollama pull qwen2.5:14b
+
+# Verify the model is downloaded
+ollama list
+# Should show: qwen2.5:14b</code></pre>
+
+<div class="note">
+<strong>💡 Why this model?</strong> Qwen 2.5 14B is the "sweet spot" for 24GB Macs. Powerful enough for serious text analysis, small enough to run fast (28+ tokens/second). Larger models (32B+) won't fit comfortably in 24GB RAM.
+</div>
+
+<h3>Step 3: Set Up the Python Project</h3>
+<pre><code># Create project folder
+mkdir ~/news-data-science
+cd ~/news-data-science
+
+# Create isolated Python environment
+python3 -m venv venv
+source venv/bin/activate
+
+# Install all required packages
+pip install datasets jupyter requests pandas matplotlib seaborn</code></pre>
+
+<h3>Step 4: Start Jupyter Notebook</h3>
+<pre><code># Make sure venv is activated first
+cd ~/news-data-science
+source venv/bin/activate
+jupyter notebook</code></pre>
+<p>Your browser opens at <code>http://localhost:8888</code>. Click <strong>New → Python 3</strong> to create a notebook.</p>
+
+<hr>
+
+<!-- ============================================ -->
+<!-- SECTION 3: THE MAIN NOTEBOOK -->
+<!-- ============================================ -->
+<h2>3. The Main Analysis Notebook</h2>
+
+<p>This is the complete notebook code for the project. Create a new notebook in Jupyter and run each cell.</p>
+
+<div class="file-box">
+<h4>📓 Cell 1: Import Libraries & Load Dataset</h4>
+<pre><code># ============================================
+# AI NEWS ANALYZER - COMPLETE SETUP (OLLAMA)
+# ============================================
+
+from datasets import load_dataset
+import requests
+import pandas as pd
+import time
+
+# Load AG News dataset (downloads automatically first time)
+dataset = load_dataset("ag_news")
+categories = {0: "World", 1: "Sports", 2: "Business", 3: "Sci/Tech"}
+
+print("✅ Dataset loaded! 120,000 training articles, 7,600 test articles.")
+print(f"Categories: {categories}")
+print(f"\nSample article:\n{dataset['train'][0]['text'][:300]}...")</code></pre>
+</div>
+
+<div class="file-box">
+<h4>📓 Cell 2: Create the Qwen Connection Function</h4>
+<pre><code># ============================================
+# CONNECT TO LOCAL QWEN MODEL VIA OLLAMA
+# ============================================
+
+def ask_qwen(prompt, article_text):
+    """
+    Send an article to the local Qwen model and get analysis back.
+    
+    Parameters:
+        prompt (str): Instructions telling Qwen what to do
+        article_text (str): The news article text to analyze
+    
+    Returns:
+        str: Qwen's response
+    """
+    response = requests.post(
+        "http://localhost:11434/v1/chat/completions",  # Ollama API endpoint
+        json={
+            "model": "qwen2.5:14b",                     # Model name in Ollama
+            "messages": [
+                {
+                    "role": "system", 
+                    "content": prompt                    # Instructions
+                },
+                {
+                    "role": "user", 
+                    "content": article_text               # The article
+                }
+            ],
+            "temperature": 0.1                           # Low = consistent answers
+        }
+    )
+    return response.json()["choices"][0]["message"]["content"]
+
+print("✅ ask_qwen() function ready!")</code></pre>
+</div>
+
+<div class="file-box">
+<h4>📓 Cell 3: Test the Connection</h4>
+<pre><code># ============================================
+# TEST: Send one article to Qwen
+# ============================================
+
+test_article = dataset["train"][0]["text"]
+true_label = categories[dataset["train"][0]["label"]]
+
+result = ask_qwen(
+    "Classify this news into ONE category: World, Sports, Business, or Sci/Tech. Return ONLY the category name.",
+    test_article[:1000]  # Send first 1000 characters
+)
+
+print(f"Qwen predicted: {result.strip()}")
+print(f"True label:     {true_label}")
+print(f"Correct?        {result.strip().lower() == true_label.lower()}")</code></pre>
+</div>
+
+<div class="file-box">
+<h4>📓 Cell 4: Batch Process 50 Articles</h4>
+<pre><code># ============================================
+# BATCH CLASSIFICATION: 50 Articles
+# ============================================
+
+results = []
+num_to_process = 50
+
+print(f"Processing {num_to_process} articles...")
+for i in range(num_to_process):
+    article = dataset["train"][i]
+    true = categories[article["label"]]
+    
+    # Ask Qwen to classify
+    pred = ask_qwen(
+        "Classify this news into ONE category: World, Sports, Business, or Sci/Tech. Return ONLY the category name.",
+        article["text"][:1000]
+    ).strip()
+    
+    # Record result
+    results.append({
+        "article_id": i,
+        "true_label": true,
+        "qwen_prediction": pred,
+        "correct": true.lower() == pred.lower()
+    })
+    
+    # Progress update every 10 articles
+    if i % 10 == 0:
+        print(f"  Progress: {i}/{num_to_process}")
+    time.sleep(0.1)  # Tiny delay to avoid overwhelming Ollama
+
+# Calculate and display accuracy
+df = pd.DataFrame(results)
+accuracy = df["correct"].mean()
+
+print(f"\n{'='*50}")
+print(f"RESULTS")
+print(f"{'='*50}")
+print(f"Total articles:  {num_to_process}")
+print(f"Correct:         {df['correct'].sum()}")
+print(f"Wrong:           {num_to_process - df['correct'].sum()}")
+print(f"Accuracy:        {accuracy:.1%}")
+print(f"{'='*50}")
+
+# Show the mistakes
+mistakes = df[~df["correct"]]
+if len(mistakes) > 0:
+    print(f"\n❌ Mistakes ({len(mistakes)} articles):")
+    for _, row in mistakes.iterrows():
+        art = dataset["train"][int(row["article_id"])]
+        print(f"\n  Article #{row['article_id']}:")
+        print(f"  True label: {row['true_label']}")
+        print(f"  Qwen said:  {row['qwen_prediction']}")
+        print(f"  Text: {art['text'][:150]}...")</code></pre>
+</div>
+
+<div class="file-box">
+<h4>📓 Cell 5: Visualize Results (Confusion Matrix)</h4>
+<pre><code># ============================================
+# VISUALIZATION: Confusion Matrix
+# ============================================
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Create confusion matrix: true labels vs predicted labels
+confusion = pd.crosstab(
+    df["true_label"], 
+    df["qwen_prediction"]
+)
+
+# Plot as heatmap
+plt.figure(figsize=(8, 6))
+sns.heatmap(confusion, annot=True, fmt="d", cmap="Blues", 
+            xticklabels=["Business", "Sci/Tech", "Sports", "World"],
+            yticklabels=["Business", "Sci/Tech", "Sports", "World"])
+plt.title("Qwen Classification vs True Labels", fontsize=14)
+plt.xlabel("Qwen Prediction")
+plt.ylabel("True Label")
+plt.tight_layout()
+plt.show()</code></pre>
+</div>
+
+<hr>
+
+<!-- ============================================ -->
+<!-- SECTION 4: HOW TO RESTART -->
+<!-- ============================================ -->
+<h2>4. How to Restart Everything After Closing</h2>
+
+<h3>Quick Restart (3 Steps)</h3>
+<table>
+  <tr><th>Step</th><th>Action</th><th>Command / What to Click</th></tr>
+  <tr><td>1</td><td>Ensure Ollama is running</td><td>Open Terminal, type: <code>ollama serve</code><br>(Ollama usually auto-starts on login)</td></tr>
+  <tr><td>2</td><td>Start Jupyter</td><td><code>cd ~/news-data-science && source venv/bin/activate && jupyter notebook</code></td></tr>
+  <tr><td>3</td><td>Run setup cells</td><td>Open your notebook, run Cell 1 and Cell 2 from above</td></tr>
+</table>
+
+<h3>One-Command Alias (Save Time)</h3>
+<pre><code># Run this ONCE to create a shortcut
+echo 'alias news="cd ~/news-data-science && source venv/bin/activate && jupyter notebook"' >> ~/.zshrc && source ~/.zshrc
+
+# After that, just type:
+news</code></pre>
+
+<hr>
+
+<!-- ============================================ -->
+<!-- SECTION 5: CONCEPTS EXPLAINED -->
+<!-- ============================================ -->
+<h2>5. Key Concepts Explained Simply</h2>
+
+<h3>What is a Dataset?</h3>
+<p>A dataset is a big collection of examples, like a spreadsheet. AG News has 120,000 rows. Each row has two columns: <strong>text</strong> (the news article) and <strong>label</strong> (the correct category: 0=World, 1=Sports, 2=Business, 3=Sci/Tech). Someone already labeled all 120,000 articles correctly — we use this to test if our AI can match human accuracy.</p>
+
+<h3>What is a Model?</h3>
+<p>A model is a mathematical function trained on billions of text examples. It learns patterns in language. Qwen has <strong>14 billion parameters</strong> — think of these as 14 billion tiny knobs that were tuned during training. When you give it new text, it uses those learned patterns to predict, classify, summarize, or generate.</p>
+
+<h3>What is an API?</h3>
+<p>API = Application Programming Interface. It's a standard way for two programs to talk to each other. When your Python code calls <code>http://localhost:11434/v1/chat/completions</code>, it's using Ollama's API. The format is always the same: you send a request with instructions and text, you get back a response with the AI's answer.</p>
+
+<h3>What is localhost:11434?</h3>
+<p><code>localhost</code> means "this computer." <code>11434</code> is a port number — like a specific door on your computer. Ollama listens at this door for requests. LM Studio used port 1234. Different apps use different ports so they don't conflict.</p>
+
+<h3>What is a Virtual Environment (venv)?</h3>
+<p>Python projects need specific versions of packages. A virtual environment creates an isolated bubble for your project. The packages you install inside <code>venv</code> won't conflict with other Python projects. Always use one. The command <code>source venv/bin/activate</code> enters the bubble; <code>deactivate</code> exits it.</p>
+
+<h3>What is Jupyter Notebook?</h3>
+<p>Jupyter is an interactive coding environment that runs in your browser. Instead of writing a whole script and running it once, you write code in small chunks called "cells." You run each cell individually and see results immediately. This makes it perfect for data exploration and learning.</p>
+
+<h3>What is the ask_qwen() Function?</h3>
+<p>This is the bridge between your notebook and the AI. You give it two things: a <strong>prompt</strong> (instructions like "classify this") and <strong>article_text</strong> (the actual news). It packages them into the format Ollama expects, sends them over <code>localhost:11434</code>, and returns whatever Qwen says. It's the single most important function in the whole project.</p>
+
+<h3>What Does 92% Accuracy Mean?</h3>
+<p>Out of 50 articles, Qwen correctly classified 46. That's 92% accuracy. The 4 mistakes (8%) are actually valuable — they show us <em>where</em> Qwen gets confused. Maybe it mixes up World and Business news. These patterns help us understand the model's strengths and weaknesses.</p>
+
+<h3>What is Ollama vs LM Studio?</h3>
+<table>
+  <tr><th>Ollama</th><th>LM Studio</th></tr>
+  <tr><td>Terminal-based, stable</td><td>GUI app, occasionally buggy</td></tr>
+  <tr><td>One command to download: <code>ollama pull</code></td><td>Must search and pick correct format (MLX)</td></tr>
+  <tr><td>No format confusion</td><td>GGUF vs MLX vs Safetensors confusion</td></tr>
+  <tr><td>Auto-runs in background</td><td>Must manually start server</td></tr>
+  <tr><td>Port 11434</td><td>Port 1234</td></tr>
+  <tr><td><strong>✅ Recommended for this project</strong></td><td>❌ We switched away due to engine bugs</td></tr>
+</table>
+
+<hr>
+
+<!-- ============================================ -->
+<!-- SECTION 6: PROJECT FILES -->
+<!-- ============================================ -->
+<h2>6. Recommended Repo Structure</h2>
+
+<p>Here's how the GitHub repo should be organized:</p>
+
+<pre><code>data-science-journey/
+├── README.md                    # Project overview and setup instructions
+├── guide.html                   # This complete guide
+├── notebooks/
+│   └── news-analysis.ipynb      # Main analysis notebook
+├── data/
+│   └── .gitkeep                 # Dataset cached here by HuggingFace
+├── results/
+│   └── .gitkeep                 # CSV exports, charts, findings
+├── requirements.txt             # Python dependencies
+└── .gitignore                   # What NOT to commit to git</code></pre>
+
+<h3>File: requirements.txt</h3>
+<pre><code>datasets
+jupyter
+requests
+pandas
+matplotlib
+seaborn</code></pre>
+
+<h3>File: .gitignore</h3>
+<pre><code># Python virtual environment
+venv/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# HuggingFace cache (large, don't commit)
+data/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+
+# Results (generated files)
+results/*.csv
+results/*.png
+
+# Ollama (local only, not part of repo)
+.ollama/</code></pre>
+
+<h3>File: README.md</h3>
+<pre><code># 🧠 Data Science Journey
+
+**Learning data science by building.** This repo documents my journey from absolute beginner to building real AI-powered data analysis pipelines — all running locally on a Mac M4 Pro.
+
+## What's Inside
+
+- **Local AI Pipeline**: Qwen 2.5 14B running via Ollama for zero-cost text analysis
+- **Real Dataset**: AG News (120,000 articles) from Hugging Face
+- **Interactive Notebooks**: Jupyter notebooks with step-by-step explanations
+- **Complete Guide**: `guide.html` explains every concept, every command, every step
+
+## Quick Start
+
+```bash
+# 1. Install Ollama
+curl -fsSL https://ollama.com/install.sh | sh
+
+# 2. Download the model
+ollama pull qwen2.5:14b
+
+# 3. Set up Python environment
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+# 4. Start Jupyter
+jupyter notebook
